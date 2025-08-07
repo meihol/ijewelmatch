@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JewelMatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add Cropper.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
+    <!-- Add Cropper.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+        .container { 
+            width: 80%; 
+            margin: 0 auto; 
+            position: relative; 
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            margin-bottom: 20px; 
+        }
+        .logo { 
+            width: 50px; 
+            height: auto; 
+            margin-right: 10px;
+        }
+        h1 { 
+            flex-grow: 1; 
+            text-align: center; 
+            margin: 0; 
+            font-size: 24px;
+            font-weight: bold;
+            color: #00698f;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #666;
+        }
+        .fa-gear {
+            color: #666;
+        }
+        .form-group { 
+            margin-bottom: 20px; 
+            position: relative; 
+        }
+        label { 
+            display: block; 
+            margin-bottom: 5px; 
+        }
+        input[type="text"], input[type="file"], input[type="number"], input[type="submit"], input[type="button"], button { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+        }
+        #video, #canvas, #capturedImage { 
+            max-width: 100%; 
+        }
+        #response { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+        }
+        .result-item { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .result-item img { 
+            margin-bottom: 10px; 
+            max-width: 200px; 
+        }
+        .settings-button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: transparent;
+            padding: 7px;
+            border-radius: 3px;
+            font-size: 25px;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+        }
+        .left-logo {
+            width: auto; /* Adjust width as needed */
+            height: 50px; /* Adjust height as needed */
+            margin-right: 1000px; /* Add margin for spacing */
+        }
+        .right-logo {
+            width: auto; /* Adjust width as needed */
+            height: 50px; /* Adjust height as needed */
+        }
+        .footer {
+            position: relative;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        #AIMirror {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+        }
+        .tab {
+            display: flex; /* Make tabs inline */
+        }
+        .tablinks {
+            /* Remove unnecessary styles and add padding for better appearance */
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        .tablinks:hover { /* Add hover effect */
+            background-color: #f1f1f1; /* Light grey background on hover */
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none; /* Remove top border */
+        }
+        .footer {
+            position: relative;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f7f7f7; /* Light grey background */
+            text-align: center;
+            border-top: 1px solid #00698f;
+            font-size: 16px;
+            color: #333; /* Dark grey text */
+            background-image: linear-gradient(to bottom, #f7f7f7, #fff); /* Subtle gradient effect */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        .footer p {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .footer a {
+            color: #00698f;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .footer .copyright {
+            font-size: 14px;
+            color: #666;
+        }     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./static/iJewelMatchh.svg" alt="JewelMatch Logo" class="left-logo">
+        <img src="./static/Gatisofttech-Logo.svg" alt="Gatisofttech Logo" class="right-logo">
+        <h1 style="margin-left: 0;">JewelMatch</h1> 
+        <div class="tab">
+            <button class="tablinks" onclick="openSearch()"><b>Search</b></button>
+            <button class="tablinks" onclick="openTrain()"><b>Train Model</b></button>
+            <button class="tablinks" onclick="openAIMirror()"><b>AI Mirror</b></button>
+            <button class="settings-button" onclick="openSettings()"><i class="fa fa-gear"></i></button>
+        </div>
+
+        <div id="Search" class="tabcontent">
+            <!-- Search content goes here -->
+            <div class="search-container">
+                <!-- Form to Search Image -->
+                <div class="form-group">
+                    <h2>Search Image</h2>
+                    <ul>
+                        <li><p>To search for similar images, upload an image along with how many results (K) and minimum similarity (Threshold) you want using the search function on our website.</p></li>
+                    </ul>
+                    <label for="fileSearchImage">Select Image</label>
+                    <input type="file" id="fileSearchImage" name="image" accept="image/*">
+                    <input type="button" value="Search with Selected Image" onclick="searchImage('file')">
+                
+                    <label for="cameraCapture">Capture Image</label>
+                    <button id="cameraCapture">Open Camera</button>
+                    <video id="video" style="display:none;"></video>
+                    <canvas id="canvas" style="display:none;"></canvas>
+                    <img id="capturedImage" style="display:none;">
+                    <img id="imageToCrop" style="display:none; max-width:100%;"/>
+                    <button id="cropImage" style="display:none;">Crop Image</button>
+                    <button id="confirmImage" style="display:none;">Confirm Image</button>
+                    <input type="button" value="Search with Captured Image" onclick="searchImage('camera')" id="searchCaptured" style="display:none;">
+                
+                    <label for="k">Number of Required Photos </label>
+                    <input type="number" id="Number_Of_Images_Req" name="k" value="5">
+                    <label for="threshold">Similarity Percentage (0-100):</label>
+                    <input type="text" id="Similarity_Percentage" name="threshold" value="90">
+                </div>
+             </div>
+        </div>
+
+        <div id="Train" class="tabcontent">
+            <!-- Form to Train Model -->
+            <div class="form-group">
+                <h2>Train Model</h2>
+                <ul>
+                    <li>
+                        <p>Click the "Train" button and select the folder containing your images. The system will learn from these images to improve its ability to recognize similar ones in the future.</p>
+                    </li>
+                </ul>
+                <label for="trainFolder">Image Folder Path</label>
+                <input type="text" id="trainFolder" name="folder_path">
+                <input type="button" value="Train Model" onclick="trainModel()">
+            </div>
+
+            <!-- Form to Rebuild Index -->
+            <div class="form-group">
+                <h2>Selective Folder Path</h2>
+                <ul>
+                    <li><p>To update the image database, upload your images to a new folder and send a request to the website using the 'rebuild' function. Provide the folder path where your images are located.</p></li>
+                </ul>
+                <label for="rebuildFolder">New Folder Path</label>
+                <input type="text" id="rebuildFolder" name="folder_path">
+                <input type="button" value="Insert selective folder path" onclick="rebuildIndex()">
+            </div>
+        </div>
+
+        <!-- AI Mirror Tab Content -->
+        <div id="AIMirror" class="tabcontent">
+            <div class="form-group">
+                <h2>AI Mirror Jewelry</h2>
+                <ul>
+                    <li><p>Upload or capture an image with multiple jewelry objects, and the AI will mirror the objects accordingly.</p></li>
+                </ul>
+
+                <!-- Upload Image for AI Mirror -->
+                <label for="fileMirrorImage">Select Image</label>
+                <input type="file" id="fileMirrorImage" name="mirror_image" accept="image/*">
+                <input type="button" value="Apply AI Mirror" onclick="applyAIMirror('file')">
+                <input type="file" id="fileMirrorImage" name="mirror_image" accept="image/*">
+                
+                <!-- Capture Image for AI Mirror -->
+                <label for="cameraMirrorCapture">Capture Image</label>
+                <button id="cameraMirrorCapture">Open Camera</button>
+                <video id="mirrorVideo" style="display:none;"></video>
+                <canvas id="mirrorCanvas" style="display:none;"></canvas>
+                <img id="mirrorCapturedImage" style="display:none;">
+                <input type="button" value="Apply AI Mirror to Captured Image" onclick="applyAIMirror('camera')" id="mirrorCapturedButton" style="display:none;">
+                
+                <!-- Mirrored Image Result -->
+                <div id="mirrorResponse"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Form to Insert Image -->
+            <div class="form-group">
+                <h2>Insert Image</h2>
+                <ul>
+                    <li><p>To add an image to the system, upload it using the website's uploader.</p></li>
+                </ul>
+                <label for="insertImage">Select Image</label>
+                <input type="file" id="insertImage" name="image">
+                <input type="button" value="Insert Image" onclick="insertImage()">
+            </div>
+
+            <!-- Form to Insert Folder -->
+            <div class="form-group">
+                <h2>Insert Folder</h2>
+                <ul>
+                    <li><p>To add a new folder of images to the index, use the upload tool and select the folder you want to add.</p></li>
+                </ul>
+                <label for="insertFolder">Folder Path</label>
+                <input type="text" id="insertFolder" name="folder_path">
+                <input type="button" value="Insert Folder" onclick="insertFolder()">
+            </div>
+
+            <!-- Form to Delete Image -->
+            <div class="form-group">
+                <h2>Delete Images</h2>
+                <ul>
+                    <li><p>To remove images from the system, use the "Delete" function and provide a list of image file names (e.g., "image1.jpg", "image2.png") in the body of your request.</p></li>
+                </ul>
+                <label for="deleteImages">Select Images to Delete</label>
+                <input type="file" id="deleteImages" name="images" multiple>
+                <input type="button" value="Delete Images" onclick="deleteImages()">
+            </div>
+
+            <!-- Response Output -->
+            <div class="form-group">
+                <h2>Results</h2>
+                <div id="response"></div>
+            </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="copyright">© 2024 All Rights are Reserved by iJewelMatch. Version 1.5. Developed By GatiSoftTech.</p>
+        </div>
+        </div>
+    </div>  
+
+    <script>
+        function openSearch() {
+            // Hide Train content
+            document.getElementById("Train").style.display = "none";
+            // Show Search content
+            document.getElementById("Search").style.display = "block";
+            // (Optional) Add your specific Search content logic here (e.g., populate the Search div)
+        }
+
+        function openTrain() {
+            // Hide Search content
+            document.getElementById("Search").style.display = "none";
+            // Show Train content
+            document.getElementById("Train").style.display = "block";
+            // (Optional) Add your specific Train content logic here (e.g., populate the Train div)
+        }
+
+        let videoStream;
+        function toggleApiDoc(element) {
+            const content = element.querySelector('.api-doc-content');
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+        
+        function openSettings() {
+            window.open("/setup", "_blank");
+        }
+
+        document.querySelector(".settings-button").addEventListener("click", openSettings);
+
+        // Modify the trainModel function
+        async function trainModel() {
+            const folderPath = document.getElementById('trainFolder').value;
+            const responseElement = document.getElementById('response');
+            
+            try {
+                const response = await fetch('/train', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ folder_path: folderPath }),
+                });
+                const result = await response.json();
+                responseElement.textContent = JSON.stringify(result, null, 4);
+                
+                // Automatically save the configuration after training
+                
+            } catch (error) {
+                responseElement.textContent = "Error: " + error;
+            }
+        } 
+
+        // Modify the rebuildIndex function
+        async function rebuildIndex() {
+            const folderPath = document.getElementById('rebuildFolder').value;
+            const responseElement = document.getElementById('response');
+            
+            try {
+                const response = await fetch('/rebuild', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ folder_path: folderPath }),
+                });
+                const result = await response.json();
+                responseElement.textContent = JSON.stringify(result, null, 4);
+                
+                // Automatically save the configuration after rebuilding
+                
+            } catch (error) {
+                responseElement.textContent = "Error: " + error;
+            }
+        }
+
+        async function insertFolder() {
+            const folderPath = document.getElementById('insertFolder').value;
+            const responseElement = document.getElementById('response');
+    
+            try {
+                const response = await fetch('/insert_folder', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ folder_path: folderPath }),
+                });
+                const result = await response.json();
+                responseElement.textContent = JSON.stringify(result, null, 4);
+            } catch (error) {
+                responseElement.textContent = "Error: " + error;
+            }
+        }
+        
+        async function insertImage() {
+            const imageInput = document.getElementById('insertImage');
+            const responseElement = document.getElementById('response');
+            
+            if (!imageInput.files.length) {
+                responseElement.textContent = "Image file is required";
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('image', imageInput.files[0]);
+
+            try {
+                const response = await fetch('/insert', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                responseElement.textContent = JSON.stringify(result, null, 4);
+            } catch (error) {
+                responseElement.textContent = "Error: " + error;
+            }
+        }
+
+        function openAIMirror() {
+            // Hide other content
+            document.getElementById("Search").style.display = "none";
+            document.getElementById("Train").style.display = "none";
+            document.getElementById("AIMirror").style.display = "block";
+        }
+        
+        async function applyAIMirror(type) {
+            const responseElement = document.getElementById('mirrorResponse');
+            let formData = new FormData();
+        
+            if (type === 'file') {
+                const imageInput = document.getElementById('fileMirrorImage');
+                if (!imageInput.files.length) {
+                    responseElement.textContent = "Please upload an image";
+                    return;
+                }
+                formData.append('image', imageInput.files[0]);
+            } else if (type === 'camera') {
+                const canvas = document.getElementById('mirrorCanvas');
+                canvas.toBlob(async (blob) => {
+                    formData.append('image', blob, 'captured_mirror_image.jpg');
+                    await sendAIMirrorRequest(formData);
+                }, 'image/jpeg');
+                return;
+            }
+        
+            await sendAIMirrorRequest(formData);
+        }
+        
+        async function sendAIMirrorRequest(formData) {
+            const responseElement = document.getElementById('mirrorResponse');
+            try {
+                const response = await fetch('/ai_mirror', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                
+                if (result.error) {
+                    responseElement.textContent = "Error: " + result.error;
+                } else {
+                    const img = document.createElement('img');
+                    img.src = result.mirrored_image_url;
+                    responseElement.innerHTML = '';  // Clear previous results
+                    responseElement.appendChild(img);  // Show mirrored image
+                }
+            } catch (error) {
+                responseElement.textContent = "Error: " + error;
+            }
+        }
+
+        document.getElementById('cameraMirrorCapture').addEventListener('click', async () => {
+            const video = document.getElementById('mirrorVideo');
+            const canvas = document.getElementById('mirrorCanvas');
+            const capturedImage = document.getElementById('mirrorCapturedImage');
+            const captureButton = document.getElementById('mirrorCapturedButton');
+        
+            try {
+                const videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = videoStream;
+                video.style.display = 'block';
+                canvas.style.display = 'block';
+                await video.play();
+        
+                video.onloadedmetadata = () => {
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                    canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+                    capturedImage.src = canvas.toDataURL('image/jpeg');
+                    capturedImage.style.display = 'none'; // Hide the captured image
+        
+                    captureButton.style.display = 'block'; // Show the button to submit captured image
+        
+                    videoStream.getTracks().forEach(track => track.stop());
+                    video.style.display = 'none';
+                };
+            } catch (error) {
+                console.error('Error accessing camera:', error);
+            }
+        });
+
+        document.getElementById('cropImage').addEventListener('click', () => {
+            const canvas = cropper.getCroppedCanvas();
+            const imageToCrop = document.getElementById('imageToCrop');
+            const capturedImage = document.getElementById('capturedImage');
+            const confirmImageButton = document.getElementById('confirmImage');
+        
+            imageToCrop.style.display = 'none'; // Hide the image to crop
+            confirmImageButton.style.display = 'block'; // Show the confirm button
+        
+            // Replace the captured image with the cropped one
+            capturedImage.src = canvas.toDataURL('image/jpeg');
+            capturedImage.style.display = 'block';
+        });
+
+        document.getElementById('confirmImage').addEventListener('click', () => {
+            const imageToCrop = document.getElementById('imageToCrop');
+            const capturedImage = document.getElementById('capturedImage');
+            const cropImageButton = document.getElementById('cropImage');
+            const confirmImageButton = document.getElementById('confirmImage');
+        
+            // Hide the cropping interface
+            imageToCrop.style.display = 'none'; // Hide the image to crop
+            cropImageButton.style.display = 'none'; // Hide the crop button
+            confirmImageButton.style.display = 'none'; // Hide the confirm button
+        
+            // Show only the final cropped image
+            capturedImage.style.display = 'block';
+        
+            // Destroy the Cropper instance to free up resources
+            if (cropper) {
+                cropper.destroy();
+            }
+        
+            // Enable the search button after confirming the crop
+            document.getElementById('searchCaptured').style.display = 'block';
+        });
+
+        async function searchImage(type) {
+            const Number_Of_Images_Req = document.getElementById('Number_Of_Images_Req').value;
+            const Similarity_Percentage = document.getElementById('Similarity_Percentage').value;
+           
+            let formData = new FormData();
+            formData.append('Number_Of_Images_Req', Number_Of_Images_Req);
+            formData.append('Similarity_Percentage', Similarity_Percentage);
+
+            if (type === 'file') {
+                const imageInput = document.getElementById('fileSearchImage');
+                if (!imageInput.files.length) {
+                    document.getElementById('response').textContent = "Image file is required";
+                    return;
+                }
+                formData.append('image', imageInput.files[0]);
+            } else if (type === 'camera') {
+                const canvas = document.getElementById('canvas');
+                canvas.toBlob(async (blob) => {
+                    formData.append('image', blob, 'captured_image.jpg');
+                    await sendSearchRequest(formData);
+                }, 'image/jpeg');
+                return;
+            }
+
+            await sendSearchRequest(formData);
+        }
+
+        async function deleteImages() {
+            const imageInput = document.getElementById('deleteImages');
+            const responseElement = document.getElementById('response');
+        
+            if (!imageInput.files.length) {
+                responseElement.textContent = "Please select images to delete";
+                return;
+            }
+        
+            const filenames = Array.from(imageInput.files).map(file => file.name);
+        
+            try {
+                const response = await fetch('/delete', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ filenames: filenames }),
+                });
+                const result = await response.json();
+                responseElement.textContent = JSON.stringify(result, null, 4);
+            } catch (error) {
+                responseElement.textContent = "Error: " + error;
+            }
+        }
+
+        async function sendSearchRequest(formData) {
+            const responseElement = document.getElementById('response');
+            try {
+                const response = await fetch('/search', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                if (result.error) {
+                    // Handle error case
+                    responseElement.textContent = "Error: " + result.error;
+                } else {
+                    // Handle success case
+                    displayResults(result.results);
+                }
+            } catch (error) {
+                responseElement.textContent = "Error: " + error;
+            }
+        }
+
+        function openAIMirror() {
+            document.getElementById("Search").style.display = "none";
+            document.getElementById("Train").style.display = "none";
+            document.getElementById("AIMirror").style.display = "block";
+        }
+        
+        async function applyAIMirror(type) {
+            const responseElement = document.getElementById('mirrorResponse');
+            let formData = new FormData();
+        
+            if (type === 'file') {
+                const imageInput = document.getElementById('fileMirrorImage');
+                if (!imageInput.files.length) {
+                    responseElement.textContent = "Image file is required";
+                    return;
+                }
+                formData.append('mirror_image', imageInput.files[0]);
+            } else if (type === 'camera') {
+                const canvas = document.getElementById('mirrorCanvas');
+                canvas.toBlob(async (blob) => {
+                    formData.append('mirror_image', blob, 'captured_mirror_image.jpg');
+                    await sendAIMirrorRequest(formData);
+                }, 'image/jpeg');
+                return;
+            }
+        
+            await sendAIMirrorRequest(formData);
+        }
+        
+        async function sendAIMirrorRequest(formData) {
+            const responseElement = document.getElementById('mirrorResponse');
+            try {
+                const response = await fetch('/ai_mirror', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                if (result.error) {
+                    responseElement.textContent = "Error: " + result.error;
+                } else {
+                    const img = document.createElement('img');
+                    img.src = result.url;  // Assuming the backend returns the URL of the mirrored image
+                    responseElement.innerHTML = '';  // Clear previous results
+                    responseElement.appendChild(img);  // Display mirrored image
+                }
+            } catch (error) {
+                responseElement.textContent = "Error: " + error;
+            }
+        }
+
+        function displayResults(results) {
+            const responseElement = document.getElementById('response');
+            responseElement.innerHTML = ''; // Clear previous results
+
+            if (results.length === 0) {
+                responseElement.textContent = "No results found.";
+                return;
+            }
+
+            results.forEach(result => {
+                const resultDiv = document.createElement('div');
+                resultDiv.className = 'result-item';
+
+                const img = document.createElement('img');
+                img.src = result.url;
+                img.alt = 'Similar image';
+
+                const similarity = document.createElement('p');
+                similarity.textContent = `Similarity: ${(result.similarity * 100).toFixed(2)}%`;
+
+                resultDiv.appendChild(img);
+                resultDiv.appendChild(similarity);
+                responseElement.appendChild(resultDiv);
+            });
+        }
+    </script>
+</body>
