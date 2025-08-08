@@ -17,9 +17,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "install_python.bat"; DestDir: "{app}"; Flags: ignoreversion
-Source: "install_python_server.bat"; DestDir: "{app}"; Flags: ignoreversion
-Source: "setup_environment.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "windows.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "windows_server.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "check_os.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "run.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "uninstall.bat"; DestDir: "{app}"; Flags: ignoreversion

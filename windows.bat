@@ -23,7 +23,8 @@ if not exist python_installer.exe (
 
 :: Install Python
 echo Installing Python 3.12.4...
-python_installer.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
+:: python_installer.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
+python_installer.exe /quiet InstallAllUsers=1 PrependPath=1
 if %errorlevel% neq 0 (
     echo Failed to install Python.
     goto :error
@@ -44,34 +45,15 @@ if %errorlevel% neq 0 (
 echo Python installed successfully.
 
 :setup_env
-:: Define virtual environment path under user profile
-set "VENV_DIR=%USERPROFILE%\iJewelMatch"
-set "VENV_PATH=%VENV_DIR%\venv"
-
-:: Ensure the target directory exists
-if not exist "%VENV_DIR%" (
-    mkdir "%VENV_DIR%"
-    if %errorlevel% neq 0 (
-        echo Insufficient permissions to create directory %VENV_DIR%.
-        goto :error
-    )
-)
 :: Create a new virtual environment
 echo Creating virtual environment...
-:: python -m venv venv
-python -m venv "%VENV_PATH%"
+python -m venv venv
 if %errorlevel% neq 0 (
-    :: echo Failed to create virtual environment.
-    if %errorlevel% equ 5 (
-        echo Insufficient permissions to create virtual environment at %VENV_PATH%.
-    ) else (
-        echo Failed to create virtual environment.
-    )
+    echo Failed to create virtual environment.
     goto :error
 )
 
 :: Activate the virtual environment
-cd /d "%VENV_DIR%"
 call venv\Scripts\activate.bat
 
 :: Set PIP_NO_VERIFY to true to skip SSL verification
@@ -85,11 +67,10 @@ python -m pip install pip==25.0
 echo Installing required packages...
 
 :: pip install certifi
-:: pip install -U certifi
+pip install -U certifi
 
 python -m pip install --upgrade pip
-:: pip install --upgrade certifi
-python -m pip install --upgrade certifi
+pip install --upgrade certifi
 
 :: Uninstall existing torch packages
 pip uninstall -y torch torchvision torchaudio
