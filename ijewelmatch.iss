@@ -1,7 +1,7 @@
 [Setup]
 AppId={{8ACDADDE-30FA-4230-BCE3-C84D50727E03}
 AppName=StyleLens
-AppVersion=1.28
+AppVersion=1.30
 DefaultDirName={pf}\StyleLens
 DefaultGroupName=StyleLens
 OutputBaseFilename=Setup_StyleLens
@@ -17,8 +17,9 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "windows.bat"; DestDir: "{app}"; Flags: ignoreversion
-Source: "windows_server.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "install_python.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "install_python_server.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "setup_environment.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "check_os.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "run.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "uninstall.bat"; DestDir: "{app}"; Flags: ignoreversion

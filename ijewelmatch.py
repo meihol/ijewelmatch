@@ -26,10 +26,11 @@ from io import BytesIO
 import certifi
 import ssl
 import urllib.request
+import urllib.error
 import logging
 from datetime import datetime
 from pathlib import Path
-import cv2
+
 
 # Get the user's home directory
 home_dir = Path.home()
@@ -52,15 +53,15 @@ formatter = logging.Formatter('%(asctime)s - %(message)s')
 console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
 
-# Create an SSL context that uses the certifi certificate bundle
-ssl._create_default_https_context = ssl._create_unverified_context
+# # Create an SSL context that uses the certifi certificate bundle
+# ssl._create_default_https_context = ssl._create_unverified_context
 
-# Example of making an HTTPS request using the context
-url = 'https://github.com/certifi/python-certifi'
-response = urllib.request.urlopen(url, context=ssl._create_default_https_context)
-data = response.read()
-logging.debug("HTTPS request to certifi successful")
-# print(data)
+# # Example of making an HTTPS request using the context
+# url = 'https://github.com/certifi/python-certifi'
+# response = urllib.request.urlopen(url, context=ssl._create_default_https_context)
+# data = response.read()
+# logging.debug("HTTPS request to certifi successful")
+# # print(data)
 
 # SSL Certificate Verification Setup
 def setup_ssl_context():
@@ -118,15 +119,30 @@ def verify_ssl_connection(url):
         logging.error(f"Failed to verify SSL connection to {url}: {str(e)}")
         raise
 
-# Test SSL connection at startup
-try:
-    test_url = 'https://github.com/certifi/python-certifi'
-    verify_ssl_connection(test_url)
-    logging.info("Initial SSL test connection successful")
-except Exception as e:
-    logging.error(f"Initial SSL test connection failed: {str(e)}")
-    # Continue running even if SSL test fails - you might want to change this behavior
-    # based on your security requirements
+# # Test SSL connection at startup
+# try:
+#     test_url = 'https://github.com/certifi/python-certifi'
+#     verify_ssl_connection(test_url)
+#     logging.info("Initial SSL test connection successful")
+# except Exception as e:
+#     logging.error(f"Initial SSL test connection failed: {str(e)}")
+#     # Continue running even if SSL test fails - you might want to change this behavior
+#     # based on your security requirements
+
+# Test SSL connection at startup if not explicitly skipped
+skip_ssl_check = os.getenv('SKIP_SSL_CHECK', '').lower() in ('1', 'true', 'yes')
+
+if not skip_ssl_check:
+    try:
+        test_url = 'https://github.com/certifi/python-certifi'
+        verify_ssl_connection(test_url)
+        logging.info("Initial SSL test connection successful")
+    except Exception as e:
+        logging.error(f"Initial SSL test connection failed: {str(e)}")
+        # Continue running even if SSL test fails - you might want to change this behavior
+        # based on your security requirements
+else:
+    logging.info("Skipping SSL verification test because SKIP_SSL_CHECK is set")
 
 # Create default SSL context for all HTTPS requests
 default_ssl_context = setup_ssl_context()
@@ -138,7 +154,7 @@ urllib.request.default_opener = urllib.request.build_opener(
 PORT = int(sys.argv[1].split('=')[1]) if len(sys.argv) > 1 and '--port=' in sys.argv[1] else 5002
 
 # Near the top of the file, modify:
-INDEXER_STATE_FILE = os.path.join(home_dir, "Documents", "ijewelmatch_data", "base_model.pkl")
+INDEXER_STATE_FILE = os.path.join(home_dir, "Documents", "ijewelmatch_data", "base_model.pkl") 
 indexer_lock = threading.Lock()
 
 # Define the config file path
@@ -157,8 +173,7 @@ os.makedirs(os.path.dirname(INDEXER_STATE_FILE), exist_ok=True)
 config = configparser.ConfigParser()
 
 # Default upload folder
-# UPLOAD_FOLDER = 'upload'
-UPLOAD_FOLDER = os.path.abspath('upload')
+UPLOAD_FOLDER = 'upload'
 CURRENT_FOLDER_PATH = None
 
 def load_config():
@@ -190,8 +205,6 @@ def save_config():
 # Call load_config at the start of your application
 load_config()
 
-# if not os.path.exists(UPLOAD_FOLDER):
-#     os.makedirs(UPLOAD_FOLDER)
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
@@ -238,9 +251,17 @@ class JewelryMobileNetV3(nn.Module):
         return x
 
 class FastImageIndexer:
-    def __init__(self, folder_path=None):
+#    def __init__(self, folder_path=None):
+    def __init__(self, folder_path=None, weights_path=None):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model = JewelryMobileNetV3(num_classes=960)  # Use 960 as feature dimension
+        if weights_path and os.path.exists(weights_path):
+            try:
+                # self.model.load_state_dict(torch.load(weights_path, weights_only=True))
+                state_dict = torch.load(weights_path)
+                self.model.load_state_dict(state_dict)
+            except Exception as e:
+                logging.error(f"Failed to load weights from {weights_path}: {e}")
         self.model = self.model.to(self.device)
         self.model.eval()
         
@@ -294,10 +315,13 @@ class FastImageIndexer:
     warnings.filterwarnings("ignore", category=FutureWarning)
     
     def save_model_state(model, filename):
-        torch.save(model.state_dict(), filename, weights_only=True)
+        # torch.save(model.state_dict(), filename, weights_only=True)
+        torch.save(model.state_dict(), filename)
 
     def load_model_state(model, filename):
-        model.load_state_dict(torch.load(filename, weights_only=True))
+        # model.load_state_dict(torch.load(filename, weights_only=True))
+        state_dict = torch.load(filename)
+        model.load_state_dict(state_dict)
         model.eval()
 
     def save_state(self, filename):
@@ -311,11 +335,11 @@ class FastImageIndexer:
             pickle.dump(state, f)
 
     @classmethod
-    def load_state(cls, filename):
+    def load_state(cls, filename, weights_path=None):
         with open(filename, 'rb') as f:
             state = pickle.load(f)
         
-        indexer = cls()
+        indexer = cls(weights_path=weights_path)
         indexer.image_paths = state['image_paths']
         indexer.index = faiss.deserialize_index(state['index'])
         global CURRENT_FOLDER_PATH
@@ -361,57 +385,50 @@ class FastImageIndexer:
                 optimizer.step()
             
             print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
-            
+    
     def detect_shape(image_path):
-        # Read the image and convert it to grayscale
-        image = cv2.imread(image_path)
-        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        blurred = cv2.GaussianBlur(gray, (5, 5), 0)
-        _, threshold = cv2.threshold(blurred, 60, 255, cv2.THRESH_BINARY)
-
-        # Detect contours
-        contours, _ = cv2.findContours(threshold, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        shapes = []
-
-        # Analyze each contour
-        for contour in contours:
-            shape = "unidentified"
-            perimeter = cv2.arcLength(contour, True)
-            approx = cv2.approxPolyDP(contour, 0.04 * perimeter, True)
-            vertices = len(approx)
-
-            # Determine the shape based on the number of vertices
-            if vertices == 3:
-                shape = "triangle"
-            elif vertices == 4:
-                # Distinguish between square and rectangle
-                (x, y, w, h) = cv2.boundingRect(approx)
-                aspect_ratio = w / float(h)
-                shape = "square" if 0.95 <= aspect_ratio <= 1.05 else "rectangle"
-            elif vertices == 5:
-                shape = "pentagon"
-            elif vertices == 6:
-                shape = "hexagon"
-            elif vertices == 8:
-                shape = "octagon"
+        try:
+            from PIL import Image as PILImage, ImageDraw
+            img = PILImage.open(image_path).convert('RGB')
+            width, height = img.size
+            if width > 0 and height > 0:
+                return ["unidentified (shape detection requires cv2, which was removed)"]
             else:
-                # If more vertices, assume it's a circle or oval
-                (x, y), (MA, ma), angle = cv2.fitEllipse(contour)
-                if 0.9 <= MA/ma <= 1.1:
-                    shape = "circle"
-                else:
-                    shape = "oval"
-
-            shapes.append(shape)
-
-        return shapes
+                return ["unidentified (invalid image dimensions)"]
+        except Exception as e:
+            return [f"unidentified (error opening image for shape detection: {e})"]
 
 # Initialize indexer
 indexer = None
 if os.path.exists(INDEXER_STATE_FILE):
     try:
-        indexer = FastImageIndexer.load_state(INDEXER_STATE_FILE)
+        # indexer = FastImageIndexer.load_state(INDEXER_STATE_FILE)
+        weights_env = os.getenv("MOBILENETV3_WEIGHTS")
+        indexer = FastImageIndexer.load_state(INDEXER_STATE_FILE, weights_path=weights_env)
         print(f"Loaded existing indexer state from {INDEXER_STATE_FILE}")
+    except (pickle.UnpicklingError, EOFError) as e:
+        # logging.error(f"Invalid indexer state file {INDEXER_STATE_FILE}: {e}")
+        # indexer = None
+        logging.warning(
+            f"Invalid indexer state file {INDEXER_STATE_FILE}: {e}. A new model will be generated."
+        )
+        try:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            corrupt_path = f"{INDEXER_STATE_FILE}.{timestamp}.invalid"
+            os.replace(INDEXER_STATE_FILE, corrupt_path)
+            logging.warning(f"Renamed invalid model file to {corrupt_path}")
+        except OSError as rename_err:
+            logging.warning(
+                f"Failed to rename invalid model file: {rename_err}. Deleting {INDEXER_STATE_FILE}."
+            )
+            try:
+                os.remove(INDEXER_STATE_FILE)
+            except OSError as remove_err:
+                logging.error(
+                    f"Failed to remove invalid model file {INDEXER_STATE_FILE}: {remove_err}"
+                )
+        weights_env = os.getenv("MOBILENETV3_WEIGHTS")
+        indexer = FastImageIndexer(weights_path=weights_env)
     except Exception as e:
         print(f"Error loading indexer state: {e}")
 
@@ -422,29 +439,35 @@ def save_indexer_state():
             indexer.save_state(INDEXER_STATE_FILE)
         app.logger.debug("Indexer state saved")
 
-@app.errorhandler(Exception)
-def handle_exception(e):
-    # Log the error
-    app.logger.error(f"Unhandled exception: {str(e)}")
-    app.logger.error(traceback.format_exc())
-    # Return JSON instead of HTML for HTTP errors
-    return jsonify(error=str(e)), 500
+# @app.errorhandler(Exception)
+# def handle_exception(e):
+#     # Log the error
+#     app.logger.error(f"Unhandled exception: {str(e)}")
+#     app.logger.error(traceback.format_exc())
+#     # Return JSON instead of HTML for HTTP errors
+#     return jsonify(error=str(e)), 500
 
-@app.errorhandler(Exception)
-def handle_exception(e):
-    logging.error(f"Unhandled exception: {str(e)}")
-    logging.error(traceback.format_exc())
-    return jsonify({"error": "Internal Server Error", "message": str(e)}), 500
+# @app.errorhandler(Exception)
+# def handle_exception(e):
+#     logging.error(f"Unhandled exception: {str(e)}")
+#     logging.error(traceback.format_exc())
+#     return jsonify({"error": "Internal Server Error", "message": str(e)}), 500
 
-@app.route('/open_url')  
+@app.route('/open_url')
 def open_website():
     try:
-        port = current_settings.get('port_number', 5002) # Get the port from settings
+        port = current_settings.get('port_number', 5002)  # Get the port from settings
         url = f"http://127.0.0.1:{port}"  # Build the URL with the correct port
         webbrowser.open_new_tab(url) 
         # return
+        # webbrowser.open_new_tab(url)
+        # if has_app_context():
+        #     return jsonify({"message": "URL opened"}), 200
     except Exception as e:
         return jsonify({"error": f"Failed to open URL: {str(e)}"}), 500
+        # logging.error(f"Failed to open URL: {e}")
+        # if has_app_context():
+        #     return jsonify({"error": f"Failed to open URL: {str(e)}"}), 500
     
 @app.route('/')
 def read_root():
@@ -509,6 +532,8 @@ def train():
         # Use network_path if folder_path is not provided
         folder_path = request.json.get('folder_path', network_path)
         
+        logging.info(f"Verifying folder path: {folder_path}")
+        
         if folder_path is None:
             return jsonify({"error": "No folder path provided and network_path is not set"}), 400
         
@@ -517,7 +542,9 @@ def train():
         
         CURRENT_FOLDER_PATH = folder_path
         
-        indexer = FastImageIndexer(folder_path)
+        # indexer = FastImageIndexer(folder_path)
+        weights_env = os.getenv("MOBILENETV3_WEIGHTS")
+        indexer = FastImageIndexer(folder_path, weights_path=weights_env)
         num_images = len(indexer.image_paths)
         save_indexer_state()
         save_config()
@@ -668,7 +695,19 @@ def delete_images():
             # Remove the file from the indexer
             index = indexer.image_paths.index(full_path)
             indexer.image_paths.pop(index)
-            indexer.index.remove_ids(np.array([index]))
+            # indexer.index.remove_ids(np.array([index]))
+            
+            # Rebuild the FAISS index since IndexFlatIP does not support removing vectors
+            features_list = []
+            for path in indexer.image_paths:
+                try:
+                    features_list.append(indexer.extract_features(path))
+                except Exception as e:
+                    app.logger.error(f"Error extracting features during rebuild for {path}: {e}")
+
+            indexer.index = faiss.IndexFlatIP(indexer.feature_dim)
+            if features_list:
+                indexer.index.add(np.array(features_list).astype('float32'))
             
             successes.append(f"File {filename} successfully deleted")
         
@@ -684,7 +723,17 @@ def search():
     global indexer
     try:
         if indexer is None:
-            return jsonify({"error": "Model not trained yet. Use /train first."}), 400
+            # return jsonify({"error": "Model not trained yet. Use /train first."}), 400
+            app.logger.error("Search attempted but indexer is None")
+            return jsonify({"error": "Indexer not initialized"}), 400
+
+        if getattr(indexer, 'index', None) is None:
+            app.logger.error("Search attempted but indexer.index is None")
+            return jsonify({"error": "Indexer not initialized"}), 400
+
+        if not indexer.image_paths:
+            app.logger.error("Search attempted but no images indexed")
+            return jsonify({"error": "No images indexed"}), 400
         
         # Check if the request has the correct content type
         if request.content_type.startswith('application/json'):
@@ -709,14 +758,23 @@ def search():
         else:
             return jsonify({"error": "No image file or data provided"}), 400
         
-        # Save the image temporarily
-        # temp_image_path = os.path.join(UPLOAD_FOLDER, 'temp_search_image.jpg')
-        # with open(temp_image_path, 'wb') as f:
-        #     f.write(image_data)
+        # Ensure UPLOAD_FOLDER exists and use absolute path
+        upload_folder = os.path.abspath(UPLOAD_FOLDER)
+        if not os.path.exists(upload_folder):
+            os.makedirs(upload_folder, exist_ok=True)
         
-        temp_image_path = os.path.join(UPLOAD_FOLDER, 'temp_search_image.jpg') # Use the UPLOAD_FOLDER variable
-        with open(temp_image_path, 'wb') as f:
-            f.write(image_data)
+        # Save the image temporarily with proper permissions
+        temp_image_path = os.path.join(upload_folder, 'temp_search_image.jpg')
+        try:
+            with open(temp_image_path, 'wb') as f:
+                f.write(image_data)
+        except PermissionError:
+            # If we can't write to upload folder, try temp directory
+            import tempfile
+            temp_dir = tempfile.gettempdir()
+            temp_image_path = os.path.join(temp_dir, 'temp_search_image.jpg')
+            with open(temp_image_path, 'wb') as f:
+                f.write(image_data)
         
         # Get Number_Of_Images_Req and Similarity_Percentage values
         Number_Of_Images_Req = int(data.get('Number_Of_Images_Req', 5))
@@ -732,7 +790,10 @@ def search():
         # print("Search results:", results)  # Debugging line
         
         # Remove the temporary image
-        os.remove(temp_image_path)
+        try:
+            os.remove(temp_image_path)
+        except:
+            pass  # Ignore errors when cleaning up temp file
 
         # Convert file paths to URLs
         results_with_urls = [
@@ -814,4 +875,5 @@ if __name__ == '__main__':
     port_number = current_settings.get('port_number', 5002)
     open_website()
     logging.info(f"Starting server on port {port_number}")
+    # app.run(debug=False, port=int(port_number), host='0.0.0.0')
     app.run(debug=False, port=int(port_number), host='0.0.0.0')
