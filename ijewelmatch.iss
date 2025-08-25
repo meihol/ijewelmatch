@@ -1,7 +1,7 @@
 [Setup]
 AppId={{8ACDADDE-30FA-4230-BCE3-C84D50727E03}
 AppName=StyleLens
-AppVersion=1.30
+AppVersion=1.35
 DefaultDirName={pf}\StyleLens
 DefaultGroupName=StyleLens
 OutputBaseFilename=Setup_StyleLens

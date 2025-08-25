@@ -26,11 +26,9 @@ from io import BytesIO
 import certifi
 import ssl
 import urllib.request
-import urllib.error
 import logging
 from datetime import datetime
 from pathlib import Path
-
 
 # Get the user's home directory
 home_dir = Path.home()
@@ -129,6 +127,12 @@ def verify_ssl_connection(url):
 #     # Continue running even if SSL test fails - you might want to change this behavior
 #     # based on your security requirements
 
+# # Create default SSL context for all HTTPS requests
+# default_ssl_context = setup_ssl_context()
+# urllib.request.default_opener = urllib.request.build_opener(
+#     urllib.request.HTTPSHandler(context=default_ssl_context)
+# )
+
 # Test SSL connection at startup if not explicitly skipped
 skip_ssl_check = os.getenv('SKIP_SSL_CHECK', '').lower() in ('1', 'true', 'yes')
 
@@ -154,7 +158,7 @@ urllib.request.default_opener = urllib.request.build_opener(
 PORT = int(sys.argv[1].split('=')[1]) if len(sys.argv) > 1 and '--port=' in sys.argv[1] else 5002
 
 # Near the top of the file, modify:
-INDEXER_STATE_FILE = os.path.join(home_dir, "Documents", "ijewelmatch_data", "base_model.pkl") 
+INDEXER_STATE_FILE = os.path.join(home_dir, "Documents", "ijewelmatch_data", "base_model.pkl")
 indexer_lock = threading.Lock()
 
 # Define the config file path
@@ -218,6 +222,38 @@ warnings.filterwarnings("ignore", message="resource_tracker: There appear to be 
 
 app = Flask(__name__)
 
+# class JewelryMobileNetV3(nn.Module):
+#     def __init__(self, num_classes=1000):
+#         super(JewelryMobileNetV3, self).__init__()
+#         self.mobilenet = models.mobilenet_v3_large(weights=models.MobileNet_V3_Large_Weights.IMAGENET1K_V1)
+        
+#         # Freeze early layers
+#         for param in list(self.mobilenet.parameters())[:-4]:
+#             param.requires_grad = False
+        
+#         # Add custom layers
+#         self.attention = nn.Sequential(
+#             nn.Conv2d(960, 1, kernel_size=1),
+#             nn.Sigmoid()
+#         )
+#         self.global_pool = nn.AdaptiveAvgPool2d(1)
+#         self.fc = nn.Linear(960, num_classes)
+
+#     def forward(self, x):
+#         features = self.mobilenet.features(x)
+        
+#         # Apply attention
+#         attention_weights = self.attention(features)
+#         features = features * attention_weights
+        
+#         # Global average pooling
+#         x = self.global_pool(features)
+#         x = x.view(x.size(0), -1)
+        
+#         # Classification layer
+#         x = self.fc(x)
+#         return x
+
 class JewelryMobileNetV3(nn.Module):
     def __init__(self, num_classes=1000):
         super(JewelryMobileNetV3, self).__init__()
@@ -251,17 +287,9 @@ class JewelryMobileNetV3(nn.Module):
         return x
 
 class FastImageIndexer:
-#    def __init__(self, folder_path=None):
-    def __init__(self, folder_path=None, weights_path=None):
+    def __init__(self, folder_path=None):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model = JewelryMobileNetV3(num_classes=960)  # Use 960 as feature dimension
-        if weights_path and os.path.exists(weights_path):
-            try:
-                # self.model.load_state_dict(torch.load(weights_path, weights_only=True))
-                state_dict = torch.load(weights_path)
-                self.model.load_state_dict(state_dict)
-            except Exception as e:
-                logging.error(f"Failed to load weights from {weights_path}: {e}")
         self.model = self.model.to(self.device)
         self.model.eval()
         
@@ -315,13 +343,10 @@ class FastImageIndexer:
     warnings.filterwarnings("ignore", category=FutureWarning)
     
     def save_model_state(model, filename):
-        # torch.save(model.state_dict(), filename, weights_only=True)
-        torch.save(model.state_dict(), filename)
+        torch.save(model.state_dict(), filename, weights_only=True)
 
     def load_model_state(model, filename):
-        # model.load_state_dict(torch.load(filename, weights_only=True))
-        state_dict = torch.load(filename)
-        model.load_state_dict(state_dict)
+        model.load_state_dict(torch.load(filename, weights_only=True))
         model.eval()
 
     def save_state(self, filename):
@@ -335,11 +360,11 @@ class FastImageIndexer:
             pickle.dump(state, f)
 
     @classmethod
-    def load_state(cls, filename, weights_path=None):
+    def load_state(cls, filename):
         with open(filename, 'rb') as f:
             state = pickle.load(f)
         
-        indexer = cls(weights_path=weights_path)
+        indexer = cls()
         indexer.image_paths = state['image_paths']
         indexer.index = faiss.deserialize_index(state['index'])
         global CURRENT_FOLDER_PATH
@@ -402,33 +427,8 @@ class FastImageIndexer:
 indexer = None
 if os.path.exists(INDEXER_STATE_FILE):
     try:
-        # indexer = FastImageIndexer.load_state(INDEXER_STATE_FILE)
-        weights_env = os.getenv("MOBILENETV3_WEIGHTS")
-        indexer = FastImageIndexer.load_state(INDEXER_STATE_FILE, weights_path=weights_env)
+        indexer = FastImageIndexer.load_state(INDEXER_STATE_FILE)
         print(f"Loaded existing indexer state from {INDEXER_STATE_FILE}")
-    except (pickle.UnpicklingError, EOFError) as e:
-        # logging.error(f"Invalid indexer state file {INDEXER_STATE_FILE}: {e}")
-        # indexer = None
-        logging.warning(
-            f"Invalid indexer state file {INDEXER_STATE_FILE}: {e}. A new model will be generated."
-        )
-        try:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            corrupt_path = f"{INDEXER_STATE_FILE}.{timestamp}.invalid"
-            os.replace(INDEXER_STATE_FILE, corrupt_path)
-            logging.warning(f"Renamed invalid model file to {corrupt_path}")
-        except OSError as rename_err:
-            logging.warning(
-                f"Failed to rename invalid model file: {rename_err}. Deleting {INDEXER_STATE_FILE}."
-            )
-            try:
-                os.remove(INDEXER_STATE_FILE)
-            except OSError as remove_err:
-                logging.error(
-                    f"Failed to remove invalid model file {INDEXER_STATE_FILE}: {remove_err}"
-                )
-        weights_env = os.getenv("MOBILENETV3_WEIGHTS")
-        indexer = FastImageIndexer(weights_path=weights_env)
     except Exception as e:
         print(f"Error loading indexer state: {e}")
 
@@ -447,27 +447,21 @@ def save_indexer_state():
 #     # Return JSON instead of HTML for HTTP errors
 #     return jsonify(error=str(e)), 500
 
-# @app.errorhandler(Exception)
-# def handle_exception(e):
-#     logging.error(f"Unhandled exception: {str(e)}")
-#     logging.error(traceback.format_exc())
-#     return jsonify({"error": "Internal Server Error", "message": str(e)}), 500
+@app.errorhandler(Exception)
+def handle_exception(e):
+    logging.error(f"Unhandled exception: {str(e)}")
+    logging.error(traceback.format_exc())
+    return jsonify({"error": "Internal Server Error", "message": str(e)}), 500
 
-@app.route('/open_url')
+@app.route('/open_url')  
 def open_website():
     try:
-        port = current_settings.get('port_number', 5002)  # Get the port from settings
+        port = current_settings.get('port_number', 5002) # Get the port from settings
         url = f"http://127.0.0.1:{port}"  # Build the URL with the correct port
         webbrowser.open_new_tab(url) 
         # return
-        # webbrowser.open_new_tab(url)
-        # if has_app_context():
-        #     return jsonify({"message": "URL opened"}), 200
     except Exception as e:
         return jsonify({"error": f"Failed to open URL: {str(e)}"}), 500
-        # logging.error(f"Failed to open URL: {e}")
-        # if has_app_context():
-        #     return jsonify({"error": f"Failed to open URL: {str(e)}"}), 500
     
 @app.route('/')
 def read_root():
@@ -532,8 +526,6 @@ def train():
         # Use network_path if folder_path is not provided
         folder_path = request.json.get('folder_path', network_path)
         
-        logging.info(f"Verifying folder path: {folder_path}")
-        
         if folder_path is None:
             return jsonify({"error": "No folder path provided and network_path is not set"}), 400
         
@@ -542,9 +534,7 @@ def train():
         
         CURRENT_FOLDER_PATH = folder_path
         
-        # indexer = FastImageIndexer(folder_path)
-        weights_env = os.getenv("MOBILENETV3_WEIGHTS")
-        indexer = FastImageIndexer(folder_path, weights_path=weights_env)
+        indexer = FastImageIndexer(folder_path)
         num_images = len(indexer.image_paths)
         save_indexer_state()
         save_config()
@@ -695,19 +685,7 @@ def delete_images():
             # Remove the file from the indexer
             index = indexer.image_paths.index(full_path)
             indexer.image_paths.pop(index)
-            # indexer.index.remove_ids(np.array([index]))
-            
-            # Rebuild the FAISS index since IndexFlatIP does not support removing vectors
-            features_list = []
-            for path in indexer.image_paths:
-                try:
-                    features_list.append(indexer.extract_features(path))
-                except Exception as e:
-                    app.logger.error(f"Error extracting features during rebuild for {path}: {e}")
-
-            indexer.index = faiss.IndexFlatIP(indexer.feature_dim)
-            if features_list:
-                indexer.index.add(np.array(features_list).astype('float32'))
+            indexer.index.remove_ids(np.array([index]))
             
             successes.append(f"File {filename} successfully deleted")
         
@@ -718,22 +696,324 @@ def delete_images():
         app.logger.error(traceback.format_exc())
         return jsonify({"error": str(e)}), 500
 
+# @app.route('/search', methods=['POST'])
+# def search():
+#     global indexer
+#     try:
+#         if indexer is None:
+#             return jsonify({"error": "Model not trained yet. Use /train first."}), 400
+        
+#         # Check if the request has the correct content type
+#         if request.content_type.startswith('application/json'):
+#             data = request.json
+#         elif request.content_type.startswith('multipart/form-data'):
+#             data = request.form
+#         else:
+#             return jsonify({"error": f"Unsupported content type: {request.content_type}"}), 400
+
+#         # Handle image data
+#         if 'image' in request.files:
+#             image = request.files['image']
+#             if image.filename == '':
+#                 return jsonify({"error": "No selected file"}), 400
+#             image_data = image.read()
+#         elif 'image' in data:
+#             # Handle base64 encoded image
+#             try:
+#                 image_data = base64.b64decode(data['image'].split(',')[1])
+#             except:
+#                 return jsonify({"error": "Invalid base64 image data"}), 400
+#         else:
+#             return jsonify({"error": "No image file or data provided"}), 400
+        
+#         # Ensure UPLOAD_FOLDER exists and use absolute path
+#         upload_folder = os.path.abspath(UPLOAD_FOLDER)
+#         if not os.path.exists(upload_folder):
+#             os.makedirs(upload_folder, exist_ok=True)
+        
+#         # Save the image temporarily with proper permissions
+#         temp_image_path = os.path.join(upload_folder, 'temp_search_image.jpg')
+#         try:
+#             with open(temp_image_path, 'wb') as f:
+#                 f.write(image_data)
+#         except PermissionError:
+#             # If we can't write to upload folder, try temp directory
+#             import tempfile
+#             temp_dir = tempfile.gettempdir()
+#             temp_image_path = os.path.join(temp_dir, 'temp_search_image.jpg')
+#             with open(temp_image_path, 'wb') as f:
+#                 f.write(image_data)
+        
+#         # Get Number_Of_Images_Req and Similarity_Percentage values
+#         Number_Of_Images_Req = int(data.get('Number_Of_Images_Req', 5))
+#         Similarity_Percentage_str = data.get('Similarity_Percentage')
+#         if Similarity_Percentage_str and str(Similarity_Percentage_str).strip():
+#             Similarity_Percentage = float(Similarity_Percentage_str) / 100
+#             if Similarity_Percentage == 1.0:
+#                 Similarity_Percentage = 0.9999  # Use a very high threshold instead of 1.0
+#         else:
+#             Similarity_Percentage = 0.8  # Default similarity percentage
+
+#         results = indexer.search(temp_image_path, k=Number_Of_Images_Req, threshold=Similarity_Percentage)
+#         # print("Search results:", results)  # Debugging line
+        
+#         # Remove the temporary image
+#         try:
+#             os.remove(temp_image_path)
+#         except:
+#             pass  # Ignore errors when cleaning up temp file
+
+#         # Convert file paths to URLs
+#         results_with_urls = [
+#             {
+#                 "image_name": os.path.basename(filename),
+#                 "url": url_for('serve_image', filename=os.path.basename(filename), _external=True),
+#                 "similarity": float(sim)
+#             } for filename, sim in results
+#         ]
+
+#         return jsonify({
+#             "results": results_with_urls,
+#             "Status_Code": 200,
+#             "Response": "Success!"
+#         })
+        
+#     except Exception as e:
+#         app.logger.error(traceback.format_exc())
+#         return jsonify({"error": str(e)}), 500
+
+# @app.route('/search', methods=['POST'])
+# def search():
+#     global indexer
+#     try:
+#         if indexer is None:
+#             return jsonify({"error": "Model not trained yet. Use /train first."}), 400
+        
+#         # Check if the request has the correct content type
+#         if request.content_type.startswith('application/json'):
+#             data = request.json
+#         elif request.content_type.startswith('multipart/form-data'):
+#             data = request.form
+#         else:
+#             return jsonify({"error": f"Unsupported content type: {request.content_type}"}), 400
+
+#         # Handle image data
+#         if 'image' in request.files:
+#             image = request.files['image']
+#             if image.filename == '':
+#                 return jsonify({"error": "No selected file"}), 400
+#             image_data = image.read()
+#             original_filename = image.filename
+#         elif 'image' in data:
+#             # Handle base64 encoded image
+#             try:
+#                 image_data = base64.b64decode(data['image'].split(',')[1])
+#                 original_filename = "captured_image.jpg"
+#             except:
+#                 return jsonify({"error": "Invalid base64 image data"}), 400
+#         else:
+#             return jsonify({"error": "No image file or data provided"}), 400
+        
+#         # Ensure UPLOAD_FOLDER exists and use absolute path
+#         upload_folder = os.path.abspath(UPLOAD_FOLDER)
+#         if not os.path.exists(upload_folder):
+#             os.makedirs(upload_folder, exist_ok=True)
+        
+#         # Save the image temporarily with proper permissions
+#         temp_image_path = os.path.join(upload_folder, 'temp_search_image.jpg')
+        
+#         # Also save the input image for serving
+#         input_image_name = f"input_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{original_filename}"
+#         input_image_path = os.path.join(upload_folder, input_image_name)
+        
+#         try:
+#             with open(temp_image_path, 'wb') as f:
+#                 f.write(image_data)
+#             # Save input image for serving
+#             with open(input_image_path, 'wb') as f:
+#                 f.write(image_data)
+#         except PermissionError:
+#             # If we can't write to upload folder, try temp directory
+#             import tempfile
+#             temp_dir = tempfile.gettempdir()
+#             temp_image_path = os.path.join(temp_dir, 'temp_search_image.jpg')
+#             input_image_path = os.path.join(temp_dir, input_image_name)
+#             with open(temp_image_path, 'wb') as f:
+#                 f.write(image_data)
+#             with open(input_image_path, 'wb') as f:
+#                 f.write(image_data)
+        
+#         # Get Number_Of_Images_Req and Similarity_Percentage values
+#         Number_Of_Images_Req = int(data.get('Number_Of_Images_Req', 5))
+#         Similarity_Percentage_str = data.get('Similarity_Percentage')
+#         if Similarity_Percentage_str and str(Similarity_Percentage_str).strip():
+#             Similarity_Percentage = float(Similarity_Percentage_str) / 100
+#             if Similarity_Percentage == 1.0:
+#                 Similarity_Percentage = 0.9999  # Use a very high threshold instead of 1.0
+#         else:
+#             Similarity_Percentage = 0.8  # Default similarity percentage
+
+#         # Search for similar images (reduce k by 1 to make room for input image)
+#         search_k = max(1, Number_Of_Images_Req - 1)
+#         results = indexer.search(temp_image_path, k=search_k, threshold=Similarity_Percentage)
+        
+#         # Remove the temporary image
+#         try:
+#             os.remove(temp_image_path)
+#         except:
+#             pass  # Ignore errors when cleaning up temp file
+
+#         # Create the input image result (first result with 100% similarity)
+#         input_result = {
+#             "image_name": input_image_name,
+#             "url": url_for('serve_input_image', filename=input_image_name, _external=True),
+#             "similarity": 1.0  # 100% similarity
+#         }
+
+#         # Convert file paths to URLs for similar images
+#         similar_results = [
+#             {
+#                 "image_name": os.path.basename(filename),
+#                 "url": url_for('serve_image', filename=os.path.basename(filename), _external=True),
+#                 "similarity": float(sim)
+#             } for filename, sim in results
+#         ]
+
+#         # Combine results: input image first, then similar images
+#         all_results = [input_result] + similar_results
+
+#         # Limit to requested number of images
+#         final_results = all_results[:Number_Of_Images_Req]
+
+#         return jsonify({
+#             "results": final_results,
+#             "Status_Code": 200,
+#             "Response": "Success!"
+#         })
+        
+#     except Exception as e:
+#         app.logger.error(traceback.format_exc())
+#         return jsonify({"error": str(e)}), 500
+
+# @app.route('/search', methods=['POST'])
+# def search():
+#     global indexer
+#     try:
+#         if indexer is None:
+#             return jsonify({"error": "Model not trained yet. Use /train first."}), 400
+        
+#         # Check if the request has the correct content type
+#         if request.content_type.startswith('application/json'):
+#             data = request.json
+#         elif request.content_type.startswith('multipart/form-data'):
+#             data = request.form
+#         else:
+#             return jsonify({"error": f"Unsupported content type: {request.content_type}"}), 400
+
+#         # Handle image data
+#         if 'image' in request.files:
+#             image = request.files['image']
+#             if image.filename == '':
+#                 return jsonify({"error": "No selected file"}), 400
+#             image_data = image.read()
+#             original_filename = image.filename
+#         elif 'image' in data:
+#             # Handle base64 encoded image
+#             try:
+#                 image_data = base64.b64decode(data['image'].split(',')[1])
+#                 original_filename = "captured_image.jpg"
+#             except:
+#                 return jsonify({"error": "Invalid base64 image data"}), 400
+#         else:
+#             return jsonify({"error": "No image file or data provided"}), 400
+        
+#         # Ensure UPLOAD_FOLDER exists and use absolute path
+#         upload_folder = os.path.abspath(UPLOAD_FOLDER)
+#         if not os.path.exists(upload_folder):
+#             os.makedirs(upload_folder, exist_ok=True)
+        
+#         # Save the image temporarily with proper permissions
+#         temp_image_path = os.path.join(upload_folder, 'temp_search_image.jpg')
+        
+#         # Also save the input image for serving
+#         input_image_name = f"input_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{original_filename}"
+#         input_image_path = os.path.join(upload_folder, input_image_name)
+        
+#         try:
+#             with open(temp_image_path, 'wb') as f:
+#                 f.write(image_data)
+#             # Save input image for serving
+#             with open(input_image_path, 'wb') as f:
+#                 f.write(image_data)
+#         except PermissionError:
+#             # If we can't write to upload folder, try temp directory
+#             import tempfile
+#             temp_dir = tempfile.gettempdir()
+#             temp_image_path = os.path.join(temp_dir, 'temp_search_image.jpg')
+#             input_image_path = os.path.join(temp_dir, input_image_name)
+#             with open(temp_image_path, 'wb') as f:
+#                 f.write(image_data)
+#             with open(input_image_path, 'wb') as f:
+#                 f.write(image_data)
+        
+#         # Get Number_Of_Images_Req and Similarity_Percentage values
+#         Number_Of_Images_Req = int(data.get('Number_Of_Images_Req', 5))
+#         Similarity_Percentage_str = data.get('Similarity_Percentage')
+#         if Similarity_Percentage_str and str(Similarity_Percentage_str).strip():
+#             Similarity_Percentage = float(Similarity_Percentage_str) / 100
+#             if Similarity_Percentage == 1.0:
+#                 Similarity_Percentage = 0.9999  # Use a very high threshold instead of 1.0
+#         else:
+#             Similarity_Percentage = 0.8  # Default similarity percentage
+
+#         # Search for similar images (reduce k by 1 to make room for input image)
+#         search_k = max(1, Number_Of_Images_Req - 1)
+#         results = indexer.search(temp_image_path, k=search_k, threshold=Similarity_Percentage)
+        
+#         # Remove the temporary image
+#         try:
+#             os.remove(temp_image_path)
+#         except:
+#             pass  # Ignore errors when cleaning up temp file
+
+#         # Create the input image result (first result with 100% similarity)
+#         input_result = {
+#             "image_name": input_image_name,
+#             "url": f"{request.host_url}uploads/input/{input_image_name}",
+#             "similarity": 1.0  # 100% similarity
+#         }
+
+#         # Convert file paths to URLs for similar images
+#         similar_results = [
+#             {
+#                 "image_name": os.path.basename(filename),
+#                 "url": url_for('serve_image', filename=os.path.basename(filename), _external=True),
+#                 "similarity": float(sim)
+#             } for filename, sim in results
+#         ]
+
+#         # Combine results: input image first, then similar images
+#         all_results = [input_result] + similar_results
+
+#         # Limit to requested number of images
+#         final_results = all_results[:Number_Of_Images_Req]
+
+#         return jsonify({
+#             "results": final_results,
+#             "Status_Code": 200,
+#             "Response": "Success!"
+#         })
+        
+#     except Exception as e:
+#         app.logger.error(traceback.format_exc())
+#         return jsonify({"error": str(e)}), 500
+
 @app.route('/search', methods=['POST'])
 def search():
     global indexer
     try:
         if indexer is None:
-            # return jsonify({"error": "Model not trained yet. Use /train first."}), 400
-            app.logger.error("Search attempted but indexer is None")
-            return jsonify({"error": "Indexer not initialized"}), 400
-
-        if getattr(indexer, 'index', None) is None:
-            app.logger.error("Search attempted but indexer.index is None")
-            return jsonify({"error": "Indexer not initialized"}), 400
-
-        if not indexer.image_paths:
-            app.logger.error("Search attempted but no images indexed")
-            return jsonify({"error": "No images indexed"}), 400
+            return jsonify({"error": "Model not trained yet. Use /train first."}), 400
         
         # Check if the request has the correct content type
         if request.content_type.startswith('application/json'):
@@ -749,32 +1029,30 @@ def search():
             if image.filename == '':
                 return jsonify({"error": "No selected file"}), 400
             image_data = image.read()
+            original_filename = image.filename
         elif 'image' in data:
             # Handle base64 encoded image
             try:
                 image_data = base64.b64decode(data['image'].split(',')[1])
+                original_filename = "captured_image.jpg"
             except:
                 return jsonify({"error": "Invalid base64 image data"}), 400
         else:
             return jsonify({"error": "No image file or data provided"}), 400
         
-        # Ensure UPLOAD_FOLDER exists and use absolute path
-        upload_folder = os.path.abspath(UPLOAD_FOLDER)
-        if not os.path.exists(upload_folder):
-            os.makedirs(upload_folder, exist_ok=True)
+        # Use system temp directory for search (completely separate from indexed images)
+        import tempfile
+        temp_dir = tempfile.gettempdir()
         
-        # Save the image temporarily with proper permissions
-        temp_image_path = os.path.join(upload_folder, 'temp_search_image.jpg')
+        # Create unique filename to avoid conflicts
+        unique_id = datetime.now().strftime('%Y%m%d_%H%M%S_%f')
+        temp_image_path = os.path.join(temp_dir, f'search_{unique_id}.jpg')
+        
         try:
             with open(temp_image_path, 'wb') as f:
                 f.write(image_data)
-        except PermissionError:
-            # If we can't write to upload folder, try temp directory
-            import tempfile
-            temp_dir = tempfile.gettempdir()
-            temp_image_path = os.path.join(temp_dir, 'temp_search_image.jpg')
-            with open(temp_image_path, 'wb') as f:
-                f.write(image_data)
+        except Exception as e:
+            return jsonify({"error": f"Failed to save search image: {str(e)}"}), 500
         
         # Get Number_Of_Images_Req and Similarity_Percentage values
         Number_Of_Images_Req = int(data.get('Number_Of_Images_Req', 5))
@@ -782,30 +1060,48 @@ def search():
         if Similarity_Percentage_str and str(Similarity_Percentage_str).strip():
             Similarity_Percentage = float(Similarity_Percentage_str) / 100
             if Similarity_Percentage == 1.0:
-                Similarity_Percentage = 0.9999  # Use a very high threshold instead of 1.0
+                Similarity_Percentage = 0.9999
         else:
-            Similarity_Percentage = 0.8  # Default similarity percentage
+            Similarity_Percentage = 0.8
 
+        # Search for similar images
         results = indexer.search(temp_image_path, k=Number_Of_Images_Req, threshold=Similarity_Percentage)
-        # print("Search results:", results)  # Debugging line
         
-        # Remove the temporary image
+        # Clean up temp file immediately
         try:
             os.remove(temp_image_path)
         except:
-            pass  # Ignore errors when cleaning up temp file
+            pass
 
-        # Convert file paths to URLs
-        results_with_urls = [
-            {
-                "image_name": os.path.basename(filename),
-                "url": url_for('serve_image', filename=os.path.basename(filename), _external=True),
-                "similarity": float(sim)
-            } for filename, sim in results
-        ]
+        # Convert image data to base64 for input image
+        input_image_base64 = f"data:image/jpeg;base64,{base64.b64encode(image_data).decode('utf-8')}"
+        
+        # Create the input image result (first result with 100% similarity)
+        input_result = {
+            "image_name": f"Input: {original_filename}",
+            "url": input_image_base64,  # Use base64 data URL
+            "similarity": 1.0,
+            "is_input": True  # Flag to identify input image
+        }
+
+        # Convert file paths to URLs for similar images
+        similar_results = []
+        for filename, sim in results:
+            image_name = os.path.basename(filename)
+            similar_results.append({
+                "image_name": image_name,
+                "url": url_for('serve_image', filename=image_name, _external=True),
+                "similarity": float(sim),
+                "is_input": False
+            })
+
+        # Combine results: input image first, then similar images
+        # Limit similar results to make room for input image
+        max_similar = max(0, Number_Of_Images_Req - 1)
+        final_results = [input_result] + similar_results[:max_similar]
 
         return jsonify({
-            "results": results_with_urls,
+            "results": final_results,
             "Status_Code": 200,
             "Response": "Success!"
         })
@@ -813,6 +1109,62 @@ def search():
     except Exception as e:
         app.logger.error(traceback.format_exc())
         return jsonify({"error": str(e)}), 500
+    
+# Add this global variable at the top of your file
+temp_images = {}  # Dictionary to store temp image paths
+
+@app.route('/uploads/temp/<path:filename>')
+def serve_temp_image(filename):
+    try:
+        app.logger.debug(f"Attempting to serve temp image: {filename}")
+        
+        # Look for the file in system temp directory
+        import tempfile
+        import glob
+        
+        # Search for the file in temp directories
+        temp_pattern = os.path.join(tempfile.gettempdir(), '*', filename)
+        matching_files = glob.glob(temp_pattern)
+        
+        if matching_files:
+            full_path = matching_files[0]
+            directory = os.path.dirname(full_path)
+            basename = os.path.basename(full_path)
+            return send_from_directory(directory, basename)
+        
+        app.logger.error(f"Temp image not found: {filename}")
+        return jsonify({"error": f"Temp image {filename} not found"}), 404
+
+    except Exception as e:
+        app.logger.error(f"Error serving temp image {filename}: {str(e)}")
+        return jsonify({"error": f"Error serving temp image: {str(e)}"}), 500
+    
+@app.route('/uploads/input/<path:filename>')
+def serve_input_image(filename):
+    try:
+        app.logger.debug(f"Attempting to serve input image: {filename}")
+        
+        # Check in upload folder first
+        upload_folder = os.path.abspath(UPLOAD_FOLDER)
+        input_path = os.path.join(upload_folder, filename)
+        
+        if os.path.exists(input_path):
+            return send_from_directory(upload_folder, filename)
+        
+        # Check in temp directory if not found in upload folder
+        import tempfile
+        temp_dir = tempfile.gettempdir()
+        temp_path = os.path.join(temp_dir, filename)
+        
+        if os.path.exists(temp_path):
+            return send_from_directory(temp_dir, filename)
+        
+        app.logger.error(f"Input image not found: {filename}")
+        return jsonify({"error": f"Input image {filename} not found"}), 404
+
+    except Exception as e:
+        app.logger.error(f"Error serving input image {filename}: {str(e)}")
+        return jsonify({"error": f"Error serving input image: {str(e)}"}), 500
         
 @app.route('/uploads/<path:filename>')
 def serve_image(filename):
@@ -875,5 +1227,4 @@ if __name__ == '__main__':
     port_number = current_settings.get('port_number', 5002)
     open_website()
     logging.info(f"Starting server on port {port_number}")
-    # app.run(debug=False, port=int(port_number), host='0.0.0.0')
     app.run(debug=False, port=int(port_number), host='0.0.0.0')

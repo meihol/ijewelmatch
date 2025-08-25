@@ -1,5 +1,6 @@
 @echo off
 
+
 :: Check if Python is already installed
 python --version >nul 2>&1
 if %errorlevel% equ 0 (
