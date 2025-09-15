@@ -1,31 +1,25 @@
 @echo off
-
+setlocal enabledelayedexpansion
 
 :: Check if Python is already installed
 python --version >nul 2>&1
-if %errorlevel% equ 0 (
+if not errorlevel 1 (
     echo Python is already installed.
     goto :setup_env
 )
 
-:: If Python is not installed, download Python 3.12.4
-echo Python not found. Downloading Python 3.12.4...
-%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-RestMethod https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe -OutFile python_installer.exe"
-if %errorlevel% neq 0 (
+:: If Python is not installed, download Python 3.13.3
+echo Python not found. Downloading Python 3.13.3...
+%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-RestMethod https://www.python.org/ftp/python/3.13.3/python-3.13.3-amd64.exe -OutFile python_installer.exe"
+if errorlevel 1 (
     echo Failed to download Python installer.
     goto :error
 )
 
-:: Verify the installer exists
-if not exist python_installer.exe (
-    echo Python installer not found.
-    goto :error
-)
-
 :: Install Python
-echo Installing Python 3.12.4...
+echo Installing Python 3.13.3...
 python_installer.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
-if %errorlevel% neq 0 (
+if errorlevel 1 (
     echo Failed to install Python.
     goto :error
 )
@@ -34,11 +28,11 @@ if %errorlevel% neq 0 (
 del python_installer.exe
 
 :: Set Python path explicitly
-set PATH=%PATH%;C:\Program Files\Python312;C:\Program Files\Python312\Scripts
+set PATH=%PATH%;C:\Program Files\Python313;C:\Program Files\Python313\Scripts
 
 :: Verify Python installation
 python --version >nul 2>&1
-if %errorlevel% neq 0 (
+if errorlevel 1 (
     echo Python installation failed.
     goto :error
 )
@@ -61,7 +55,7 @@ set PIP_NO_VERIFY=*
 
 :: Upgrade pip
 echo Upgrading pip...
-python -m pip install pip==25.0
+python -m pip install pip
 
 :: Install required packages
 echo Installing required packages...
@@ -70,14 +64,14 @@ echo Installing required packages...
 pip install -U certifi
 
 python -m pip install --upgrade pip
-pip install --upgrade certifi
+python -m pip install --upgrade certifi
 
 :: Uninstall existing torch packages
 pip uninstall -y torch torchvision torchaudio
 :: pip install opencv-python
 
 :: Install CPU-only versions of torch packages
-pip install torch torchvision torchaudio
+pip install torch==2.7.0 torchvision torchaudio==2.7.0
 if %errorlevel% neq 0 (
     echo Failed to install torch packages.
     goto :error

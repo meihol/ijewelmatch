@@ -1,0 +1,43 @@
+2025-09-15 04:55:58,272 - INFO - SSL context created successfully
+2025-09-15 04:55:59,411 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-15 04:55:59,411 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-15 04:55:59,413 - INFO - Initial SSL test connection successful
+2025-09-15 04:55:59,428 - INFO - SSL context created successfully
+2025-09-15 04:55:59,483 - INFO - Starting server on port 5002
+2025-09-15 04:55:59,492 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-15 04:55:59,494 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-15 04:56:26,142 - INFO - 172.18.0.1 - - [15/Sep/2025 04:56:26] "GET / HTTP/1.1" 200 -
+2025-09-15 04:56:26,573 - INFO - 172.18.0.1 - - [15/Sep/2025 04:56:26] "GET /static/Gatisofttech-Logo.svg HTTP/1.1" 200 -
+2025-09-15 04:56:26,574 - INFO - 172.18.0.1 - - [15/Sep/2025 04:56:26] "GET /static/iJewelMatchh.svg HTTP/1.1" 200 -
+2025-09-15 04:56:26,733 - INFO - 172.18.0.1 - - [15/Sep/2025 04:56:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-15 04:56:32,713 - INFO - 172.18.0.1 - - [15/Sep/2025 04:56:32] "[31m[1mPOST /train HTTP/1.1[0m" 400 -
+2025-09-15 06:30:15,764 - INFO - SSL context created successfully
+2025-09-15 06:30:16,783 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-15 06:30:16,785 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-15 06:30:16,788 - INFO - Initial SSL test connection successful
+2025-09-15 06:30:16,810 - INFO - SSL context created successfully
+2025-09-15 06:30:16,828 - INFO - Starting server on port 5002
+2025-09-15 06:30:16,832 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-15 06:30:16,832 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-15 06:32:42,838 - INFO - 172.18.0.1 - - [15/Sep/2025 06:32:42] "GET / HTTP/1.1" 200 -
+2025-09-15 06:32:42,937 - INFO - 172.18.0.1 - - [15/Sep/2025 06:32:42] "[36mGET /static/iJewelMatchh.svg HTTP/1.1[0m" 304 -
+2025-09-15 06:32:42,938 - INFO - 172.18.0.1 - - [15/Sep/2025 06:32:42] "[36mGET /static/Gatisofttech-Logo.svg HTTP/1.1[0m" 304 -
+2025-09-15 06:32:43,058 - INFO - 172.18.0.1 - - [15/Sep/2025 06:32:43] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-15 06:32:51,941 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-15 06:32:51,960 - INFO - Scanned 0 files; indexed 0 images from: /app/dataset
+2025-09-15 06:32:51,961 - WARNING - No images found to index.
+2025-09-15 06:32:52,322 - INFO - 172.18.0.1 - - [15/Sep/2025 06:32:52] "POST /train HTTP/1.1" 200 -
+2025-09-15 06:35:58,569 - WARNING - Search called but index is empty.
+2025-09-15 06:35:58,572 - INFO - 172.18.0.1 - - [15/Sep/2025 06:35:58] "POST /search HTTP/1.1" 200 -
+2025-09-15 06:36:07,740 - WARNING - Search called but index is empty.
+2025-09-15 06:36:07,741 - INFO - 172.18.0.1 - - [15/Sep/2025 06:36:07] "POST /search HTTP/1.1" 200 -
+2025-09-15 06:36:17,384 - WARNING - Search called but index is empty.
+2025-09-15 06:36:17,386 - INFO - 172.18.0.1 - - [15/Sep/2025 06:36:17] "POST /search HTTP/1.1" 200 -
+2025-09-15 06:36:24,140 - WARNING - Search called but index is empty.
+2025-09-15 06:36:24,141 - INFO - 172.18.0.1 - - [15/Sep/2025 06:36:24] "POST /search HTTP/1.1" 200 -

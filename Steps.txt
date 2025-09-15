@@ -1,0 +1,33 @@
+Step 1. Map your network share
+net use Z: \\SERVER\StyleImages
+
+Step 2. Share the drive with Docker Desktop
+Open Docker Desktop → Settings → Resources → File Sharing
+Add the Z:\ drive (or the base path)
+Click Apply & Restart
+This step is essential, otherwise containers won’t see files on Z:.
+
+Step 3. Build your Docker image
+docker build -t ijewelmatch .
+
+Step 4. Run your container with volume mounts
+docker run -it --rm -p 5002:5002 -v D:\GatiGithub\ijewelmatch\logs:/root/Documents/ijewelmatch_logs -v D:\GatiGithub\ijewelmatch\data:/root/Documents/ijewelmatch_data -v D:\GatiGithub\ijewelmatch\upload:/app/upload -v Z:\:/app/dataset ijewelmatch
+
+Step 5. Train the model with the correct path
+/app/dataset
+OR
+/app/dataset/EARRING
+
+Step 6. Verify images are visible
+docker run -it --rm -v Z:\:/app/dataset ijewelmatch bash
+Then inside the container:
+ls /app/dataset
+find /app/dataset -type f -iregex '.*\.\(jpg\|jpeg\|png\)' | head -n 20
+This will confirm if the files/extensions are visible. Rename .JPG → .jpg if needed, because some scripts are case-sensitive.
+
+
+
+
+
+Model packaging box with the character from this photo printed on it. In front of the box on a round plastic baseplace the figure version of the photo I gave you. I'd like the PVC material to be clearly represented. It would be even better if the background is indoors.
+

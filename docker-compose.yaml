@@ -1,0 +1,25 @@
+services:
+  ijewelmatch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ijewelmatch_app
+    restart: unless-stopped
+    ports:
+      - "5002:5002"
+    environment:
+      - PORT=5002
+      - RUNNING_IN_DOCKER=1
+      - KMP_DUPLICATE_LIB_OK=TRUE
+      - SKIP_SSL_CHECK=false
+    volumes:
+      - ./upload:/app/upload
+      - ./logs:/root/Documents/ijewelmatch_logs
+      - ./ijewelmatch_data:/root/Documents/ijewelmatch_data
+      - ./templates:/app/templates
+      - ./static:/app/static
+      - type: bind
+        source: "//SERVER/StyleImages"     # UNC path
+        target: /app/dataset               # app’s default dataset dir:contentReference[oaicite:0]{index=0}
+        read_only: true
+    command: ["python", "ijewelmatch.py"]

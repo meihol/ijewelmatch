@@ -1,0 +1,8 @@
+flask
+gunicorn
+torch
+torchvision
+faiss-cpu
+pillow
+tqdm
+certifi
