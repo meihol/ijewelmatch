@@ -313,7 +313,13 @@ class JewelryMobileNetV3(nn.Module):
 #             self.create(folder_path)
 
 ALLOWED_IMAGE_EXTS = ('.png', '.jpg', '.jpeg', '.webp', '.bmp', '.tif', '.tiff', '.jfif')
-DEFAULT_DATASET_DIR = "/app/dataset"
+# DEFAULT_DATASET_DIR = "/app/dataset"
+DEFAULT_DATASET_DIR = os.getenv("DATASET_DIR", "/app/dataset")
+
+DEFAULT_NUMBER_OF_IMAGES = int(os.getenv("NUMBER_OF_IMAGES_REQ", "5"))
+DEFAULT_SIMILARITY_PERCENTAGE = float(os.getenv("SIMILARITY_PERCENTAGE", "80")) / 100.0
+if DEFAULT_SIMILARITY_PERCENTAGE == 1.0:
+    DEFAULT_SIMILARITY_PERCENTAGE = 0.9999
 
 class FastImageIndexer:
     def __init__(self, folder_path: str | None = None,
@@ -344,9 +350,16 @@ class FastImageIndexer:
         self.index = None
         self.image_paths = []
 
-        if not folder_path:
-            folder_path = DEFAULT_DATASET_DIR
-        self.create(folder_path)
+        # if not folder_path:
+        #     folder_path = DEFAULT_DATASET_DIR
+        # self.create(folder_path)
+        
+        if folder_path:
+            if os.path.exists(folder_path):
+                self.create(folder_path)
+            else:
+                self.logger.warning(
+                    f"Dataset folder does not exist: {folder_path}")
 
     def extract_features(self, image_path):
         try:
@@ -358,6 +371,55 @@ class FastImageIndexer:
         except Exception as e:
             print(f"Error extracting features from {image_path}: {str(e)}")
             raise
+        
+    def _extract_features_single(self, image_path: str):
+        """Safely extract a normalized feature vector for one image.
+
+        Any exception raised during feature extraction is logged and
+        ``None`` is returned so that callers can decide how to handle
+        problematic files.  This prevents a single bad image from
+        crashing a long-running indexing job.
+        """
+        try:
+            return self.extract_features(image_path)
+        except Exception as e:
+            self.logger.warning(f"Skipping unreadable image: {image_path} ({e})")
+            return None
+
+    def _extract_features_batch(self, image_paths: list[str]):
+        """Extract features for a list of images.
+
+        The list ``image_paths`` is modified in place to contain only
+        the paths for which feature extraction succeeded, ensuring it
+        stays aligned with the returned feature matrix.
+        """
+        feats = []
+        valid_paths = []
+        for path in image_paths:
+            vec = self._extract_features_single(path)
+            if vec is not None:
+                feats.append(vec)
+                valid_paths.append(path)
+
+        # Replace contents of image_paths with the successfully
+        # processed paths so that callers (e.g. ``create``) remain in
+        # sync with the feature matrix.
+        image_paths[:] = valid_paths
+
+        if not feats:
+            return np.empty((0, self.feature_dim), dtype="float32")
+
+        return np.vstack(feats).astype("float32")
+
+    def _build_faiss_index(self, feats: np.ndarray):
+        """Create a FAISS index from the given feature matrix."""
+        if feats is None or len(feats) == 0:
+            self.index = None
+            return
+
+        self.index = faiss.IndexFlatIP(self.feature_dim)
+        # ``faiss`` expects float32 arrays.
+        self.index.add(feats.astype("float32"))
 
     # def create(self, folder_path):
     #     self.image_paths = []
@@ -452,7 +514,8 @@ class FastImageIndexer:
     def save_state(self, filename):
         state = {
             'image_paths': self.image_paths,
-            'index': faiss.serialize_index(self.index),
+            # 'index': faiss.serialize_index(self.index),
+            'index': faiss.serialize_index(self.index) if self.index is not None else None,
             'current_folder_path': CURRENT_FOLDER_PATH,
             'model_state': self.model.state_dict()
         }
@@ -460,13 +523,21 @@ class FastImageIndexer:
             pickle.dump(state, f)
 
     @classmethod
-    def load_state(cls, filename):
+    # def load_state(cls, filename):
+    def load_state(cls, filename, logger: logging.Logger | None = None):
         with open(filename, 'rb') as f:
             state = pickle.load(f)
         
-        indexer = cls()
+        # indexer = cls()
+        # Avoid triggering index creation when restoring state by not
+        # providing a folder path.
+        indexer = cls(folder_path=None, logger=logger)
         indexer.image_paths = state['image_paths']
-        indexer.index = faiss.deserialize_index(state['index'])
+        # indexer.index = faiss.deserialize_index(state['index'])
+        if state['index'] is not None:
+            indexer.index = faiss.deserialize_index(state['index'])
+        else:
+            indexer.index = None
         global CURRENT_FOLDER_PATH
         CURRENT_FOLDER_PATH = state['current_folder_path']
         indexer.model.load_state_dict(state['model_state'])
@@ -590,7 +661,8 @@ class FastImageIndexer:
 indexer = None
 if os.path.exists(INDEXER_STATE_FILE):
     try:
-        indexer = FastImageIndexer.load_state(INDEXER_STATE_FILE)
+        # indexer = FastImageIndexer.load_state(INDEXER_STATE_FILE)
+        indexer = FastImageIndexer.load_state(INDEXER_STATE_FILE, logger=app.logger)
         print(f"Loaded existing indexer state from {INDEXER_STATE_FILE}")
     except Exception as e:
         print(f"Error loading indexer state: {e}")
@@ -717,8 +789,11 @@ def train():
 
         if not folder_path:
             return jsonify({"error": "No folder path provided"}), 400
-        if not os.path.exists(folder_path):
-            return jsonify({"error": f"Folder path does not exist: {folder_path}"}), 400
+        # if not os.path.exists(folder_path):
+        #     return jsonify({"error": f"Folder path does not exist: {folder_path}"}), 400
+        # Create the directory if it doesn't exist so training can
+        # proceed even when the dataset volume hasn't been mounted yet.
+        os.makedirs(folder_path, exist_ok=True)
 
         CURRENT_FOLDER_PATH = folder_path
         # indexer = FastImageIndexer(folder_path)
@@ -918,14 +993,16 @@ def search():
         except Exception as e:
             return jsonify({"error": f"Failed to save search image: {str(e)}"}), 500
         
-        Number_Of_Images_Req = int(data.get('Number_Of_Images_Req', 5))
+        # Number_Of_Images_Req = int(data.get('Number_Of_Images_Req', 5))
+        Number_Of_Images_Req = int(data.get('Number_Of_Images_Req', DEFAULT_NUMBER_OF_IMAGES))
         Similarity_Percentage_str = data.get('Similarity_Percentage')
         if Similarity_Percentage_str and str(Similarity_Percentage_str).strip():
             Similarity_Percentage = float(Similarity_Percentage_str) / 100
             if Similarity_Percentage == 1.0:
                 Similarity_Percentage = 0.9999
         else:
-            Similarity_Percentage = 0.8
+            # Similarity_Percentage = 0.8
+            Similarity_Percentage = DEFAULT_SIMILARITY_PERCENTAGE
 
         results = indexer.search(temp_image_path, k=Number_Of_Images_Req, threshold=Similarity_Percentage)
         

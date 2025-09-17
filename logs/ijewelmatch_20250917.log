@@ -1,0 +1,12 @@
+2025-09-17 04:11:28,807 - INFO - SSL context created successfully
+2025-09-17 04:11:29,673 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-17 04:11:29,675 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-17 04:11:29,675 - INFO - Initial SSL test connection successful
+2025-09-17 04:11:29,690 - INFO - SSL context created successfully
+2025-09-17 04:11:30,216 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-17 04:11:30,324 - INFO - Starting server on port 5002
+2025-09-17 04:11:30,329 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-17 04:11:30,330 - INFO - [33mPress CTRL+C to quit[0m
