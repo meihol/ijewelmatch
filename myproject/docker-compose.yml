@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  hello_writer:
+    build: .
+    container_name: hello_writer
+    volumes:
+      - ./logs:/data

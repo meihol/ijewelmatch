@@ -1,0 +1,5 @@
+what code I write to check .jpg file as I get error like "cannot identify an image file "Filename.jpg" while building model.
+again write a code to skip that file if corrupted or locked or empty or of not jpg type write me one code snippet
+also check network path issue also
+can u make it multi threaded so it will work faster for more then 1 Lakh image for scanning
+can we add start from last position if network fails or on power failure

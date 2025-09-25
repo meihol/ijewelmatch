@@ -184,8 +184,8 @@
                         <li><p>To search for similar images, upload an image along with how many results (K) and minimum similarity (Threshold) you want using the search function on our website.</p></li>
                     </ul>
                     <label for="fileSearchImage">Select Image</label>
-                    <input type="file" id="fileSearchImage" name="image" accept="image/*">
-                    <input type="button" value="Search with Selected Image" onclick="searchImage('file')">
+                    <input type="file" id="fileSearchImage" name="image" accept="image/*" multiple>
+                    <input type="button" value="Search with Selected Images" onclick="searchImage('file')">
                 
                     <label for="cameraCapture">Capture Image</label>
                     <button id="cameraCapture">Open Camera</button>
@@ -382,7 +382,20 @@
             }
 
             const formData = new FormData();
-            formData.append('image', imageInput.files[0]);
+            // formData.append('image', imageInput.files[0]);
+
+            if (type === 'file') {
+                const imageInput = document.getElementById('fileSearchImage');
+                if (!imageInput.files.length) {
+                    document.getElementById('response').textContent = "Image file is required";
+                    return;
+                }
+
+                // Append all selected files
+                for (let i = 0; i < imageInput.files.length; i++) {
+                    formData.append('images', imageInput.files[i]);  // use 'images' (plural)
+                }
+            }
 
             try {
                 const response = await fetch('/insert', {

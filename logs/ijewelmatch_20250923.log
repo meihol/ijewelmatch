@@ -1,0 +1,135 @@
+2025-09-23 04:59:26,951 - INFO - SSL context created successfully
+2025-09-23 04:59:28,359 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-23 04:59:28,362 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-23 04:59:28,363 - INFO - Initial SSL test connection successful
+2025-09-23 04:59:28,374 - INFO - SSL context created successfully
+2025-09-23 04:59:28,921 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 04:59:28,951 - INFO - Starting server on port 5002
+2025-09-23 04:59:28,955 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-23 04:59:28,956 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 05:10:08,881 - INFO - SSL context created successfully
+2025-09-23 05:10:09,815 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-23 05:10:09,825 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-23 05:10:09,826 - INFO - Initial SSL test connection successful
+2025-09-23 05:10:09,846 - INFO - SSL context created successfully
+2025-09-23 05:10:10,415 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 05:10:10,460 - INFO - Starting server on port 5002
+2025-09-23 05:10:10,464 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-23 05:10:10,465 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 05:10:12,406 - INFO - 172.18.0.1 - - [23/Sep/2025 05:10:12] "GET / HTTP/1.1" 200 -
+2025-09-23 05:10:12,465 - INFO - 172.18.0.1 - - [23/Sep/2025 05:10:12] "GET /static/iJewelMatchh.svg HTTP/1.1" 200 -
+2025-09-23 05:10:12,465 - INFO - 172.18.0.1 - - [23/Sep/2025 05:10:12] "GET /static/Gatisofttech-Logo.svg HTTP/1.1" 200 -
+2025-09-23 05:10:12,530 - INFO - 172.18.0.1 - - [23/Sep/2025 05:10:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-23 05:10:17,730 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 05:10:17,746 - INFO - Scanned 0 files; indexed 0 images from: /app/dataset
+2025-09-23 05:10:17,746 - WARNING - No images found to index.
+2025-09-23 05:10:18,015 - INFO - 172.18.0.1 - - [23/Sep/2025 05:10:18] "POST /train HTTP/1.1" 200 -
+2025-09-23 05:11:29,728 - WARNING - Search called but index is empty.
+2025-09-23 05:11:29,731 - INFO - 172.18.0.1 - - [23/Sep/2025 05:11:29] "POST /search HTTP/1.1" 200 -
+2025-09-23 05:39:01,607 - WARNING - Search called but index is empty.
+2025-09-23 05:39:01,610 - INFO - 172.18.0.1 - - [23/Sep/2025 05:39:01] "POST /search HTTP/1.1" 200 -
+2025-09-23 05:39:08,210 - WARNING - Search called but index is empty.
+2025-09-23 05:39:08,212 - INFO - 172.18.0.1 - - [23/Sep/2025 05:39:08] "POST /search HTTP/1.1" 200 -
+2025-09-23 05:39:14,045 - WARNING - Search called but index is empty.
+2025-09-23 05:39:14,047 - INFO - 172.18.0.1 - - [23/Sep/2025 05:39:14] "POST /search HTTP/1.1" 200 -
+2025-09-23 05:39:21,945 - WARNING - Search called but index is empty.
+2025-09-23 05:39:21,947 - INFO - 172.18.0.1 - - [23/Sep/2025 05:39:21] "POST /search HTTP/1.1" 200 -
+2025-09-23 08:51:00,890 - INFO - SSL context created successfully
+2025-09-23 08:51:01,774 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-23 08:51:01,777 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-23 08:51:01,777 - INFO - Initial SSL test connection successful
+2025-09-23 08:51:01,788 - INFO - SSL context created successfully
+2025-09-23 08:51:02,318 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 08:51:02,376 - INFO - Starting server on port 5002
+2025-09-23 08:51:02,392 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-23 08:51:02,400 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 08:51:03,959 - INFO - 172.18.0.1 - - [23/Sep/2025 08:51:03] "GET / HTTP/1.1" 200 -
+2025-09-23 08:51:03,998 - INFO - 172.18.0.1 - - [23/Sep/2025 08:51:03] "[36mGET /static/iJewelMatchh.svg HTTP/1.1[0m" 304 -
+2025-09-23 08:51:03,999 - INFO - 172.18.0.1 - - [23/Sep/2025 08:51:03] "[36mGET /static/Gatisofttech-Logo.svg HTTP/1.1[0m" 304 -
+2025-09-23 08:51:04,078 - INFO - 172.18.0.1 - - [23/Sep/2025 08:51:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-23 08:51:12,030 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 08:51:12,044 - INFO - Scanned 0 files; indexed 0 images from: /app/dataset
+2025-09-23 08:51:12,045 - WARNING - No images found to index.
+2025-09-23 08:51:12,309 - INFO - 172.18.0.1 - - [23/Sep/2025 08:51:12] "POST /train HTTP/1.1" 200 -
+2025-09-23 08:51:29,585 - WARNING - Search called but index is empty.
+2025-09-23 08:51:29,587 - INFO - 172.18.0.1 - - [23/Sep/2025 08:51:29] "POST /search HTTP/1.1" 200 -
+2025-09-23 08:54:15,589 - INFO - SSL context created successfully
+2025-09-23 08:54:16,588 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-23 08:54:16,589 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-23 08:54:16,590 - INFO - Initial SSL test connection successful
+2025-09-23 08:54:16,604 - INFO - SSL context created successfully
+2025-09-23 08:54:17,258 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 08:54:17,317 - INFO - Starting server on port 5002
+2025-09-23 08:54:17,324 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-23 08:54:17,324 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 08:54:19,153 - INFO - 172.18.0.1 - - [23/Sep/2025 08:54:19] "GET / HTTP/1.1" 200 -
+2025-09-23 08:54:19,203 - INFO - 172.18.0.1 - - [23/Sep/2025 08:54:19] "[36mGET /static/iJewelMatchh.svg HTTP/1.1[0m" 304 -
+2025-09-23 08:54:19,204 - INFO - 172.18.0.1 - - [23/Sep/2025 08:54:19] "[36mGET /static/Gatisofttech-Logo.svg HTTP/1.1[0m" 304 -
+2025-09-23 08:54:19,278 - INFO - 172.18.0.1 - - [23/Sep/2025 08:54:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-23 08:54:36,448 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 08:54:36,473 - INFO - Scanned 0 files; indexed 0 images from: /app/dataset
+2025-09-23 08:54:36,473 - WARNING - No images found to index.
+2025-09-23 08:54:36,651 - INFO - 172.18.0.1 - - [23/Sep/2025 08:54:36] "POST /train HTTP/1.1" 200 -
+2025-09-23 08:54:50,838 - WARNING - Search called but index is empty.
+2025-09-23 08:54:50,840 - INFO - 172.18.0.1 - - [23/Sep/2025 08:54:50] "POST /search HTTP/1.1" 200 -
+2025-09-23 09:09:39,494 - INFO - SSL context created successfully
+2025-09-23 09:09:40,501 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-23 09:09:40,504 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-23 09:09:40,505 - INFO - Initial SSL test connection successful
+2025-09-23 09:09:40,515 - INFO - SSL context created successfully
+2025-09-23 09:09:45,460 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 09:09:45,530 - INFO - Starting server on port 5002
+2025-09-23 09:09:45,539 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-23 09:09:45,539 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 09:09:49,130 - INFO - 172.18.0.1 - - [23/Sep/2025 09:09:49] "GET / HTTP/1.1" 200 -
+2025-09-23 09:09:49,213 - INFO - 172.18.0.1 - - [23/Sep/2025 09:09:49] "[36mGET /static/iJewelMatchh.svg HTTP/1.1[0m" 304 -
+2025-09-23 09:09:49,214 - INFO - 172.18.0.1 - - [23/Sep/2025 09:09:49] "[36mGET /static/Gatisofttech-Logo.svg HTTP/1.1[0m" 304 -
+2025-09-23 09:09:49,301 - INFO - 172.18.0.1 - - [23/Sep/2025 09:09:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-23 09:10:07,426 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 09:10:07,438 - INFO - Scanned 0 files; indexed 0 images from: /app/dataset
+2025-09-23 09:10:07,440 - WARNING - No images found to index.
+2025-09-23 09:10:07,689 - INFO - 172.18.0.1 - - [23/Sep/2025 09:10:07] "POST /train HTTP/1.1" 200 -
+2025-09-23 09:10:53,331 - WARNING - Search called but index is empty.
+2025-09-23 09:10:53,333 - INFO - 172.18.0.1 - - [23/Sep/2025 09:10:53] "POST /search HTTP/1.1" 200 -
+2025-09-23 09:10:59,315 - WARNING - Search called but index is empty.
+2025-09-23 09:10:59,317 - INFO - 172.18.0.1 - - [23/Sep/2025 09:10:59] "POST /search HTTP/1.1" 200 -
+2025-09-23 09:47:10,062 - INFO - SSL context created successfully
+2025-09-23 09:47:11,131 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-23 09:47:11,134 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-23 09:47:11,140 - INFO - Initial SSL test connection successful
+2025-09-23 09:47:11,155 - INFO - SSL context created successfully
+2025-09-23 09:47:14,920 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 09:47:14,946 - INFO - Starting server on port 5002
+2025-09-23 09:47:14,949 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-23 09:47:14,951 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 09:47:59,268 - INFO - 172.18.0.1 - - [23/Sep/2025 09:47:59] "GET / HTTP/1.1" 200 -
+2025-09-23 09:47:59,357 - INFO - 172.18.0.1 - - [23/Sep/2025 09:47:59] "[36mGET /static/iJewelMatchh.svg HTTP/1.1[0m" 304 -
+2025-09-23 09:47:59,361 - INFO - 172.18.0.1 - - [23/Sep/2025 09:47:59] "[36mGET /static/Gatisofttech-Logo.svg HTTP/1.1[0m" 304 -
+2025-09-23 09:47:59,445 - INFO - 172.18.0.1 - - [23/Sep/2025 09:47:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-23 09:48:05,577 - INFO - 172.18.0.1 - - [23/Sep/2025 09:48:05] "[31m[1mPOST /train HTTP/1.1[0m" 400 -
+2025-09-23 09:48:14,490 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 09:48:14,751 - DEBUG - Indexer state saved
+2025-09-23 09:48:14,752 - INFO - 172.18.0.1 - - [23/Sep/2025 09:48:14] "POST /train HTTP/1.1" 200 -
+2025-09-23 09:48:38,121 - INFO - 172.18.0.1 - - [23/Sep/2025 09:48:38] "[31m[1mPOST /train HTTP/1.1[0m" 400 -
+2025-09-23 09:48:54,549 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-23 09:48:54,830 - DEBUG - Indexer state saved
+2025-09-23 09:48:54,831 - INFO - 172.18.0.1 - - [23/Sep/2025 09:48:54] "POST /train HTTP/1.1" 200 -
+2025-09-23 09:49:09,570 - INFO - 172.18.0.1 - - [23/Sep/2025 09:49:09] "POST /search HTTP/1.1" 200 -

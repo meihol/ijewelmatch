@@ -88,7 +88,7 @@ echo All packages installed successfully.
 
 :: Run the Flask app
 echo Sparkling up your iJewelMatch...
-python ijewelmatch.py
+python test.py
 pause
 exit /b 0
 

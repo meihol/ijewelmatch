@@ -1,31 +1,66 @@
+# version: "3.9"
+
+# services:
+#   ijewelmatch:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     container_name: ijewelmatch_app
+#     restart: unless-stopped
+#     ports:
+#       - "5002:5002"
+#     environment:
+#       - PORT=5002
+#       - RUNNING_IN_DOCKER=1
+#       - KMP_DUPLICATE_LIB_OK=TRUE
+#       - SKIP_SSL_CHECK=TRUE
+#       - DATASET_DIR=/app/dataset
+#       - NUMBER_OF_IMAGES_REQ=5
+#       - SIMILARITY_PERCENTAGE=90
+#     volumes:
+#       # Map your Windows network share to container
+#       - //SERVER/StyleImages:/mnt/style_images:ro
+#       # Persist logs/config
+#       - ./data:/app/data
+#       # - "//192.168.8.202/StyleImages:/app/dataset"
+#       # Mount UNC network share (requires Docker Desktop with File Sharing enabled)
+#       # - "//SERVER/StyleImages:/app/dataset:ro"
+#     command: ["python", "ijewelmatch.py"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+version: "3.9"
+
 services:
   ijewelmatch:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     container_name: ijewelmatch_app
     restart: unless-stopped
     ports:
       - "5002:5002"
     environment:
-      - PORT=5002
-      - RUNNING_IN_DOCKER=1
-      - KMP_DUPLICATE_LIB_OK=TRUE
-      - SKIP_SSL_CHECK=false
-      - DATASET_DIR=/app/dataset
-      - NUMBER_OF_IMAGES_REQ=5       # Number of images to return
-      - SIMILARITY_PERCENTAGE=90     # Minimum similarity percentage
+      # already set in Dockerfile, but keeping here is fine
+      - SKIP_SSL_CHECK=true
     volumes:
-      - ./upload:/app/upload
-      - ./logs:/root/Documents/ijewelmatch_logs
-      - ./ijewelmatch_data:/root/Documents/ijewelmatch_data
-      - ./templates:/app/templates
-      - ./static:/app/static
-      # - type: bind
-      #   source: "//SERVER/StyleImages"     # UNC path
-      #   target: /app/dataset               # app’s default dataset dir:contentReference[oaicite:0]{index=0}
-      #   read_only: true
-      # Mount the host dataset directory read-only inside the container.
-      # Set HOST_DATASET_DIR to the host path, e.g. "//SERVER/StyleImages" on Windows.
-      - ${HOST_DATASET_DIR:-./dataset}:/app/dataset:ro
-    command: ["python", "ijewelmatch.py"]
+      # OPTION A: UNC share (Docker Desktop syntax uses forward slashes)
+      - //SERVER/StyleImages:/mnt/style_images:ro
+      # OPTION B: if you mapped the share to Z:\StyleImages on Windows, use this instead:
+      # - Z:/StyleImages:/mnt/style_images:ro
+
+      # Persist app-side data/config if you want (not mandatory for your app)
+      - ./data:/app/data
+
