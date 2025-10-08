@@ -1,0 +1,1628 @@
+2025-09-30 06:12:32,779 - INFO - SSL context created successfully
+2025-09-30 06:12:33,853 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-30 06:12:33,857 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-30 06:12:33,859 - INFO - Initial SSL test connection successful
+2025-09-30 06:12:33,880 - INFO - SSL context created successfully
+2025-09-30 06:12:38,219 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:12:38,341 - INFO - Starting server on port 5002
+2025-09-30 06:12:38,345 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-30 06:12:38,345 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-30 06:12:50,448 - INFO - 172.18.0.1 - - [30/Sep/2025 06:12:50] "GET / HTTP/1.1" 200 -
+2025-09-30 06:12:50,502 - INFO - 172.18.0.1 - - [30/Sep/2025 06:12:50] "GET /static/iJewelMatchh.svg HTTP/1.1" 200 -
+2025-09-30 06:12:50,503 - INFO - 172.18.0.1 - - [30/Sep/2025 06:12:50] "GET /static/Gatisofttech-Logo.svg HTTP/1.1" 200 -
+2025-09-30 06:12:50,602 - INFO - 172.18.0.1 - - [30/Sep/2025 06:12:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-30 06:13:32,442 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:13:32,708 - DEBUG - Indexer state saved
+2025-09-30 06:13:32,709 - INFO - 172.18.0.1 - - [30/Sep/2025 06:13:32] "POST /train HTTP/1.1" 200 -
+2025-09-30 06:13:51,984 - INFO - 172.18.0.1 - - [30/Sep/2025 06:13:51] "POST /search HTTP/1.1" 200 -
+2025-09-30 06:18:36,805 - INFO - SSL context created successfully
+2025-09-30 06:18:37,780 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-30 06:18:37,782 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-30 06:18:37,796 - INFO - Initial SSL test connection successful
+2025-09-30 06:18:37,818 - INFO - SSL context created successfully
+2025-09-30 06:18:41,861 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:18:41,947 - INFO - Starting server on port 5002
+2025-09-30 06:18:41,951 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-30 06:18:41,951 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-30 06:18:46,085 - INFO - 172.18.0.1 - - [30/Sep/2025 06:18:46] "GET / HTTP/1.1" 200 -
+2025-09-30 06:18:50,390 - INFO - 172.18.0.1 - - [30/Sep/2025 06:18:50] "GET / HTTP/1.1" 200 -
+2025-09-30 06:18:50,506 - INFO - 172.18.0.1 - - [30/Sep/2025 06:18:50] "[36mGET /static/iJewelMatchh.svg HTTP/1.1[0m" 304 -
+2025-09-30 06:18:50,512 - INFO - 172.18.0.1 - - [30/Sep/2025 06:18:50] "[36mGET /static/Gatisofttech-Logo.svg HTTP/1.1[0m" 304 -
+2025-09-30 06:18:50,603 - INFO - 172.18.0.1 - - [30/Sep/2025 06:18:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-30 06:19:05,887 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:19:06,138 - DEBUG - Indexer state saved
+2025-09-30 06:19:06,139 - INFO - 172.18.0.1 - - [30/Sep/2025 06:19:06] "POST /train HTTP/1.1" 200 -
+2025-09-30 06:22:11,869 - INFO - SSL context created successfully
+2025-09-30 06:22:12,772 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-30 06:22:12,773 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-30 06:22:12,774 - INFO - Initial SSL test connection successful
+2025-09-30 06:22:12,788 - INFO - SSL context created successfully
+2025-09-30 06:22:16,754 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:22:16,802 - INFO - Starting server on port 5002
+2025-09-30 06:22:16,808 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-30 06:22:16,809 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-30 06:22:18,675 - INFO - 172.18.0.1 - - [30/Sep/2025 06:22:18] "GET / HTTP/1.1" 200 -
+2025-09-30 06:22:18,769 - INFO - 172.18.0.1 - - [30/Sep/2025 06:22:18] "[36mGET /static/iJewelMatchh.svg HTTP/1.1[0m" 304 -
+2025-09-30 06:22:18,771 - INFO - 172.18.0.1 - - [30/Sep/2025 06:22:18] "[36mGET /static/Gatisofttech-Logo.svg HTTP/1.1[0m" 304 -
+2025-09-30 06:22:19,892 - INFO - 172.18.0.1 - - [30/Sep/2025 06:22:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-30 06:22:56,703 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:22:57,056 - DEBUG - Indexer state saved
+2025-09-30 06:22:57,057 - INFO - 172.18.0.1 - - [30/Sep/2025 06:22:57] "POST /train HTTP/1.1" 200 -
+2025-09-30 06:23:10,636 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:23:10,866 - DEBUG - Indexer state saved
+2025-09-30 06:23:10,867 - INFO - 172.18.0.1 - - [30/Sep/2025 06:23:10] "POST /train HTTP/1.1" 200 -
+2025-09-30 06:25:29,751 - INFO - SSL context created successfully
+2025-09-30 06:25:30,756 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-30 06:25:30,762 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-30 06:25:30,764 - INFO - Initial SSL test connection successful
+2025-09-30 06:25:30,780 - INFO - SSL context created successfully
+2025-09-30 06:25:34,789 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:25:34,825 - INFO - Starting server on port 5002
+2025-09-30 06:25:34,828 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-30 06:25:34,829 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-30 06:28:35,704 - INFO - SSL context created successfully
+2025-09-30 06:28:36,652 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-09-30 06:28:36,656 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-09-30 06:28:36,656 - INFO - Initial SSL test connection successful
+2025-09-30 06:28:36,669 - INFO - SSL context created successfully
+2025-09-30 06:28:40,511 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:28:40,597 - INFO - Starting server on port 5002
+2025-09-30 06:28:40,606 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-09-30 06:28:40,606 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-30 06:29:07,977 - INFO - 172.18.0.1 - - [30/Sep/2025 06:29:07] "GET / HTTP/1.1" 200 -
+2025-09-30 06:29:08,055 - INFO - 172.18.0.1 - - [30/Sep/2025 06:29:08] "[36mGET /static/iJewelMatchh.svg HTTP/1.1[0m" 304 -
+2025-09-30 06:29:08,056 - INFO - 172.18.0.1 - - [30/Sep/2025 06:29:08] "[36mGET /static/Gatisofttech-Logo.svg HTTP/1.1[0m" 304 -
+2025-09-30 06:29:08,157 - INFO - 172.18.0.1 - - [30/Sep/2025 06:29:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-09-30 06:29:13,327 - INFO - MobileNetV3 weights loaded successfully.
+2025-09-30 06:29:13,370 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:29:13,370 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:29:13,371 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:29:13,371 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:29:13,371 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:29:14,952 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:14,952 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:14,953 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:14,953 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:14,953 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:14,953 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:01:16 09:32:20\x00'
+2025-09-30 06:29:14,953 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:15,052 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:15,052 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:15,052 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:15,052 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:15,053 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:15,053 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:01:16 09:44:11\x00'
+2025-09-30 06:29:15,053 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:15,145 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:15,146 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:15,146 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:15,146 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:15,146 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:15,146 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:01:16 09:50:00\x00'
+2025-09-30 06:29:15,147 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:15,240 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:15,240 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:15,241 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:15,241 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:15,241 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:15,241 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:01:27 11:20:34\x00'
+2025-09-30 06:29:15,241 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:17,004 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:17,004 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:17,004 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:17,005 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:17,005 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:17,005 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:02:24 14:37:38\x00'
+2025-09-30 06:29:17,006 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:17,205 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:17,205 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:17,205 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:17,205 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:17,205 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:17,206 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:03:31 14:18:27\x00'
+2025-09-30 06:29:17,206 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:17,314 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:17,315 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:17,315 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:17,315 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:17,315 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:17,315 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:03:31 14:21:07\x00'
+2025-09-30 06:29:17,316 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:20,083 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:20,084 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:20,084 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:20,085 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:20,085 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:20,085 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:11:23 15:35:40\x00'
+2025-09-30 06:29:20,086 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:20,280 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:20,280 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:20,281 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:20,281 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:20,281 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:20,281 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:11:22 15:29:39\x00'
+2025-09-30 06:29:20,281 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:20,664 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:20,664 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:20,665 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:20,665 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:20,665 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:20,666 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2021:11:20 17:39:09\x00'
+2025-09-30 06:29:20,666 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:25,166 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:25,166 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:25,166 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:25,167 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:25,167 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:25,167 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2022:08:23 16:07:49\x00'
+2025-09-30 06:29:25,167 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:25,279 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:25,279 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:25,279 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:25,280 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:25,280 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:25,280 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2022:08:29 13:59:02\x00'
+2025-09-30 06:29:25,280 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:26,807 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:26,807 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:26,807 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:26,808 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:26,808 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:26,808 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:08:03 12:30:01\x00'
+2025-09-30 06:29:26,808 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:27,300 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:27,300 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:27,300 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:27,301 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:27,301 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:27,302 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:01:19 14:30:25\x00'
+2025-09-30 06:29:27,302 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:27,891 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:27,892 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:27,892 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:27,892 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:27,894 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:27,894 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:02:04 17:35:29\x00'
+2025-09-30 06:29:27,894 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,074 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,074 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,074 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,075 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,075 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,075 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:02:11 15:36:39\x00'
+2025-09-30 06:29:28,075 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,186 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,187 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,187 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,187 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,188 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,188 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:02:11 18:32:47\x00'
+2025-09-30 06:29:28,188 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,319 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,319 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,320 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,320 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,320 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,320 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:02:15 16:42:29\x00'
+2025-09-30 06:29:28,321 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,429 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,429 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:29:28,430 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:29:28,430 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,430 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,430 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:02:17 12:49:47\x00'
+2025-09-30 06:29:28,431 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,514 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,514 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,515 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,515 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,515 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,515 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:02:20 13:56:40\x00'
+2025-09-30 06:29:28,515 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,600 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,601 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,601 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,601 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,601 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,601 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:02:20 13:17:37\x00'
+2025-09-30 06:29:28,602 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,682 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,682 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,682 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,683 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,683 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,683 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:02:20 13:15:01\x00'
+2025-09-30 06:29:28,683 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,764 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,764 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,764 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,764 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,764 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,765 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:02:20 13:12:54\x00'
+2025-09-30 06:29:28,765 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,858 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,858 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,858 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,859 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,859 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,859 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:03:11 16:13:44\x00'
+2025-09-30 06:29:28,859 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:28,954 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:28,954 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,954 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:28,955 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:28,955 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:28,955 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:03:17 16:13:33\x00'
+2025-09-30 06:29:28,955 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:29,056 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:29,056 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,057 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,057 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:29,057 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:29,057 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:03:24 11:58:11\x00'
+2025-09-30 06:29:29,058 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:29,157 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:29,157 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,157 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,158 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:29,158 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:29,158 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:04:18 09:31:03\x00'
+2025-09-30 06:29:29,158 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:29,432 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:29,433 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,433 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,433 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:29,434 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:29,434 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:04:27 15:39:05\x00'
+2025-09-30 06:29:29,434 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:29,570 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:29,570 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,570 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,570 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:29,571 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:29,571 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:04:27 15:42:42\x00'
+2025-09-30 06:29:29,571 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:29,671 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:29,671 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,671 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,671 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:29,671 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:29,672 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:04:27 15:46:36\x00'
+2025-09-30 06:29:29,672 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:29,756 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:29,756 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,756 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,757 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:29,757 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:29,757 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:04:27 15:49:54\x00'
+2025-09-30 06:29:29,757 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:29,838 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:29,839 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,839 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,839 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:29,839 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:29,839 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:04:27 15:52:57\x00'
+2025-09-30 06:29:29,840 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:29,926 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:29,926 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,926 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:29,926 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:29,928 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:29,928 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:04:27 15:59:18\x00'
+2025-09-30 06:29:29,928 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:30,025 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:30,025 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,025 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,026 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:30,026 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:30,026 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:05:04 17:15:34\x00'
+2025-09-30 06:29:30,026 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:30,130 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:30,130 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,130 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,131 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:30,131 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:30,131 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:05:19 13:07:06\x00'
+2025-09-30 06:29:30,131 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:30,312 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:30,312 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,313 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,313 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:30,313 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:30,314 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:05:29 10:41:09\x00'
+2025-09-30 06:29:30,314 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:30,531 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:30,531 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,531 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,531 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:30,532 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:30,532 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:05:29 16:31:19\x00'
+2025-09-30 06:29:30,532 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:30,624 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:30,624 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,625 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:30,625 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:30,625 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:30,625 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:06:21 09:50:10\x00'
+2025-09-30 06:29:30,625 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:31,000 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:31,001 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,001 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,002 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:31,002 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:31,002 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:07:12 12:01:35\x00'
+2025-09-30 06:29:31,003 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:31,114 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:31,115 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,115 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,115 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:31,115 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:31,115 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:07:12 17:43:36\x00'
+2025-09-30 06:29:31,116 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:31,324 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:31,325 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,325 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,325 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:31,325 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:31,325 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:07:19 15:26:04\x00'
+2025-09-30 06:29:31,326 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:31,434 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x07\x80'
+2025-09-30 06:29:31,434 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x048'
+2025-09-30 06:29:31,435 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:29:31,435 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:31,435 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:31,435 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:29:31,435 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,435 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,436 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:31,436 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: <table: 34 bytes>
+2025-09-30 06:29:31,436 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 214 - value: b'2023:07:20 15:10:41\x00'
+2025-09-30 06:29:31,436 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xec'
+2025-09-30 06:29:31,546 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:31,547 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,547 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,547 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:31,548 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:31,548 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:07:22 16:39:23\x00'
+2025-09-30 06:29:31,548 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:31,841 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:31,841 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,842 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,842 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:31,842 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:31,842 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:08:02 14:28:10\x00'
+2025-09-30 06:29:31,842 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:31,975 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:31,976 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,976 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:31,976 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:31,976 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:31,976 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:08:14 14:35:44\x00'
+2025-09-30 06:29:31,977 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:32,074 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:32,074 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,075 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,075 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:32,075 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:32,075 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:08:14 14:58:06\x00'
+2025-09-30 06:29:32,075 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:32,161 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:32,162 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,162 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,162 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:32,162 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:32,163 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:08:16 15:31:49\x00'
+2025-09-30 06:29:32,163 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:32,347 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:32,347 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,348 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,348 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:32,348 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:32,348 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:09:07 17:48:34\x00'
+2025-09-30 06:29:32,348 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:32,447 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:32,447 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,447 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,447 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:32,448 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:32,448 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:10:02 17:53:48\x00'
+2025-09-30 06:29:32,448 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:32,821 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:32,821 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,821 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,821 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:32,822 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:32,822 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:10:20 14:00:30\x00'
+2025-09-30 06:29:32,822 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:32,921 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:32,921 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,922 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:32,922 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:32,922 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:32,922 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:02:28 13:08:43\x00'
+2025-09-30 06:29:32,922 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:33,172 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:33,173 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,173 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,173 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:33,173 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:33,173 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:11:09 09:22:23\x00'
+2025-09-30 06:29:33,174 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:33,259 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:33,259 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,260 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,260 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:33,260 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:33,262 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:12:07 12:15:18\x00'
+2025-09-30 06:29:33,262 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:33,438 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:33,438 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,438 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,439 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:33,439 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:33,439 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:12:13 16:33:41\x00'
+2025-09-30 06:29:33,439 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:33,621 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:33,621 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,622 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,622 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:33,622 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:33,622 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:12:23 14:24:10\x00'
+2025-09-30 06:29:33,622 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:33,793 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:33,793 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,795 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,795 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:33,795 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:33,795 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:12:30 10:12:24\x00'
+2025-09-30 06:29:33,796 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:33,896 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:33,896 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,896 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:33,896 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:33,897 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:33,897 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:12:29 12:13:43\x00'
+2025-09-30 06:29:33,897 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:34,000 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:34,001 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,001 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,001 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:34,001 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:34,001 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2023:12:29 17:12:49\x00'
+2025-09-30 06:29:34,002 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:34,209 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:34,209 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,209 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,210 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:34,210 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:34,210 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:01:09 15:58:35\x00'
+2025-09-30 06:29:34,210 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:34,310 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:34,312 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,312 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,312 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:34,313 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:34,313 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:01:11 17:37:10\x00'
+2025-09-30 06:29:34,313 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:34,418 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:34,419 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,419 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,419 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:34,419 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:34,419 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:01:19 14:01:37\x00'
+2025-09-30 06:29:34,420 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:34,547 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:34,547 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,547 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,548 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:34,548 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:34,548 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:02:10 18:20:24\x00'
+2025-09-30 06:29:34,548 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:34,689 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:34,690 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,690 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,690 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:34,691 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:34,691 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:02:24 08:52:24\x00'
+2025-09-30 06:29:34,691 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:34,899 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:34,901 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,901 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:34,901 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:34,902 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:34,902 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:02:15 09:46:46\x00'
+2025-09-30 06:29:34,903 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:35,026 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:35,027 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,027 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,029 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:35,029 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:35,029 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:02:15 10:00:15\x00'
+2025-09-30 06:29:35,029 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:35,233 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:35,234 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,234 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,234 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:35,235 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:35,235 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:02:24 17:22:27\x00'
+2025-09-30 06:29:35,235 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:35,323 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:35,323 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,323 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,323 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:35,324 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:35,324 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:03:02 16:47:50\x00'
+2025-09-30 06:29:35,325 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:35,488 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:35,489 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,489 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,489 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:35,489 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:35,489 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:03:06 09:11:21\x00'
+2025-09-30 06:29:35,490 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:35,599 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:35,599 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,600 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,600 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:35,600 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:35,600 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:03:14 15:50:14\x00'
+2025-09-30 06:29:35,600 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:35,708 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:35,708 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,708 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,708 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:35,709 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:35,709 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:03:14 18:32:13\x00'
+2025-09-30 06:29:35,709 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:35,818 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:35,818 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,818 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,818 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:35,819 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:35,819 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:05:08 16:20:38\x00'
+2025-09-30 06:29:35,819 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:35,924 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:35,924 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,924 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:35,925 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:35,925 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:35,925 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:04:23 09:35:21\x00'
+2025-09-30 06:29:35,925 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:36,031 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:36,031 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,031 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,031 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:36,032 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:36,032 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:04:02 14:07:39\x00'
+2025-09-30 06:29:36,032 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:36,137 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:36,138 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,138 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,138 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:36,138 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:36,139 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:04:02 14:12:59\x00'
+2025-09-30 06:29:36,139 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:36,246 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:36,246 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,246 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,247 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:36,247 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:36,247 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:04:10 13:00:19\x00'
+2025-09-30 06:29:36,247 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:36,355 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:36,355 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,355 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,355 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:36,356 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:36,356 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:04:10 12:58:24\x00'
+2025-09-30 06:29:36,356 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:36,540 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x07\x80'
+2025-09-30 06:29:36,540 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x048'
+2025-09-30 06:29:36,541 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:29:36,541 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:36,541 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:36,541 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:29:36,541 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,542 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,542 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:36,542 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: <table: 34 bytes>
+2025-09-30 06:29:36,542 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 214 - value: b'2024:08:03 15:27:50\x00'
+2025-09-30 06:29:36,542 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xec'
+2025-09-30 06:29:36,646 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:36,647 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,647 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,647 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:36,647 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:36,648 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:07:11 11:51:14\x00'
+2025-09-30 06:29:36,648 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:36,748 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:36,748 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,749 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:36,749 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:36,749 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:36,749 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:05:08 17:54:09\x00'
+2025-09-30 06:29:36,750 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:37,039 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:37,039 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,039 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,039 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,040 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:37,040 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:05:13 17:50:19\x00'
+2025-09-30 06:29:37,040 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:37,156 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:37,157 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,157 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,157 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,157 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:37,157 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:05:20 10:48:00\x00'
+2025-09-30 06:29:37,158 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:37,250 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x07\x80'
+2025-09-30 06:29:37,250 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x048'
+2025-09-30 06:29:37,250 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:29:37,251 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,251 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:37,251 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:29:37,251 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,251 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,252 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,252 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: <table: 34 bytes>
+2025-09-30 06:29:37,252 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 214 - value: b'2024:05:29 09:49:06\x00'
+2025-09-30 06:29:37,252 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xec'
+2025-09-30 06:29:37,434 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:37,434 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,435 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,435 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,435 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:37,435 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:06:08 17:35:28\x00'
+2025-09-30 06:29:37,435 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:37,543 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x07\x80'
+2025-09-30 06:29:37,543 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x048'
+2025-09-30 06:29:37,544 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:29:37,545 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,546 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:37,546 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:29:37,546 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,546 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,547 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,547 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: <table: 34 bytes>
+2025-09-30 06:29:37,547 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 214 - value: b'2024:08:26 10:22:46\x00'
+2025-09-30 06:29:37,547 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xec'
+2025-09-30 06:29:37,651 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x07\x80'
+2025-09-30 06:29:37,651 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x048'
+2025-09-30 06:29:37,652 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:29:37,652 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,652 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:37,653 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:29:37,653 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,653 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,654 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,654 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: <table: 34 bytes>
+2025-09-30 06:29:37,654 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 214 - value: b'2024:08:29 11:41:46\x00'
+2025-09-30 06:29:37,654 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xec'
+2025-09-30 06:29:37,837 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:37,838 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,838 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,838 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,838 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:37,838 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:06:08 16:59:51\x00'
+2025-09-30 06:29:37,839 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:37,940 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:37,940 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,940 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:37,941 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:37,941 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:37,941 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:06:11 09:41:51\x00'
+2025-09-30 06:29:37,941 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:38,044 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:38,045 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,046 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,046 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:38,046 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:38,047 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:06:12 11:53:11\x00'
+2025-09-30 06:29:38,047 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:38,142 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:38,142 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,143 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,143 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:38,143 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:38,143 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:06:12 18:15:11\x00'
+2025-09-30 06:29:38,143 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:38,251 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:38,251 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,251 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,252 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:38,252 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:38,252 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:06:18 09:23:19\x00'
+2025-09-30 06:29:38,252 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:38,354 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:38,354 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,354 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,355 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:38,355 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:38,355 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:07:13 17:08:43\x00'
+2025-09-30 06:29:38,355 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:38,506 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:38,507 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,508 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,508 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:38,508 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:38,509 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:07:09 12:29:08\x00'
+2025-09-30 06:29:38,509 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:38,686 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:38,687 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,687 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,687 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:38,688 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:38,688 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:07:10 15:58:21\x00'
+2025-09-30 06:29:38,689 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:38,809 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:38,809 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,809 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,810 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:38,810 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:38,810 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:07:16 13:32:19\x00'
+2025-09-30 06:29:38,810 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:38,907 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:38,907 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,907 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,907 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:38,908 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:38,908 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:07:25 14:04:22\x00'
+2025-09-30 06:29:38,908 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:38,998 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:38,999 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,999 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:38,999 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:38,999 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:39,000 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:08:03 12:39:04\x00'
+2025-09-30 06:29:39,000 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:39,093 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:39,093 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,093 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,094 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:39,094 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:39,096 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:09:14 09:46:32\x00'
+2025-09-30 06:29:39,096 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:39,313 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:39,313 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,313 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,314 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:39,314 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:39,314 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:08:21 17:53:59\x00'
+2025-09-30 06:29:39,314 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:39,434 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:39,434 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,435 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,435 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:39,435 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:39,435 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:08:25 11:31:07\x00'
+2025-09-30 06:29:39,436 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:39,519 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:39,519 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,519 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,520 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:39,520 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:39,520 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:09:04 09:00:32\x00'
+2025-09-30 06:29:39,520 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:39,622 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:39,622 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,623 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,623 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:39,623 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:39,623 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:09:04 09:10:06\x00'
+2025-09-30 06:29:39,624 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:39,724 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:39,725 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,725 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,725 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:39,725 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:39,726 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:09:10 11:26:51\x00'
+2025-09-30 06:29:39,726 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:39,825 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:39,825 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,825 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,826 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:39,826 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:39,826 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:09:21 15:43:10\x00'
+2025-09-30 06:29:39,826 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:39,925 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:39,925 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,925 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:39,926 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:39,926 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:39,926 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:09:21 15:40:50\x00'
+2025-09-30 06:29:39,926 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:40,033 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x07\x80'
+2025-09-30 06:29:40,034 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x048'
+2025-09-30 06:29:40,034 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:29:40,034 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:40,034 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:40,035 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:29:40,035 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:40,035 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:40,035 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:40,035 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: <table: 34 bytes>
+2025-09-30 06:29:40,036 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 214 - value: b'2024:10:01 18:33:42\x00'
+2025-09-30 06:29:40,036 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xec'
+2025-09-30 06:29:40,136 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:40,136 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:40,136 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:40,136 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:40,137 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:40,137 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:10:04 10:48:51\x00'
+2025-09-30 06:29:40,137 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:41,905 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:29:41,906 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:29:41,906 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:29:41,906 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:29:41,906 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:29:44,538 - INFO - 172.18.0.1 - - [30/Sep/2025 06:29:44] "POST /search HTTP/1.1" 200 -
+2025-09-30 06:29:45,245 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:45,246 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:29:45,246 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:29:45,246 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:45,247 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:45,247 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2025:07:17 15:38:48\x00'
+2025-09-30 06:29:45,247 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:45,470 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:45,471 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:29:45,471 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:29:45,471 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:45,471 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:45,471 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2025:07:17 17:50:09\x00'
+2025-09-30 06:29:45,472 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:45,610 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:45,614 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:29:45,614 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:29:45,614 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:45,615 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:45,615 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2025:07:17 17:56:29\x00'
+2025-09-30 06:29:45,615 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:46,002 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:46,003 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:46,003 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:46,005 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:46,005 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: <table: 34 bytes>
+2025-09-30 06:29:46,007 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 148 - value: b'2024:02:24 15:54:40\x00'
+2025-09-30 06:29:46,007 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa8'
+2025-09-30 06:29:57,680 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x03*'
+2025-09-30 06:29:57,680 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x02\x1c'
+2025-09-30 06:29:57,680 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:29:57,681 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:57,681 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:29:57,681 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:29:57,681 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:57,681 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:29:57,682 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:29:57,682 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:29:57,682 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 209 - value: b'2018:09:14 15:21:19\x00'
+2025-09-30 06:29:57,682 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xe8'
+2025-09-30 06:30:01,786 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:01,786 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:01,787 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:01,787 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:01,787 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:01,787 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:01,788 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:01,788 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:01,788 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:01,789 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CS6 (Windows)\x00'
+2025-09-30 06:30:01,789 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 210 - value: b'2015:03:12 11:39:29\x00'
+2025-09-30 06:30:01,789 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\xe8\x00\x00\x00'
+2025-09-30 06:30:02,506 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'D\n'
+2025-09-30 06:30:02,506 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\xdc\x0b'
+2025-09-30 06:30:02,506 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:02,506 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:02,506 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:02,507 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:02,507 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:02,507 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:02,507 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:02,507 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:02,507 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 209 - value: b'2016:08:01 18:25:53\x00'
+2025-09-30 06:30:02,508 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\xe8\x00\x00\x00'
+2025-09-30 06:30:02,752 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:02,753 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:02,753 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:02,753 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:02,753 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:02,754 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:02,754 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:02,754 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:02,754 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:02,754 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CS6 (Windows)\x00'
+2025-09-30 06:30:02,754 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 210 - value: b'2014:03:20 12:03:39\x00'
+2025-09-30 06:30:02,755 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\xe8\x00\x00\x00'
+2025-09-30 06:30:04,081 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:04,082 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:04,082 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:04,083 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:04,083 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:30:04,187 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:04,187 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:04,188 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:04,188 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:04,188 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:30:04,287 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:04,288 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:04,288 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:04,288 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:04,289 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:30:04,388 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:04,388 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:04,389 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:04,389 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:04,389 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:30:04,481 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:04,481 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:04,481 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:04,481 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:04,481 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:30:04,582 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:04,583 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:04,583 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:04,583 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:04,584 - DEBUG - STREAM b'IDAT' 91 24446
+2025-09-30 06:30:04,665 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:04,665 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:04,665 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:04,665 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:04,666 - DEBUG - STREAM b'IDAT' 91 24446
+2025-09-30 06:30:04,755 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:04,755 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:04,756 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:04,756 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:04,756 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:30:07,170 - INFO - 172.18.0.1 - - [30/Sep/2025 06:30:07] "POST /search HTTP/1.1" 200 -
+2025-09-30 06:30:12,521 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:12,522 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:12,522 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:12,522 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:12,523 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:12,523 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:12,523 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:12,524 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:12,524 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:12,524 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:12,525 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 209 - value: b'2016:08:01 18:31:32\x00'
+2025-09-30 06:30:12,525 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\xe8\x00\x00\x00'
+2025-09-30 06:30:12,623 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x0f\xa0'
+2025-09-30 06:30:12,623 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x0f\xa0'
+2025-09-30 06:30:12,623 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 266 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:30:12,623 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:12,624 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 70 - Data Location: 272 - value: b'NIKON CORPORATION\x00'
+2025-09-30 06:30:12,624 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 82 - Data Location: 290 - value: b'NIKON D800E\x00'
+2025-09-30 06:30:12,624 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:12,624 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:12,624 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 118 - Data Location: 302 - value: b"\x00=\t\x00\x00\x00'\x10"
+2025-09-30 06:30:12,624 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 130 - Data Location: 310 - value: b"\x00=\t\x00\x00\x00'\x10"
+2025-09-30 06:30:12,625 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:12,625 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 154 - Data Location: 318 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:12,625 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 166 - Data Location: 347 - value: b'2016:08:01 18:33:03\x00'
+2025-09-30 06:30:12,626 - DEBUG - tag: Artist (315) - type: string (2) Tag Location: 178 - Data Location: 367 - value: b'Umesh Walwaikar\x00'
+2025-09-30 06:30:12,627 - DEBUG - tag: WhitePoint (318) - type: rational (5) Tag Location: 190 - Data Location: 383 - value: b'\x00\x00\x019\x00\x00\x03\xe8\x00\x00\x01I\x00\x00\x03\xe8'
+2025-09-30 06:30:12,627 - DEBUG - tag: PrimaryChromaticities (319) - type: rational (5) Tag Location: 202 - Data Location: 399 - value: <table: 48 bytes>
+2025-09-30 06:30:12,627 - DEBUG - tag: YCbCrCoefficients (529) - type: rational (5) Tag Location: 214 - Data Location: 447 - value: b'\x00\x00\x01+\x00\x00\x03\xe8\x00\x00\x02K\x00\x00\x03\xe8\x00\x00\x00r\x00\x00\x03\xe8'
+2025-09-30 06:30:12,627 - DEBUG - tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:12,628 - DEBUG - tag: Copyright (33432) - type: string (2) Tag Location: 238 - Data Location: 471 - value: <table: 39 bytes>
+2025-09-30 06:30:12,628 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x02\x00'
+2025-09-30 06:30:12,628 - DEBUG - tag: GPSInfoIFD (34853) - type: long (4) - value: b'\x00\x00\x04|'
+2025-09-30 06:30:12,719 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x0f\xa0'
+2025-09-30 06:30:12,719 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x0f\xa0'
+2025-09-30 06:30:12,719 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 266 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:30:12,719 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:12,719 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 70 - Data Location: 272 - value: b'NIKON CORPORATION\x00'
+2025-09-30 06:30:12,720 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 82 - Data Location: 290 - value: b'NIKON D800E\x00'
+2025-09-30 06:30:12,720 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:12,720 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:12,720 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 118 - Data Location: 302 - value: b"\x00=\t\x00\x00\x00'\x10"
+2025-09-30 06:30:12,720 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 130 - Data Location: 310 - value: b"\x00=\t\x00\x00\x00'\x10"
+2025-09-30 06:30:12,721 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:12,721 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 154 - Data Location: 318 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:12,721 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 166 - Data Location: 347 - value: b'2016:08:01 18:33:33\x00'
+2025-09-30 06:30:12,721 - DEBUG - tag: Artist (315) - type: string (2) Tag Location: 178 - Data Location: 367 - value: b'Umesh Walwaikar\x00'
+2025-09-30 06:30:12,721 - DEBUG - tag: WhitePoint (318) - type: rational (5) Tag Location: 190 - Data Location: 383 - value: b'\x00\x00\x019\x00\x00\x03\xe8\x00\x00\x01I\x00\x00\x03\xe8'
+2025-09-30 06:30:12,721 - DEBUG - tag: PrimaryChromaticities (319) - type: rational (5) Tag Location: 202 - Data Location: 399 - value: <table: 48 bytes>
+2025-09-30 06:30:12,722 - DEBUG - tag: YCbCrCoefficients (529) - type: rational (5) Tag Location: 214 - Data Location: 447 - value: b'\x00\x00\x01+\x00\x00\x03\xe8\x00\x00\x02K\x00\x00\x03\xe8\x00\x00\x00r\x00\x00\x03\xe8'
+2025-09-30 06:30:12,722 - DEBUG - tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:12,722 - DEBUG - tag: Copyright (33432) - type: string (2) Tag Location: 238 - Data Location: 471 - value: <table: 39 bytes>
+2025-09-30 06:30:12,722 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x02\x00'
+2025-09-30 06:30:12,722 - DEBUG - tag: GPSInfoIFD (34853) - type: long (4) - value: b'\x00\x00\x04|'
+2025-09-30 06:30:12,804 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\xa0\x0f'
+2025-09-30 06:30:12,804 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\xa0\x0f'
+2025-09-30 06:30:12,804 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 206 - value: b'\x08\x00\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:12,804 - DEBUG - tag: Compression (259) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:12,805 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:12,805 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 82 - Data Location: 214 - value: b'Canon\x00'
+2025-09-30 06:30:12,805 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 94 - Data Location: 220 - value: b'Canon EOS 5D Mark III\x00'
+2025-09-30 06:30:12,805 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:12,805 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x04\x00'
+2025-09-30 06:30:12,806 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 130 - Data Location: 242 - value: b"\xc0\xc6-\x00\x10'\x00\x00"
+2025-09-30 06:30:12,806 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 142 - Data Location: 250 - value: b"\xc0\xc6-\x00\x10'\x00\x00"
+2025-09-30 06:30:12,806 - DEBUG - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:12,806 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:12,806 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 178 - Data Location: 258 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:12,807 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 190 - Data Location: 287 - value: b'2016:08:01 18:34:11\x00'
+2025-09-30 06:30:12,807 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'4\x01\x00\x00'
+2025-09-30 06:30:12,892 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\xa0\x0f'
+2025-09-30 06:30:12,893 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\xa0\x0f'
+2025-09-30 06:30:12,894 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 206 - value: b'\x08\x00\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:12,894 - DEBUG - tag: Compression (259) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:12,894 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:12,894 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 82 - Data Location: 214 - value: b'Canon\x00'
+2025-09-30 06:30:12,895 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 94 - Data Location: 220 - value: b'Canon EOS 5D Mark III\x00'
+2025-09-30 06:30:12,895 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:12,895 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x04\x00'
+2025-09-30 06:30:12,895 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 130 - Data Location: 242 - value: b"\xc0\xc6-\x00\x10'\x00\x00"
+2025-09-30 06:30:12,895 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 142 - Data Location: 250 - value: b"\xc0\xc6-\x00\x10'\x00\x00"
+2025-09-30 06:30:12,896 - DEBUG - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:12,896 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:12,896 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 178 - Data Location: 258 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:12,896 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 190 - Data Location: 287 - value: b'2016:08:01 18:27:37\x00'
+2025-09-30 06:30:12,897 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'4\x01\x00\x00'
+2025-09-30 06:30:12,983 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x01\xc8'
+2025-09-30 06:30:12,983 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x01\x97'
+2025-09-30 06:30:12,983 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:30:12,983 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:12,983 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:12,984 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:12,984 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:12,984 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:12,984 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:12,984 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:12,984 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 209 - value: b'2016:08:01 18:43:22\x00'
+2025-09-30 06:30:12,985 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xe8'
+2025-09-30 06:30:13,181 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x01['
+2025-09-30 06:30:13,181 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x01\x1a'
+2025-09-30 06:30:13,182 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:30:13,182 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:13,182 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:13,182 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:13,183 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:13,183 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:13,183 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:13,184 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:13,184 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 209 - value: b'2016:08:01 18:43:12\x00'
+2025-09-30 06:30:13,184 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xe8'
+2025-09-30 06:30:13,370 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'h\r'
+2025-09-30 06:30:13,370 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'h\r'
+2025-09-30 06:30:13,370 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 458 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:13,370 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,370 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 70 - Data Location: 464 - value: b'Canon\x00'
+2025-09-30 06:30:13,371 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 82 - Data Location: 470 - value: b'Canon EOS 5D Mark III\x00'
+2025-09-30 06:30:13,371 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:13,371 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:13,371 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 118 - Data Location: 492 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:13,371 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 130 - Data Location: 500 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:13,372 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,372 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 154 - Data Location: 508 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:13,372 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 166 - Data Location: 537 - value: b'2016:08:01 12:59:48\x00'
+2025-09-30 06:30:13,372 - DEBUG - tag: ExposureTime (33434) - type: rational (5) Tag Location: 178 - Data Location: 557 - value: b'\x01\x00\x00\x00}\x00\x00\x00'
+2025-09-30 06:30:13,373 - DEBUG - tag: FNumber (33437) - type: rational (5) Tag Location: 190 - Data Location: 565 - value: b'\x10\x00\x00\x00\x01\x00\x00\x00'
+2025-09-30 06:30:13,373 - DEBUG - tag: ExposureProgram (34850) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:13,373 - DEBUG - tag: ISOSpeedRatings (34855) - type: short (3) - value: b'd\x00'
+2025-09-30 06:30:13,373 - DEBUG - tag: ExifVersion (36864) - type: undefined (7) - value: b'0220'
+2025-09-30 06:30:13,373 - DEBUG - tag: DateTimeOriginal (36867) - type: string (2) Tag Location: 238 - Data Location: 573 - value: b'2015:09:30 15:46:22\x00'
+2025-09-30 06:30:13,374 - DEBUG - tag: DateTimeDigitized (36868) - type: string (2) Tag Location: 250 - Data Location: 593 - value: b'2015:09:30 15:46:22\x00'
+2025-09-30 06:30:13,374 - DEBUG - tag: ShutterSpeedValue (37377) - type: signed rational (10) Tag Location: 262 - Data Location: 613 - value: b'\x00\x00\x07\x00\x00\x00\x01\x00'
+2025-09-30 06:30:13,374 - DEBUG - tag: ApertureValue (37378) - type: rational (5) Tag Location: 274 - Data Location: 621 - value: b'\x00\x00\x08\x00\x00\x00\x01\x00'
+2025-09-30 06:30:13,374 - DEBUG - tag: ExposureBiasValue (37380) - type: signed rational (10) Tag Location: 286 - Data Location: 629 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+2025-09-30 06:30:13,374 - DEBUG - tag: SubjectDistance (37382) - type: rational (5) Tag Location: 298 - Data Location: 637 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+2025-09-30 06:30:13,375 - DEBUG - tag: MeteringMode (37383) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:13,375 - DEBUG - tag: Flash (37385) - type: short (3) - value: b'\x10\x00'
+2025-09-30 06:30:13,376 - DEBUG - tag: FocalLength (37386) - type: rational (5) Tag Location: 334 - Data Location: 645 - value: b'i\x00\x00\x00\x01\x00\x00\x00'
+2025-09-30 06:30:13,377 - DEBUG - tag: UserComment (37510) - type: undefined (7) Tag Location: 346 - Data Location: 653 - value: <table: 264 bytes>
+2025-09-30 06:30:13,377 - DEBUG - tag: PixelXDimension (40962) - type: short (3) - value: b'h\r'
+2025-09-30 06:30:13,377 - DEBUG - tag: PixelYDimension (40963) - type: short (3) - value: b'h\r'
+2025-09-30 06:30:13,377 - DEBUG - tag: FocalPlaneResolutionUnit (41488) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,378 - DEBUG - tag: FileSource (41728) - type: undefined (7) - value: b'\x03'
+2025-09-30 06:30:13,378 - DEBUG - tag: SceneType (41729) - type: undefined (7) - value: b'\x01'
+2025-09-30 06:30:13,378 - DEBUG - tag: ExposureMode (41986) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:13,378 - DEBUG - tag: WhiteBalance (41987) - type: short (3) - value: b'\x00\x00'
+2025-09-30 06:30:13,378 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x98\x03\x00\x00'
+2025-09-30 06:30:13,379 - DEBUG - tag: GPSInfoIFD (34853) - type: long (4) - value: b'\x0c\x05\x00\x00'
+2025-09-30 06:30:13,571 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\xf0\x15'
+2025-09-30 06:30:13,571 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\xa0\x0e'
+2025-09-30 06:30:13,571 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 206 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:13,571 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,572 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 70 - Data Location: 212 - value: b'Canon\x00'
+2025-09-30 06:30:13,572 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 82 - Data Location: 218 - value: b'Canon EOS 5D Mark II\x00'
+2025-09-30 06:30:13,572 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:13,572 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:13,573 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 118 - Data Location: 239 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:13,573 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 130 - Data Location: 247 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:13,573 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,573 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 154 - Data Location: 255 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:13,573 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 166 - Data Location: 284 - value: b'2016:08:01 12:59:34\x00'
+2025-09-30 06:30:13,573 - DEBUG - tag: YCbCrPositioning (531) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,574 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'0\x01\x00\x00'
+2025-09-30 06:30:13,574 - DEBUG - tag: GPSInfoIFD (34853) - type: long (4) - value: b'X\x04\x00\x00'
+2025-09-30 06:30:13,664 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\xf0\x15'
+2025-09-30 06:30:13,664 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\xa0\x0e'
+2025-09-30 06:30:13,664 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 206 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:13,665 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,665 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 70 - Data Location: 212 - value: b'Canon\x00'
+2025-09-30 06:30:13,665 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 82 - Data Location: 218 - value: b'Canon EOS 5D Mark II\x00'
+2025-09-30 06:30:13,665 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:13,666 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:13,666 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 118 - Data Location: 239 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:13,666 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 130 - Data Location: 247 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:13,666 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,667 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 154 - Data Location: 255 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:13,667 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 166 - Data Location: 284 - value: b'2016:08:01 18:29:30\x00'
+2025-09-30 06:30:13,667 - DEBUG - tag: YCbCrPositioning (531) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,667 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'0\x01\x00\x00'
+2025-09-30 06:30:13,668 - DEBUG - tag: GPSInfoIFD (34853) - type: long (4) - value: b'X\x04\x00\x00'
+2025-09-30 06:30:13,762 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:13,763 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x01\xae'
+2025-09-30 06:30:13,763 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:30:13,763 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:13,763 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:13,764 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:13,764 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:13,764 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:13,764 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:13,764 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:13,765 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 209 - value: b'2016:08:01 18:43:51\x00'
+2025-09-30 06:30:13,765 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xe8'
+2025-09-30 06:30:13,954 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x01\xbb'
+2025-09-30 06:30:13,955 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x01\x95'
+2025-09-30 06:30:13,955 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:30:13,955 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:13,955 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:13,956 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:13,956 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:13,956 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:13,956 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:13,956 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:13,957 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 209 - value: b'2016:08:01 18:44:08\x00'
+2025-09-30 06:30:13,957 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xe8'
+2025-09-30 06:30:14,187 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x02@'
+2025-09-30 06:30:14,187 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x02\n'
+2025-09-30 06:30:14,188 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:30:14,188 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:14,188 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:14,188 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:14,189 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:14,189 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\x0e\xa6\x00\x00\x00'\x10"
+2025-09-30 06:30:14,189 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:14,189 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 06:30:14,189 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 209 - value: b'2016:08:01 18:44:27\x00'
+2025-09-30 06:30:14,190 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xe8'
+2025-09-30 06:30:14,362 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:14,362 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:14,362 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:14,363 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:14,363 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:14,363 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:14,363 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:14,363 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:14,364 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:14,364 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CS6 (Windows)\x00'
+2025-09-30 06:30:14,364 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 210 - value: b'2015:12:30 17:39:50\x00'
+2025-09-30 06:30:14,364 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\xe8\x00\x00\x00'
+2025-09-30 06:30:18,285 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:18,285 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:18,285 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:18,286 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:18,286 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:18,286 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:18,286 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:18,286 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:18,287 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:18,287 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CS6 (Windows)\x00'
+2025-09-30 06:30:18,287 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 210 - value: b'2014:01:30 14:54:00\x00'
+2025-09-30 06:30:18,287 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\xe8\x00\x00\x00'
+2025-09-30 06:30:18,902 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:18,902 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:30:18,903 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:30:18,903 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:18,903 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: b'Adobe Photoshop CS6 (Windows)\x00'
+2025-09-30 06:30:18,903 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 144 - value: b'2016:03:12 12:24:24\x00'
+2025-09-30 06:30:18,903 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa4'
+2025-09-30 06:30:18,990 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:18,990 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 98 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:30:18,991 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 106 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 06:30:18,991 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:18,991 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 114 - value: b'Adobe Photoshop CS6 (Windows)\x00'
+2025-09-30 06:30:18,992 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 82 - Data Location: 144 - value: b'2016:03:12 12:57:39\x00'
+2025-09-30 06:30:18,992 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa4'
+2025-09-30 06:30:19,662 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:19,662 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'R\x03'
+2025-09-30 06:30:19,662 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x08\x00\x08\x00\x08\x00'
+2025-09-30 06:30:19,662 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:19,663 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+2025-09-30 06:30:19,663 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+2025-09-30 06:30:19,663 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:19,663 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x80\xfc\n\x00\x10'\x00\x00"
+2025-09-30 06:30:19,663 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+2025-09-30 06:30:19,663 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CS6 (Windows)\x00'
+2025-09-30 06:30:19,664 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 210 - value: b'2015:05:18 11:41:35\x00'
+2025-09-30 06:30:19,664 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\xe8\x00\x00\x00'
+2025-09-30 06:30:30,411 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:30,412 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:30,412 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:30,412 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:30,412 - DEBUG - STREAM b'IDAT' 91 40221
+2025-09-30 06:30:30,485 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:30,485 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:30,485 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:30,485 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:30,486 - DEBUG - STREAM b'IDAT' 91 48552
+2025-09-30 06:30:30,561 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:30,562 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:30,562 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:30,562 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:30,562 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:30:30,637 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:30,637 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:30,638 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:30,638 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:30,639 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:30:30,719 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:30,719 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:30,720 - DEBUG - STREAM b'gAMA' 54 4
+2025-09-30 06:30:30,720 - DEBUG - STREAM b'pHYs' 70 9
+2025-09-30 06:30:30,720 - DEBUG - STREAM b'IDAT' 91 65445
+2025-09-30 06:30:36,888 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\t-'
+2025-09-30 06:30:36,888 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\t-'
+2025-09-30 06:30:36,888 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 218 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 06:30:36,889 - DEBUG - tag: Compression (259) - type: short (3) - value: b'\x00\x05'
+2025-09-30 06:30:36,889 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:36,889 - DEBUG - tag: ImageDescription (270) - type: string (2) Tag Location: 82 - Data Location: 224 - value: b'                               \x00'
+2025-09-30 06:30:36,889 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 94 - Data Location: 256 - value: b'Canon\x00'
+2025-09-30 06:30:36,890 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 106 - Data Location: 262 - value: b'Canon PowerShot SX720 HS\x00'
+2025-09-30 06:30:36,890 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:36,890 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 06:30:36,890 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 142 - Data Location: 287 - value: b"\x00\x1bw@\x00\x00'\x10"
+2025-09-30 06:30:36,891 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 154 - Data Location: 295 - value: b"\x00\x1bw@\x00\x00'\x10"
+2025-09-30 06:30:36,891 - DEBUG - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x00\x01'
+2025-09-30 06:30:36,891 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 06:30:36,891 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 190 - Data Location: 303 - value: b'Adobe Photoshop 24.0 (Windows)\x00'
+2025-09-30 06:30:36,891 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 202 - Data Location: 334 - value: b'2022:12:10 11:29:59\x00'
+2025-09-30 06:30:36,891 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01d'
+2025-09-30 06:30:37,186 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:37,186 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:37,186 - DEBUG - STREAM b'eXIf' 54 120
+2025-09-30 06:30:37,187 - DEBUG - STREAM b'pHYs' 186 9
+2025-09-30 06:30:37,187 - DEBUG - STREAM b'iDOT' 207 28
+2025-09-30 06:30:37,187 - DEBUG - b'iDOT' 207 28 (unknown)
+2025-09-30 06:30:37,188 - DEBUG - STREAM b'IDAT' 247 16384
+2025-09-30 06:30:37,380 - DEBUG - STREAM b'IHDR' 16 13
+2025-09-30 06:30:37,380 - DEBUG - STREAM b'sRGB' 41 1
+2025-09-30 06:30:37,381 - DEBUG - STREAM b'eXIf' 54 120
+2025-09-30 06:30:37,381 - DEBUG - STREAM b'pHYs' 186 9
+2025-09-30 06:30:37,381 - DEBUG - STREAM b'iDOT' 207 28
+2025-09-30 06:30:37,382 - DEBUG - b'iDOT' 207 28 (unknown)
+2025-09-30 06:30:37,382 - DEBUG - STREAM b'IDAT' 247 16384
+2025-09-30 06:30:37,885 - DEBUG - Indexer state saved
+2025-09-30 06:30:37,885 - INFO - 172.18.0.1 - - [30/Sep/2025 06:30:37] "POST /train HTTP/1.1" 200 -
+2025-09-30 06:45:37,441 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "POST /search HTTP/1.1" 200 -
+2025-09-30 06:45:37,482 - DEBUG - Attempting to serve image: BN0035.jpg
+2025-09-30 06:45:37,482 - DEBUG - Attempting to serve image: BN0029.jpg
+2025-09-30 06:45:37,483 - DEBUG - Attempting to serve image: BN0032.jpg
+2025-09-30 06:45:37,484 - DEBUG - Attempting to serve image: BN0030.jpg
+2025-09-30 06:45:37,486 - DEBUG - Attempting to serve image: BN0031.jpg
+2025-09-30 06:45:37,488 - DEBUG - Attempting to serve image: BN0034.jpg
+2025-09-30 06:45:37,490 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0035.jpg
+2025-09-30 06:45:37,490 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0029.jpg
+2025-09-30 06:45:37,491 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0032.jpg
+2025-09-30 06:45:37,492 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0030.jpg
+2025-09-30 06:45:37,493 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0031.jpg
+2025-09-30 06:45:37,494 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0034.jpg
+2025-09-30 06:45:37,494 - DEBUG - File exists: True
+2025-09-30 06:45:37,495 - DEBUG - File exists: True
+2025-09-30 06:45:37,495 - DEBUG - File exists: True
+2025-09-30 06:45:37,495 - DEBUG - File exists: True
+2025-09-30 06:45:37,496 - DEBUG - File exists: True
+2025-09-30 06:45:37,496 - DEBUG - File exists: True
+2025-09-30 06:45:37,510 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0035.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,513 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0029.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,513 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0032.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,524 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0030.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,542 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0031.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,543 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0034.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,600 - DEBUG - Attempting to serve image: BN0004.JPG
+2025-09-30 06:45:37,608 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0004.JPG
+2025-09-30 06:45:37,618 - DEBUG - File exists: True
+2025-09-30 06:45:37,637 - DEBUG - Attempting to serve image: PS0009E.jpg
+2025-09-30 06:45:37,638 - DEBUG - Attempting to serve image: BN0021.jpg
+2025-09-30 06:45:37,657 - DEBUG - Attempting to serve image: BN0028.jpg
+2025-09-30 06:45:37,671 - DEBUG - Attempting to serve image: LR0016.jpg
+2025-09-30 06:45:37,678 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0021.jpg
+2025-09-30 06:45:37,681 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0009E.jpg
+2025-09-30 06:45:37,681 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0028.jpg
+2025-09-30 06:45:37,689 - DEBUG - File exists: True
+2025-09-30 06:45:37,691 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0016.jpg
+2025-09-30 06:45:37,693 - DEBUG - File exists: True
+2025-09-30 06:45:37,693 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0004.JPG HTTP/1.1" 200 -
+2025-09-30 06:45:37,694 - DEBUG - File exists: True
+2025-09-30 06:45:37,697 - DEBUG - File exists: True
+2025-09-30 06:45:37,704 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0021.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,708 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0028.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,721 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/PS0009E.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,723 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/LR0016.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,742 - DEBUG - Attempting to serve image: BN0003.jpg
+2025-09-30 06:45:37,748 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0003.jpg
+2025-09-30 06:45:37,753 - DEBUG - Attempting to serve image: BN0002.JPG
+2025-09-30 06:45:37,754 - DEBUG - Attempting to serve image: BN0015.jpg
+2025-09-30 06:45:37,761 - DEBUG - File exists: True
+2025-09-30 06:45:37,761 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0002.JPG
+2025-09-30 06:45:37,763 - DEBUG - Attempting to serve image: LR0019.jpg
+2025-09-30 06:45:37,763 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0015.jpg
+2025-09-30 06:45:37,763 - DEBUG - Attempting to serve image: BN0023.jpg
+2025-09-30 06:45:37,764 - DEBUG - File exists: True
+2025-09-30 06:45:37,766 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0019.jpg
+2025-09-30 06:45:37,768 - DEBUG - File exists: True
+2025-09-30 06:45:37,771 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0023.jpg
+2025-09-30 06:45:37,772 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0003.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,773 - DEBUG - File exists: True
+2025-09-30 06:45:37,774 - DEBUG - File exists: True
+2025-09-30 06:45:37,781 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0002.JPG HTTP/1.1" 200 -
+2025-09-30 06:45:37,786 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0015.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,802 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/BN0023.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:37,816 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:37] "GET /uploads/LR0019.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:46,531 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:46] "POST /search HTTP/1.1" 200 -
+2025-09-30 06:45:58,993 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:58] "POST /search HTTP/1.1" 200 -
+2025-09-30 06:45:59,025 - DEBUG - Attempting to serve image: PS0024.jpg
+2025-09-30 06:45:59,027 - DEBUG - Attempting to serve image: ER0001.jpg
+2025-09-30 06:45:59,027 - DEBUG - Attempting to serve image: PS0004P.jpg
+2025-09-30 06:45:59,032 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0024.jpg
+2025-09-30 06:45:59,033 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0001.jpg
+2025-09-30 06:45:59,034 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0004P.jpg
+2025-09-30 06:45:59,035 - DEBUG - File exists: True
+2025-09-30 06:45:59,035 - DEBUG - File exists: True
+2025-09-30 06:45:59,036 - DEBUG - File exists: True
+2025-09-30 06:45:59,042 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:59] "GET /uploads/PS0024.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:59,043 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:59] "GET /uploads/ER0001.jpg HTTP/1.1" 200 -
+2025-09-30 06:45:59,044 - INFO - 172.18.0.1 - - [30/Sep/2025 06:45:59] "GET /uploads/PS0004P.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:05,773 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:05] "POST /search HTTP/1.1" 200 -
+2025-09-30 06:46:10,556 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:10] "POST /search HTTP/1.1" 200 -
+2025-09-30 06:46:10,593 - DEBUG - Attempting to serve image: GR0023.jpg
+2025-09-30 06:46:10,599 - DEBUG - Attempting to serve image: ASAC00256.jpg
+2025-09-30 06:46:10,599 - DEBUG - Attempting to serve image: PS0004E.jpg
+2025-09-30 06:46:10,600 - DEBUG - Attempting to serve image: LR0005.jpg
+2025-09-30 06:46:10,602 - DEBUG - Attempting to serve image: ER0018.jpg
+2025-09-30 06:46:10,603 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0023.jpg
+2025-09-30 06:46:10,604 - DEBUG - Attempting to serve image: PS0005E.jpg
+2025-09-30 06:46:10,604 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00256.jpg
+2025-09-30 06:46:10,605 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0004E.jpg
+2025-09-30 06:46:10,606 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0005.jpg
+2025-09-30 06:46:10,607 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0018.jpg
+2025-09-30 06:46:10,608 - DEBUG - File exists: True
+2025-09-30 06:46:10,608 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0005E.jpg
+2025-09-30 06:46:10,609 - DEBUG - File exists: True
+2025-09-30 06:46:10,609 - DEBUG - File exists: True
+2025-09-30 06:46:10,610 - DEBUG - File exists: True
+2025-09-30 06:46:10,610 - DEBUG - File exists: True
+2025-09-30 06:46:10,611 - DEBUG - File exists: True
+2025-09-30 06:46:10,620 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:10] "GET /uploads/GR0023.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:10,621 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:10] "GET /uploads/PS0004E.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:10,622 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:10] "GET /uploads/ASAC00256.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:10,627 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:10] "GET /uploads/PS0005E.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:10,632 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:10] "GET /uploads/LR0005.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:10,639 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:10] "GET /uploads/ER0018.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,471 - DEBUG - Attempting to serve image: LR0011.jpg
+2025-09-30 06:46:11,477 - DEBUG - Attempting to serve image: MLR00001.jpeg
+2025-09-30 06:46:11,478 - DEBUG - Attempting to serve image: PS0005P.jpg
+2025-09-30 06:46:11,479 - DEBUG - Attempting to serve image: GR0002.jpg
+2025-09-30 06:46:11,483 - DEBUG - Attempting to serve image: MNK00007E.jpeg
+2025-09-30 06:46:11,483 - DEBUG - Attempting to serve image: ASAC00461.jpg
+2025-09-30 06:46:11,484 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0011.jpg
+2025-09-30 06:46:11,485 - DEBUG - Full path to image: /app/StyleImages/ASAC/MLR00001.jpeg
+2025-09-30 06:46:11,487 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0005P.jpg
+2025-09-30 06:46:11,488 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0002.jpg
+2025-09-30 06:46:11,489 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00461.jpg
+2025-09-30 06:46:11,489 - DEBUG - Full path to image: /app/StyleImages/ASAC/MNK00007E.jpeg
+2025-09-30 06:46:11,490 - DEBUG - File exists: True
+2025-09-30 06:46:11,491 - DEBUG - File exists: True
+2025-09-30 06:46:11,492 - DEBUG - File exists: True
+2025-09-30 06:46:11,492 - DEBUG - File exists: True
+2025-09-30 06:46:11,492 - DEBUG - File exists: True
+2025-09-30 06:46:11,492 - DEBUG - File exists: True
+2025-09-30 06:46:11,503 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/MLR00001.jpeg HTTP/1.1" 200 -
+2025-09-30 06:46:11,504 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/ASAC00461.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,504 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/MNK00007E.jpeg HTTP/1.1" 200 -
+2025-09-30 06:46:11,505 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/LR0011.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,508 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/GR0002.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,537 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/PS0005P.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,541 - DEBUG - Attempting to serve image: PS0010E.jpg
+2025-09-30 06:46:11,543 - DEBUG - Attempting to serve image: PS0005P-1.jpg
+2025-09-30 06:46:11,543 - DEBUG - Attempting to serve image: PS0003E.jpg
+2025-09-30 06:46:11,554 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0010E.jpg
+2025-09-30 06:46:11,555 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0005P-1.jpg
+2025-09-30 06:46:11,556 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0003E.jpg
+2025-09-30 06:46:11,558 - DEBUG - File exists: True
+2025-09-30 06:46:11,560 - DEBUG - File exists: True
+2025-09-30 06:46:11,561 - DEBUG - File exists: True
+2025-09-30 06:46:11,572 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/PS0005P-1.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,575 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/PS0003E.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,605 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/PS0010E.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,620 - DEBUG - Attempting to serve image: GP0007.jpg
+2025-09-30 06:46:11,621 - DEBUG - Attempting to serve image: ASAC00409.jpg
+2025-09-30 06:46:11,623 - DEBUG - Full path to image: /app/StyleImages/PENDENT/GP0007.jpg
+2025-09-30 06:46:11,624 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00409.jpg
+2025-09-30 06:46:11,625 - DEBUG - File exists: True
+2025-09-30 06:46:11,626 - DEBUG - File exists: True
+2025-09-30 06:46:11,689 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/GP0007.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,689 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/ASAC00409.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,733 - DEBUG - Attempting to serve image: ASAC00361.jpg
+2025-09-30 06:46:11,734 - DEBUG - Attempting to serve image: ER0008.jpg
+2025-09-30 06:46:11,735 - DEBUG - Attempting to serve image: ER0011.jpg
+2025-09-30 06:46:11,736 - DEBUG - Attempting to serve image: MLR00007.jpeg
+2025-09-30 06:46:11,739 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00361.jpg
+2025-09-30 06:46:11,743 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0008.jpg
+2025-09-30 06:46:11,743 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0011.jpg
+2025-09-30 06:46:11,743 - DEBUG - Full path to image: /app/StyleImages/ASAC/MLR00007.jpeg
+2025-09-30 06:46:11,744 - DEBUG - File exists: True
+2025-09-30 06:46:11,750 - DEBUG - File exists: True
+2025-09-30 06:46:11,750 - DEBUG - File exists: True
+2025-09-30 06:46:11,751 - DEBUG - File exists: True
+2025-09-30 06:46:11,808 - DEBUG - Attempting to serve image: ER0022.jpg
+2025-09-30 06:46:11,809 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0022.jpg
+2025-09-30 06:46:11,810 - DEBUG - File exists: True
+2025-09-30 06:46:11,885 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/ER0022.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,886 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/MLR00007.jpeg HTTP/1.1" 200 -
+2025-09-30 06:46:11,886 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/ASAC00361.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,887 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/ER0011.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:11,887 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:11] "GET /uploads/ER0008.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:12,056 - DEBUG - Attempting to serve image: GP0024.jpg
+2025-09-30 06:46:12,057 - DEBUG - Attempting to serve image: ASAC00365.jpg
+2025-09-30 06:46:12,057 - DEBUG - Attempting to serve image: MLR00008.jpeg
+2025-09-30 06:46:12,057 - DEBUG - Attempting to serve image: LR0030@C.jpg
+2025-09-30 06:46:12,065 - DEBUG - Full path to image: /app/StyleImages/PENDENT/GP0024.jpg
+2025-09-30 06:46:12,065 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00365.jpg
+2025-09-30 06:46:12,068 - DEBUG - Full path to image: /app/StyleImages/ASAC/MLR00008.jpeg
+2025-09-30 06:46:12,085 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0030@C.jpg
+2025-09-30 06:46:12,087 - DEBUG - File exists: True
+2025-09-30 06:46:12,087 - DEBUG - File exists: True
+2025-09-30 06:46:12,087 - DEBUG - File exists: True
+2025-09-30 06:46:12,091 - DEBUG - File exists: True
+2025-09-30 06:46:12,099 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:12] "GET /uploads/ASAC00365.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:12,104 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:12] "GET /uploads/MLR00008.jpeg HTTP/1.1" 200 -
+2025-09-30 06:46:12,106 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:12] "GET /uploads/LR0030@C.jpg HTTP/1.1" 200 -
+2025-09-30 06:46:12,108 - INFO - 172.18.0.1 - - [30/Sep/2025 06:46:12] "GET /uploads/GP0024.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,413 - DEBUG - tag: ImageWidth (256) - type: short (3) - value: b'\x03*'
+2025-09-30 07:29:39,415 - DEBUG - tag: ImageLength (257) - type: short (3) - value: b'\x02\x1c'
+2025-09-30 07:29:39,416 - DEBUG - tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 158 - value: b'\x00\x08\x00\x08\x00\x08'
+2025-09-30 07:29:39,417 - DEBUG - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+2025-09-30 07:29:39,419 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2025-09-30 07:29:39,419 - DEBUG - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+2025-09-30 07:29:39,419 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 94 - Data Location: 164 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 07:29:39,420 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 106 - Data Location: 172 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+2025-09-30 07:29:39,420 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2025-09-30 07:29:39,421 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 130 - Data Location: 180 - value: b'Adobe Photoshop CC (Windows)\x00'
+2025-09-30 07:29:39,421 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 142 - Data Location: 209 - value: b'2018:09:14 15:21:19\x00'
+2025-09-30 07:29:39,421 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xe8'
+2025-09-30 07:29:39,552 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "POST /search HTTP/1.1" 200 -
+2025-09-30 07:29:39,595 - DEBUG - Attempting to serve image: CN00001.jpg
+2025-09-30 07:29:39,597 - DEBUG - Attempting to serve image: CN00019.jpg
+2025-09-30 07:29:39,598 - DEBUG - Attempting to serve image: CN00017.JPG
+2025-09-30 07:29:39,598 - DEBUG - Attempting to serve image: CN00015.jpg
+2025-09-30 07:29:39,600 - DEBUG - Attempting to serve image: CN00018.jpg
+2025-09-30 07:29:39,601 - DEBUG - Attempting to serve image: CN00013.jpg
+2025-09-30 07:29:39,622 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00019.jpg
+2025-09-30 07:29:39,622 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00017.JPG
+2025-09-30 07:29:39,622 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00001.jpg
+2025-09-30 07:29:39,622 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00015.jpg
+2025-09-30 07:29:39,623 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00018.jpg
+2025-09-30 07:29:39,629 - DEBUG - File exists: True
+2025-09-30 07:29:39,630 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00013.jpg
+2025-09-30 07:29:39,630 - DEBUG - File exists: True
+2025-09-30 07:29:39,630 - DEBUG - File exists: True
+2025-09-30 07:29:39,631 - DEBUG - File exists: True
+2025-09-30 07:29:39,631 - DEBUG - File exists: True
+2025-09-30 07:29:39,632 - DEBUG - File exists: True
+2025-09-30 07:29:39,637 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00019.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,638 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00017.JPG HTTP/1.1" 200 -
+2025-09-30 07:29:39,639 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00001.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,640 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00018.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,642 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00015.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,643 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00013.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,682 - DEBUG - Attempting to serve image: CN00016.jpg
+2025-09-30 07:29:39,685 - DEBUG - Attempting to serve image: NCK0021.jpg
+2025-09-30 07:29:39,688 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00016.jpg
+2025-09-30 07:29:39,693 - DEBUG - Attempting to serve image: NCK0013N.jpg
+2025-09-30 07:29:39,693 - DEBUG - Full path to image: /app/StyleImages/NECKLACE SET/NCK0021.jpg
+2025-09-30 07:29:39,693 - DEBUG - File exists: True
+2025-09-30 07:29:39,699 - DEBUG - Attempting to serve image: PS0013P-1.jpg
+2025-09-30 07:29:39,700 - DEBUG - File exists: True
+2025-09-30 07:29:39,701 - DEBUG - Full path to image: /app/StyleImages/NECKLACE SET/NCK0013N.jpg
+2025-09-30 07:29:39,706 - DEBUG - File exists: True
+2025-09-30 07:29:39,709 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0013P-1.jpg
+2025-09-30 07:29:39,710 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/NCK0021.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,713 - DEBUG - Attempting to serve image: BR0020.jpg
+2025-09-30 07:29:39,714 - DEBUG - Attempting to serve image: NK020.jpg
+2025-09-30 07:29:39,714 - DEBUG - File exists: True
+2025-09-30 07:29:39,719 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00016.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,720 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0020.jpg
+2025-09-30 07:29:39,720 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/NCK0013N.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,720 - DEBUG - Full path to image: /app/StyleImages/NECKLACE SET/NK020.jpg
+2025-09-30 07:29:39,732 - DEBUG - File exists: True
+2025-09-30 07:29:39,734 - DEBUG - File exists: True
+2025-09-30 07:29:39,737 - DEBUG - Attempting to serve image: NK005.jpg
+2025-09-30 07:29:39,743 - DEBUG - Full path to image: /app/StyleImages/NECKLACE SET/NK005.jpg
+2025-09-30 07:29:39,748 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/NK020.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,749 - DEBUG - Attempting to serve image: NCK0005.jpg
+2025-09-30 07:29:39,753 - DEBUG - Full path to image: /app/StyleImages/NECKLACE SET/NCK0005.jpg
+2025-09-30 07:29:39,754 - DEBUG - File exists: True
+2025-09-30 07:29:39,756 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/PS0013P-1.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,756 - DEBUG - File exists: True
+2025-09-30 07:29:39,757 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/BR0020.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,770 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/NK005.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,775 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/NCK0005.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,788 - DEBUG - Attempting to serve image: CN00014.jpg
+2025-09-30 07:29:39,791 - DEBUG - Attempting to serve image: CN00009.jpg
+2025-09-30 07:29:39,792 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00014.jpg
+2025-09-30 07:29:39,794 - DEBUG - Attempting to serve image: NK006.jpg
+2025-09-30 07:29:39,797 - DEBUG - File exists: True
+2025-09-30 07:29:39,798 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00009.jpg
+2025-09-30 07:29:39,800 - DEBUG - Full path to image: /app/StyleImages/NECKLACE SET/NK006.jpg
+2025-09-30 07:29:39,800 - DEBUG - File exists: True
+2025-09-30 07:29:39,801 - DEBUG - Attempting to serve image: PS0013P.jpg
+2025-09-30 07:29:39,802 - DEBUG - File exists: True
+2025-09-30 07:29:39,804 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0013P.jpg
+2025-09-30 07:29:39,806 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00014.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,807 - DEBUG - File exists: True
+2025-09-30 07:29:39,808 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00009.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,816 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/NK006.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,822 - DEBUG - Attempting to serve image: NK011.jpg
+2025-09-30 07:29:39,830 - DEBUG - Full path to image: /app/StyleImages/NECKLACE SET/NK011.jpg
+2025-09-30 07:29:39,830 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/PS0013P.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,831 - DEBUG - Attempting to serve image: NCK0002.jpg
+2025-09-30 07:29:39,833 - DEBUG - File exists: True
+2025-09-30 07:29:39,834 - DEBUG - Full path to image: /app/StyleImages/NECKLACE SET/NCK0002.jpg
+2025-09-30 07:29:39,835 - DEBUG - File exists: True
+2025-09-30 07:29:39,842 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/NCK0002.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,842 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/NK011.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,869 - DEBUG - Attempting to serve image: BR0025.jpg
+2025-09-30 07:29:39,870 - DEBUG - Attempting to serve image: NK004.jpg
+2025-09-30 07:29:39,876 - DEBUG - Attempting to serve image: MNK00004.jpeg
+2025-09-30 07:29:39,878 - DEBUG - Full path to image: /app/StyleImages/NECKLACE SET/NK004.jpg
+2025-09-30 07:29:39,879 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0025.jpg
+2025-09-30 07:29:39,881 - DEBUG - Attempting to serve image: CN00012.jpg
+2025-09-30 07:29:39,883 - DEBUG - File exists: True
+2025-09-30 07:29:39,883 - DEBUG - Full path to image: /app/StyleImages/ASAC/MNK00004.jpeg
+2025-09-30 07:29:39,886 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00012.jpg
+2025-09-30 07:29:39,890 - DEBUG - Attempting to serve image: BR0021.jpg
+2025-09-30 07:29:39,890 - DEBUG - File exists: True
+2025-09-30 07:29:39,890 - DEBUG - File exists: True
+2025-09-30 07:29:39,892 - DEBUG - File exists: True
+2025-09-30 07:29:39,896 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0021.jpg
+2025-09-30 07:29:39,898 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/NK004.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,903 - DEBUG - File exists: True
+2025-09-30 07:29:39,915 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/BR0025.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,918 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/MNK00004.jpeg HTTP/1.1" 200 -
+2025-09-30 07:29:39,919 - DEBUG - Attempting to serve image: CN00007.jpg
+2025-09-30 07:29:39,923 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00012.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,924 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/BR0021.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,934 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00007.jpg
+2025-09-30 07:29:39,938 - DEBUG - File exists: True
+2025-09-30 07:29:39,952 - DEBUG - Attempting to serve image: CN00006.jpg
+2025-09-30 07:29:39,952 - DEBUG - Attempting to serve image: PS0014P-1.jpg
+2025-09-30 07:29:39,968 - DEBUG - Attempting to serve image: CN00003.jpg
+2025-09-30 07:29:39,970 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00006.jpg
+2025-09-30 07:29:39,972 - DEBUG - Full path to image: /app/StyleImages/CHAIN/CN00003.jpg
+2025-09-30 07:29:39,973 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0014P-1.jpg
+2025-09-30 07:29:39,974 - DEBUG - File exists: True
+2025-09-30 07:29:39,975 - DEBUG - File exists: True
+2025-09-30 07:29:39,984 - DEBUG - File exists: True
+2025-09-30 07:29:39,985 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00007.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:39,998 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:39] "GET /uploads/CN00006.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:40,001 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:40] "GET /uploads/CN00003.jpg HTTP/1.1" 200 -
+2025-09-30 07:29:40,016 - INFO - 172.18.0.1 - - [30/Sep/2025 07:29:40] "GET /uploads/PS0014P-1.jpg HTTP/1.1" 200 -

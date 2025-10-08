@@ -1,0 +1,211 @@
+Here's a complete step-by-step guide for client-side deployment of your iJewelMatch Docker image:
+
+Client-Side Deployment Guide
+
+Prerequisites
+
+Docker Desktop installed on their machine
+Access to Docker Hub
+Jewelry images ready for training
+
+Step 1: Install Docker Desktop Windows:
+
+Download Docker Desktop from https://www.docker.com/products/docker-desktop
+
+@echo off
+REM Batch file to install Docker Desktop with custom parameters
+
+REM Change to the directory where the installer is located (optional)
+cd /d "%~dp0"
+
+REM Corrected line with proper quoting
+"Docker Desktop Installer.exe" install -accept-license ^
+--installation-dir=D:\Docker ^
+--wsl-default-data-root=D:\Docker-data ^
+--windows-containers-default-data-root="D:\\Docker-containers"
+
+echo Installation command executed.
+pause
+
+
+Run the installer
+Restart computer if prompted
+Open Docker Desktop and wait for it to start
+
+Step 2: Create Project Structure
+Open Terminal/Command Prompt and run:
+
+# Create a project folder
+mkdir ijewelmatch-app
+cd ijewelmatch-app
+
+# Create required folders
+mkdir StyleImages
+mkdir ijewelmatch_data
+mkdir ijewelmatch_logs
+mkdir upload
+
+Step 3: Create docker-compose.yml
+Create a file named docker-compose.yml with this content:
+
+version: '3.8'
+
+services:
+  ijewelmatch:
+    image: gatisofttech20/ijewelmatch:latest  
+    container_name: ijewelmatch
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./upload:/app/upload
+      - ./ijewelmatch_data:/root/Documents/ijewelmatch_data
+      - ./ijewelmatch_logs:/root/Documents/ijewelmatch_logs
+      - ./StyleImages:/app/StyleImages:ro
+    environment:    
+      - SKIP_SSL_CHECK=0
+      - RUNNING_IN_DOCKER=1
+      - KMP_DUPLICATE_LIB_OK=TRUE
+    restart: unless-stopped
+    networks:
+      - ijewelmatch-network
+
+networks:
+  ijewelmatch-network:
+    driver: bridge
+
+
+Step 4: Add Jewelry Images
+Copy jewelry images into the StyleImages folder. The structure should look like:
+
+ijewelmatch-app/
+├── docker-compose.yml
+├── StyleImages/
+│   ├── EARRING/
+│   │   ├── earring1.jpg
+│   │   ├── earring2.jpg
+│   ├── BANGLE/
+│   │   ├── bangle1.jpg
+│   ├── CHAIN/
+│       ├── chain1.jpg
+├── ijewelmatch_data/    (empty - will store trained model)
+├── ijewelmatch_logs/    (empty - will store logs)
+└── upload/              (empty - for temporary files)
+
+
+Step 5: Pull and Start the Container
+
+# Pull the latest image
+docker-compose pull
+
+# Start the container
+docker-compose up -d
+
+# Check if it's running
+docker-compose ps
+
+You should see output like:
+NAME          IMAGE                              STATUS
+ijewelmatch   gatisofttech20/ijewelmatch:latest  Up 10 seconds
+
+Step 6: Access the Application
+Open your web browser and go to: http://localhost:5002
+
+Step 7: Train the Model (REQUIRED)
+This is the most important step:
+
+In the web interface, click the "Train Model" tab
+Enter the folder path: /app/StyleImages
+Click "Train Model"
+Wait for training to complete (this may take 5-30 minutes depending on image count)
+
+You'll see progress in the terminal:
+# View logs
+docker-compose logs -f
+
+# You should see:
+# Index build complete. Inserted: 781, Skipped: 0
+
+
+
+
+
+
+Step 8: Start Searching
+Once training is complete:
+
+Go to the "Search" tab
+Upload a jewelry image
+Set Number of Required Photos: 10
+Set Similarity Percentage: 80
+Click "Search with Selected Images"
+
+You should now see similar jewelry images!
+Common Issues & Solutions
+Issue 1: "Folder path does not exist"
+Solution: Make sure you created the StyleImages folder and added images to it.
+
+# Check folder exists
+ls -la StyleImages/  # Linux/Mac
+dir StyleImages\     # Windows
+
+Issue 2: Container not starting
+Solution: Check Docker logs
+
+docker-compose logs
+
+Issue 3: Port 5002 already in use
+Solution: Change the port in docker-compose.yml
+
+ports:
+  - "5003:5002"  # Use port 5003 instead
+
+Then access at: http://localhost:5003
+
+Issue 4: No results when searching
+Solution: Lower the similarity percentage to 50-70 for more results
+Stopping and Restarting
+
+# Stop the container
+docker-compose down
+
+# Restart the container
+docker-compose up -d
+
+# Your trained model persists in ijewelmatch_data/
+
+Updating to Latest Version
+
+# Pull latest image
+docker-compose pull
+
+# Restart with new image
+docker-compose down
+docker-compose up -d
+
+File Structure Summary
+
+ijewelmatch-app/
+├── docker-compose.yml           # Configuration file (you create this)
+├── StyleImages/                 # Your jewelry images (you add these)
+│   └── [your images here]
+├── ijewelmatch_data/            # Trained model (created automatically)
+│   └── base_model.pkl          # Generated after training
+├── ijewelmatch_logs/            # Application logs (created automatically)
+│   └── ijewelmatch_20251002.log
+└── upload/                      # Temporary files (created automatically)
+
+Windows (setup.bat):
+
+@echo off
+:: Create folders only if they don't exist
+if not exist StyleImages mkdir StyleImages
+if not exist ijewelmatch_data mkdir ijewelmatch_data
+if not exist ijewelmatch_logs mkdir ijewelmatch_logs
+if not exist upload mkdir upload
+
+echo Folders created. Now:
+echo 1. Copy your jewelry images to StyleImages\
+echo 2. Run: docker-compose up -d
+echo 3. Open http://localhost:5002
+echo 4. Train the model with path: /app/StyleImages
+pause

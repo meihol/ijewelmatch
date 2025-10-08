@@ -341,7 +341,7 @@ class JewelryMobileNetV3(nn.Module):
 class FastImageIndexer:
     def __init__(self, folder_path=None):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.model = JewelryMobileNetV3(num_classes=960)  # Use 960 as feature dimension
+        self.model = JewelryMobileNetV3(num_classes=960)  
         self.model = self.model.to(self.device)
         self.model.eval()
         
@@ -369,6 +369,8 @@ class FastImageIndexer:
     #     except Exception as e:
     #         print(f"Error extracting features from {image_path}: {str(e)}")
     #         raise
+    
+    
     
     def extract_features(self, image_path):
         try:

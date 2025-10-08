@@ -24,7 +24,7 @@ import sys
 import webbrowser
 from io import BytesIO
 import certifi
-import ssl
+import ssl  
 import urllib.request
 import logging
 from datetime import datetime

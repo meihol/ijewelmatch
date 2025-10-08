@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  ijewelmatch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ijewelmatch
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./upload:/app/upload
+      - D:/GatiGithub/ijewelmatch:/root/Documents/ijewelmatch_data
+      - ./ijewelmatch_logs:/root/Documents/ijewelmatch_logs
+      # Changed from Z:/ to local copy
+      - D:/GatiGithub/ijewelmatch/StyleImages:/app/StyleImages:ro
+    environment:
+      - SKIP_SSL_CHECK=0
+      - RUNNING_IN_DOCKER=1
+      - KMP_DUPLICATE_LIB_OK=TRUE
+    restart: unless-stopped
+    networks:
+      - ijewelmatch-network
+
+networks:
+  ijewelmatch-network:
+    driver: bridge
