@@ -1,0 +1,321 @@
+Docker buildkit:
+Docker BuildKit is a modern, high-performance backend for building Docker images. It was introduced to improve on the traditional Docker build system, providing faster builds, better caching, parallelization, and advanced features such as build secrets, SSH forwarding, and inline image exports.
+
+Overview:
+
+🔧 What BuildKit Does
+BuildKit enhances docker build by:
+Parallelizing builds — it builds independent stages concurrently.
+Using efficient caching — reuses unchanged layers, even across different builds.
+Reducing image size — through advanced layer handling and pruning.
+Supporting secrets and SSH keys — securely pass them into the build environment.
+Allowing remote cache import/export — great for CI/CD systems.
+Producing multi-platform images — build for amd64, arm64, etc. in one command.
+
+🚀 Enable BuildKit
+You can enable BuildKit globally or per-command:
+
+Per command:
+DOCKER_BUILDKIT=1 docker build -t myimage .
+
+Globally (recommended):
+Add this line to /etc/docker/daemon.json:
+{
+  "features": { "buildkit": true }
+}
+
+Then restart Docker:
+sudo systemctl restart docker
+
+🧱 Using BuildKit Features
+
+1. Build secrets:
+# syntax=docker/dockerfile:1.4
+FROM alpine
+RUN --mount=type=secret,id=mysecret cat /run/secrets/mysecret
+Build with:
+DOCKER_BUILDKIT=1 docker build --secret id=mysecret,src=secret.txt .
+
+2. SSH forwarding:
+# syntax=docker/dockerfile:1.4
+FROM alpine
+RUN --mount=type=ssh git clone git@github.com:user/private-repo.git
+Build with:
+DOCKER_BUILDKIT=1 docker build --ssh default .
+
+3. Multi-platform builds (with Buildx):
+docker buildx build --platform linux/amd64,linux/arm64 -t myapp:latest .
+
+🧠 Key Difference from Classic Builds
+
+| Feature           | Legacy Builder | BuildKit               |
+| ----------------- | -------------- | ---------------------- |
+| Parallel builds   | ❌              | ✅                      |
+| Layer caching     | Basic          | Advanced, fine-grained |
+| Multi-platform    | ❌              | ✅ (via `buildx`)       |
+| Build secrets/SSH | ❌              | ✅                      |
+| Remote caching    | ❌              | ✅                      |
+| Progress output   | Limited        | Rich, structured       |
+
+
+Example of a Dockerfile optimized for BuildKit.
+
+🧩 Example: Go Web App with BuildKit
+
+# syntax=docker/dockerfile:1.4
+# ^ enables BuildKit syntax extensions (like --mount)
+
+########################################
+# 1️⃣  Builder stage
+########################################
+FROM golang:1.22-alpine AS builder
+
+# Set build arguments
+ARG APP_NAME=myapp
+
+# Use BuildKit cache mount for dependencies
+RUN --mount=type=cache,target=/go/pkg/mod \
+    --mount=type=cache,target=/root/.cache/go-build \
+    apk add --no-cache git
+
+WORKDIR /src
+
+# Copy go.mod and go.sum first to cache dependencies
+COPY go.mod go.sum ./
+RUN go mod download
+
+# Copy source and build
+COPY . .
+RUN go build -o /out/${APP_NAME} ./cmd/server
+
+########################################
+# 2️⃣  Production stage
+########################################
+FROM alpine:3.20
+
+# Create non-root user
+RUN adduser -D appuser
+
+# Copy binary from builder
+COPY --from=builder /out/myapp /usr/local/bin/myapp
+
+# Example: Using a secret file (only available at build time)
+# RUN --mount=type=secret,id=config cat /run/secrets/config > /app/config.json
+
+USER appuser
+EXPOSE 8080
+
+ENTRYPOINT ["myapp"]
+
+
+🧠 Build and Run
+Build with BuildKit enabled:
+DOCKER_BUILDKIT=1 docker build -t myapp .
+Build with a secret (optional):
+DOCKER_BUILDKIT=1 docker build \
+  --secret id=config,src=./config.json \
+  -t myapp .
+Run the app:
+docker run -p 8080:8080 myapp
+
+⚡ Why This Dockerfile Is Efficient
+
+| Optimization                     | Explanation                                              |
+| -------------------------------- | -------------------------------------------------------- |
+| `# syntax=docker/dockerfile:1.4` | Enables BuildKit’s advanced syntax                       |
+| Multi-stage build                | Keeps final image small — only includes binary           |
+| Cache mounts                     | Speeds up Go module downloads and builds                 |
+| Secret mounts                    | Securely inject secrets without leaving traces in layers |
+| Non-root user                    | Improves security of runtime container                   |
+
+
+
+
+
+
+
+MCP Server (Model Context Protocol)
+An MCP server is a component of the Model Context Protocol - an open-source standard for connecting AI applications to external systems. 
+Think of MCP like a USB-C port for AI applications - just as USB-C provides a standardized way to connect electronic devices, MCP provides a standardized way to connect AI applications to external systems.
+
+What is an MCP Server?
+The architecture is straightforward: developers can either expose their data through MCP servers or build AI applications (MCP clients) that connect to these servers.
+
+An MCP server provides:
+Access to data sources (databases, files, APIs)
+Tools and functions that AI can use (calculators, search engines, etc.)
+Workflows and specialized prompts
+Resources and contextual information
+
+How It Works:
+
+┌─────────────┐         ┌─────────────┐         ┌──────────────┐
+│             │         │             │         │              │
+│ MCP Client  │ ◄─────► │ MCP Server  │ ◄─────► │ Data Source  │
+│ (AI App)    │         │             │         │ or Tool      │
+│             │         │             │         │              │
+└─────────────┘         └─────────────┘         └──────────────┘
+     (e.g.,              (Exposes                 (e.g.,
+    Claude,              resources)               Database,
+   ChatGPT)                                       Files, APIs)
+
+Components:
+MCP Host/Client - The AI application (like Claude Desktop, ChatGPT)
+MCP Server - The bridge that exposes data/tools to the AI
+Data Source/Tool - The actual resource (database, filesystem, API, etc.)
+
+Example MCP Servers
+This repository is a collection of reference implementations for the Model Context Protocol (MCP), showcasing servers that give Large Language Models (LLMs) secure, controlled access to tools and data sources.
+
+Common MCP Server Types:
+# Example: File System MCP Server
+# Gives AI access to read/write local files
+
+from mcp.server import Server
+from mcp.types import Tool, TextContent
+
+app = Server("filesystem")
+
+@app.list_tools()
+async def list_tools():
+    return [
+        Tool(
+            name="read_file",
+            description="Read contents of a file",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "path": {"type": "string"}
+                }
+            }
+        ),
+        Tool(
+            name="write_file",
+            description="Write contents to a file",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "path": {"type": "string"},
+                    "content": {"type": "string"}
+                }
+            }
+        )
+    ]
+
+@app.call_tool()
+async def call_tool(name: str, arguments: dict):
+    if name == "read_file":
+        with open(arguments["path"], "r") as f:
+            content = f.read()
+        return [TextContent(type="text", text=content)]
+    
+    elif name == "write_file":
+        with open(arguments["path"], "w") as f:
+            f.write(arguments["content"])
+        return [TextContent(type="text", text="File written successfully")]
+
+
+Popular MCP Server Examples
+Database MCP Server - Access PostgreSQL, MySQL, SQLite
+GitHub MCP Server - Interact with repositories, issues, PRs
+Google Drive MCP Server - Access files and documents
+Slack MCP Server - Send messages, read channels
+Calendar MCP Server - Manage calendar events
+Web Search MCP Server - Perform web searches
+Browser Automation MCP Server - Control web browsers
+
+Why Use MCP Servers?
+Before MCP (fragmented):
+AI App ──different API──► GitHub
+       ──different API──► Google Drive
+       ──different API──► Database
+       ──different API──► Slack
+
+With MCP (standardized):
+AI App ──MCP Protocol──► MCP Server (GitHub)
+       ──MCP Protocol──► MCP Server (Google Drive)
+       ──MCP Protocol──► MCP Server (Database)
+       ──MCP Protocol──► MCP Server (Slack)
+
+Benefits:
+Standardization - One protocol for all integrations
+Security - Controlled, secure access to resources
+Reusability - Write once, use with any MCP-compatible AI
+Simplicity - Easier than building custom integrations for each tool
+
+Configuring MCP Servers
+Example: Claude Desktop Configuration
+// ~/Library/Application Support/Claude/claude_desktop_config.json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/username/Documents"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "your-github-token"
+      }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "DATABASE_URL": "postgresql://localhost/mydb"
+      }
+    }
+  }
+}
+
+Building Your Own MCP Server
+Node.js Example:
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+
+// Create server
+const server = new Server({
+  name: "my-custom-server",
+  version: "1.0.0"
+});
+
+// Define tools
+server.setRequestHandler("tools/list", async () => ({
+  tools: [
+    {
+      name: "get_weather",
+      description: "Get weather for a location",
+      inputSchema: {
+        type: "object",
+        properties: {
+          location: { type: "string" }
+        }
+      }
+    }
+  ]
+}));
+
+// Handle tool calls
+server.setRequestHandler("tools/call", async (request) => {
+  if (request.params.name === "get_weather") {
+    const weather = await fetchWeather(request.params.arguments.location);
+    return {
+      content: [{ type: "text", text: JSON.stringify(weather) }]
+    };
+  }
+});
+
+// Start server
+const transport = new StdioServerTransport();
+await server.connect(transport);
+
+Use Cases
+Development Tools - Let AI access your codebase, run tests, deploy code
+Data Analysis - Connect AI to databases, spreadsheets, data warehouses
+Automation - Enable AI to interact with your apps and services
+Knowledge Base - Give AI access to company documentation, wikis
+Productivity - Calendar management, email, task tracking
+
+MCP servers make AI applications more powerful by giving them controlled access to the tools and data they need to be truly useful assistants!
+

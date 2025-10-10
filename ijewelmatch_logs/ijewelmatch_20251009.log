@@ -1,0 +1,629 @@
+2025-10-09 06:39:59,361 - INFO - SSL context created successfully
+2025-10-09 06:40:00,729 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-10-09 06:40:00,732 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-10-09 06:40:00,736 - INFO - Initial SSL test connection successful
+2025-10-09 06:40:00,748 - INFO - SSL context created successfully
+2025-10-09 06:40:07,961 - INFO - MobileNetV3 weights loaded successfully.
+2025-10-09 06:40:08,137 - INFO - Starting server on port 5002
+2025-10-09 06:40:08,140 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-10-09 06:40:08,141 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 06:40:11,218 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:11] "GET / HTTP/1.1" 200 -
+2025-10-09 06:40:11,259 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:11] "GET /static/iJewelMatchh.svg HTTP/1.1" 200 -
+2025-10-09 06:40:11,260 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:11] "GET /static/Gatisofttech-Logo.svg HTTP/1.1" 200 -
+2025-10-09 06:40:12,969 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 204 -
+2025-10-09 06:40:34,350 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:34] "POST /search HTTP/1.1" 200 -
+2025-10-09 06:40:34,375 - DEBUG - Attempting to serve image: BN0002.JPG
+2025-10-09 06:40:34,379 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0002.JPG
+2025-10-09 06:40:34,382 - DEBUG - File exists: True
+2025-10-09 06:40:34,392 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:34] "GET /uploads/BN0002.JPG HTTP/1.1" 200 -
+2025-10-09 06:40:47,085 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "POST /search HTTP/1.1" 200 -
+2025-10-09 06:40:47,125 - DEBUG - Attempting to serve image: BN0030.jpg
+2025-10-09 06:40:47,125 - DEBUG - Attempting to serve image: BN0020.JPG
+2025-10-09 06:40:47,127 - DEBUG - Attempting to serve image: BN0005.JPG
+2025-10-09 06:40:47,128 - DEBUG - Attempting to serve image: BR0012.jpg
+2025-10-09 06:40:47,129 - DEBUG - Attempting to serve image: BN0029.jpg
+2025-10-09 06:40:47,129 - DEBUG - Attempting to serve image: GR0008.jpg
+2025-10-09 06:40:47,129 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0030.jpg
+2025-10-09 06:40:47,130 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0020.JPG
+2025-10-09 06:40:47,145 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0005.JPG
+2025-10-09 06:40:47,147 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0012.jpg
+2025-10-09 06:40:47,148 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0029.jpg
+2025-10-09 06:40:47,151 - DEBUG - File exists: True
+2025-10-09 06:40:47,151 - DEBUG - File exists: True
+2025-10-09 06:40:47,151 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0008.jpg
+2025-10-09 06:40:47,152 - DEBUG - File exists: True
+2025-10-09 06:40:47,158 - DEBUG - File exists: True
+2025-10-09 06:40:47,159 - DEBUG - File exists: True
+2025-10-09 06:40:47,160 - DEBUG - File exists: True
+2025-10-09 06:40:47,168 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BN0005.JPG HTTP/1.1" 200 -
+2025-10-09 06:40:47,168 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BN0020.JPG HTTP/1.1" 200 -
+2025-10-09 06:40:47,169 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BN0030.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,171 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BN0029.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,181 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/GR0008.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,184 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BR0012.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,202 - DEBUG - Attempting to serve image: BN0035.jpg
+2025-10-09 06:40:47,206 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0035.jpg
+2025-10-09 06:40:47,212 - DEBUG - Attempting to serve image: LR0013.jpg
+2025-10-09 06:40:47,222 - DEBUG - Attempting to serve image: BN0032.jpg
+2025-10-09 06:40:47,223 - DEBUG - Attempting to serve image: LR0017.jpg
+2025-10-09 06:40:47,223 - DEBUG - File exists: True
+2025-10-09 06:40:47,227 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0013.jpg
+2025-10-09 06:40:47,227 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0032.jpg
+2025-10-09 06:40:47,232 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0017.jpg
+2025-10-09 06:40:47,232 - DEBUG - File exists: True
+2025-10-09 06:40:47,233 - DEBUG - Attempting to serve image: BR0008.jpg
+2025-10-09 06:40:47,234 - DEBUG - File exists: True
+2025-10-09 06:40:47,235 - DEBUG - Attempting to serve image: BR0009.jpg
+2025-10-09 06:40:47,235 - DEBUG - File exists: True
+2025-10-09 06:40:47,238 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0008.jpg
+2025-10-09 06:40:47,239 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0009.jpg
+2025-10-09 06:40:47,240 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BN0035.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,242 - DEBUG - File exists: True
+2025-10-09 06:40:47,243 - DEBUG - File exists: True
+2025-10-09 06:40:47,244 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/LR0013.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,245 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BN0032.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,257 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/LR0017.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,269 - DEBUG - Attempting to serve image: BR0003.jpg
+2025-10-09 06:40:47,273 - DEBUG - Attempting to serve image: BR0011.jpg
+2025-10-09 06:40:47,274 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0003.jpg
+2025-10-09 06:40:47,278 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0011.jpg
+2025-10-09 06:40:47,279 - DEBUG - File exists: True
+2025-10-09 06:40:47,279 - DEBUG - File exists: True
+2025-10-09 06:40:47,286 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BR0008.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,286 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BR0009.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,288 - DEBUG - Attempting to serve image: BR0010.jpg
+2025-10-09 06:40:47,289 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BR0011.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,289 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BR0003.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,295 - DEBUG - Attempting to serve image: GR0010.jpg
+2025-10-09 06:40:47,296 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0010.jpg
+2025-10-09 06:40:47,301 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0010.jpg
+2025-10-09 06:40:47,302 - DEBUG - File exists: True
+2025-10-09 06:40:47,303 - DEBUG - File exists: True
+2025-10-09 06:40:47,316 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/GR0010.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,322 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BR0010.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,324 - DEBUG - Attempting to serve image: BN0007.JPG
+2025-10-09 06:40:47,327 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0007.JPG
+2025-10-09 06:40:47,328 - DEBUG - File exists: True
+2025-10-09 06:40:47,337 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BN0007.JPG HTTP/1.1" 200 -
+2025-10-09 06:40:47,375 - DEBUG - Attempting to serve image: GR0009.jpg
+2025-10-09 06:40:47,376 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0009.jpg
+2025-10-09 06:40:47,377 - DEBUG - File exists: True
+2025-10-09 06:40:47,441 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/GR0009.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,595 - DEBUG - Attempting to serve image: ASAC00447xl.jpg
+2025-10-09 06:40:47,603 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00447xl.jpg
+2025-10-09 06:40:47,610 - DEBUG - File exists: True
+2025-10-09 06:40:47,660 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/ASAC00447xl.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,767 - DEBUG - Attempting to serve image: BR0004.jpg
+2025-10-09 06:40:47,778 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0004.jpg
+2025-10-09 06:40:47,785 - DEBUG - File exists: True
+2025-10-09 06:40:47,812 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BR0004.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,814 - DEBUG - Attempting to serve image: BR0026.jpg
+2025-10-09 06:40:47,818 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0026.jpg
+2025-10-09 06:40:47,819 - DEBUG - File exists: True
+2025-10-09 06:40:47,883 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:47] "GET /uploads/BR0026.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:47,960 - DEBUG - Attempting to serve image: BN0021.jpg
+2025-10-09 06:40:47,967 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0021.jpg
+2025-10-09 06:40:47,974 - DEBUG - File exists: True
+2025-10-09 06:40:48,001 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/BN0021.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:48,101 - DEBUG - Attempting to serve image: GR0001.jpg
+2025-10-09 06:40:48,106 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0001.jpg
+2025-10-09 06:40:48,109 - DEBUG - File exists: True
+2025-10-09 06:40:48,167 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/GR0001.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:48,174 - DEBUG - Attempting to serve image: BN0018.jpg
+2025-10-09 06:40:48,177 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0018.jpg
+2025-10-09 06:40:48,178 - DEBUG - File exists: True
+2025-10-09 06:40:48,190 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/BN0018.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:48,328 - DEBUG - Attempting to serve image: LR0001.jpg
+2025-10-09 06:40:48,338 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0001.jpg
+2025-10-09 06:40:48,346 - DEBUG - File exists: True
+2025-10-09 06:40:48,385 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/LR0001.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:48,401 - DEBUG - Attempting to serve image: LR0021.jpg
+2025-10-09 06:40:48,408 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0021.jpg
+2025-10-09 06:40:48,412 - DEBUG - File exists: True
+2025-10-09 06:40:48,456 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/LR0021.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:48,494 - DEBUG - Attempting to serve image: BR0019.jpg
+2025-10-09 06:40:48,498 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0019.jpg
+2025-10-09 06:40:48,502 - DEBUG - File exists: True
+2025-10-09 06:40:48,518 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/BR0019.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:48,522 - DEBUG - Attempting to serve image: LR0020.jpg
+2025-10-09 06:40:48,525 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0020.jpg
+2025-10-09 06:40:48,527 - DEBUG - File exists: True
+2025-10-09 06:40:48,592 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/LR0020.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:48,741 - DEBUG - Attempting to serve image: BN0006.JPG
+2025-10-09 06:40:48,741 - DEBUG - Attempting to serve image: BR0002.jpg
+2025-10-09 06:40:48,742 - DEBUG - Attempting to serve image: LR0014.jpg
+2025-10-09 06:40:48,745 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0006.JPG
+2025-10-09 06:40:48,745 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0002.jpg
+2025-10-09 06:40:48,746 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0014.jpg
+2025-10-09 06:40:48,750 - DEBUG - File exists: True
+2025-10-09 06:40:48,751 - DEBUG - File exists: True
+2025-10-09 06:40:48,752 - DEBUG - File exists: True
+2025-10-09 06:40:48,767 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/BN0006.JPG HTTP/1.1" 200 -
+2025-10-09 06:40:48,806 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/BR0002.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:48,807 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:48] "GET /uploads/LR0014.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:49,177 - DEBUG - Attempting to serve image: PI.jpg
+2025-10-09 06:40:49,178 - DEBUG - Attempting to serve image: BN0014.jpg
+2025-10-09 06:40:49,181 - DEBUG - Full path to image: /app/StyleImages/Items/PI.jpg
+2025-10-09 06:40:49,182 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0014.jpg
+2025-10-09 06:40:49,183 - DEBUG - File exists: True
+2025-10-09 06:40:49,184 - DEBUG - File exists: True
+2025-10-09 06:40:49,195 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:49] "GET /uploads/BN0014.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:49,266 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:49] "GET /uploads/PI.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:49,345 - DEBUG - Attempting to serve image: BN0004.JPG
+2025-10-09 06:40:49,346 - DEBUG - Attempting to serve image: GR0020.jpg
+2025-10-09 06:40:49,351 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0004.JPG
+2025-10-09 06:40:49,352 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0020.jpg
+2025-10-09 06:40:49,355 - DEBUG - File exists: True
+2025-10-09 06:40:49,356 - DEBUG - File exists: True
+2025-10-09 06:40:49,369 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:49] "GET /uploads/BN0004.JPG HTTP/1.1" 200 -
+2025-10-09 06:40:49,407 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:49] "GET /uploads/GR0020.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:49,591 - DEBUG - Attempting to serve image: BG.jpg
+2025-10-09 06:40:49,593 - DEBUG - Attempting to serve image: BR0006.jpg
+2025-10-09 06:40:49,594 - DEBUG - Attempting to serve image: BN0031.jpg
+2025-10-09 06:40:49,599 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0006.jpg
+2025-10-09 06:40:49,600 - DEBUG - Full path to image: /app/StyleImages/Items/BG.jpg
+2025-10-09 06:40:49,601 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0031.jpg
+2025-10-09 06:40:49,602 - DEBUG - File exists: True
+2025-10-09 06:40:49,603 - DEBUG - File exists: True
+2025-10-09 06:40:49,605 - DEBUG - File exists: True
+2025-10-09 06:40:49,620 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:49] "GET /uploads/BN0031.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:49,640 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:49] "GET /uploads/BR0006.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:49,640 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:49] "GET /uploads/BG.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:49,980 - DEBUG - Attempting to serve image: BN0015.jpg
+2025-10-09 06:40:49,982 - DEBUG - Attempting to serve image: ASAC00447.jpg
+2025-10-09 06:40:49,984 - DEBUG - Attempting to serve image: LR0016.jpg
+2025-10-09 06:40:49,993 - DEBUG - Attempting to serve image: BD.jpg
+2025-10-09 06:40:49,995 - DEBUG - Attempting to serve image: LR0019.jpg
+2025-10-09 06:40:49,998 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0015.jpg
+2025-10-09 06:40:50,002 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00447.jpg
+2025-10-09 06:40:50,005 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0016.jpg
+2025-10-09 06:40:50,006 - DEBUG - Full path to image: /app/StyleImages/Dia Shapes/BD.jpg
+2025-10-09 06:40:50,009 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0019.jpg
+2025-10-09 06:40:50,009 - DEBUG - File exists: True
+2025-10-09 06:40:50,010 - DEBUG - File exists: True
+2025-10-09 06:40:50,010 - DEBUG - File exists: True
+2025-10-09 06:40:50,014 - DEBUG - File exists: True
+2025-10-09 06:40:50,015 - DEBUG - File exists: True
+2025-10-09 06:40:50,029 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:50] "GET /uploads/BN0015.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:50,046 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:50] "GET /uploads/LR0019.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:50,047 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:50] "GET /uploads/ASAC00447.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:50,047 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:50] "GET /uploads/LR0016.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:50,053 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:50] "GET /uploads/BD.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:50,390 - DEBUG - Attempting to serve image: LR0007.jpg
+2025-10-09 06:40:50,394 - DEBUG - Attempting to serve image: BR0018.jpg
+2025-10-09 06:40:50,402 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0007.jpg
+2025-10-09 06:40:50,404 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0018.jpg
+2025-10-09 06:40:50,410 - DEBUG - File exists: True
+2025-10-09 06:40:50,412 - DEBUG - File exists: True
+2025-10-09 06:40:50,435 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:50] "GET /uploads/LR0007.jpg HTTP/1.1" 200 -
+2025-10-09 06:40:50,506 - INFO - 172.18.0.1 - - [09/Oct/2025 06:40:50] "GET /uploads/BR0018.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:39,964 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:39] "POST /search HTTP/1.1" 200 -
+2025-10-09 07:00:39,999 - DEBUG - Attempting to serve image: PS0004P.jpg
+2025-10-09 07:00:40,000 - DEBUG - Attempting to serve image: PS0024.jpg
+2025-10-09 07:00:40,002 - DEBUG - Attempting to serve image: ER0001.jpg
+2025-10-09 07:00:40,006 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0004P.jpg
+2025-10-09 07:00:40,007 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0024.jpg
+2025-10-09 07:00:40,012 - DEBUG - Attempting to serve image: ASAC00256.jpg
+2025-10-09 07:00:40,009 - DEBUG - Attempting to serve image: GR0023.jpg
+2025-10-09 07:00:40,010 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0001.jpg
+2025-10-09 07:00:40,009 - DEBUG - Attempting to serve image: PS0004E.jpg
+2025-10-09 07:00:40,012 - DEBUG - File exists: True
+2025-10-09 07:00:40,017 - DEBUG - File exists: True
+2025-10-09 07:00:40,018 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00256.jpg
+2025-10-09 07:00:40,019 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0023.jpg
+2025-10-09 07:00:40,019 - DEBUG - File exists: True
+2025-10-09 07:00:40,020 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0004E.jpg
+2025-10-09 07:00:40,023 - DEBUG - File exists: True
+2025-10-09 07:00:40,024 - DEBUG - File exists: True
+2025-10-09 07:00:40,024 - DEBUG - File exists: True
+2025-10-09 07:00:40,027 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0004P.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,028 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0024.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,036 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ER0001.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,040 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0004E.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,044 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ASAC00256.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,049 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/GR0023.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,076 - DEBUG - Attempting to serve image: ER0018.jpg
+2025-10-09 07:00:40,078 - DEBUG - Attempting to serve image: LR0005.jpg
+2025-10-09 07:00:40,086 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0018.jpg
+2025-10-09 07:00:40,087 - DEBUG - Attempting to serve image: PS0005E.jpg
+2025-10-09 07:00:40,088 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0005.jpg
+2025-10-09 07:00:40,091 - DEBUG - Attempting to serve image: PS0005P.jpg
+2025-10-09 07:00:40,091 - DEBUG - File exists: True
+2025-10-09 07:00:40,093 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0005E.jpg
+2025-10-09 07:00:40,093 - DEBUG - File exists: True
+2025-10-09 07:00:40,094 - DEBUG - Attempting to serve image: ASAC00461.jpg
+2025-10-09 07:00:40,094 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0005P.jpg
+2025-10-09 07:00:40,096 - DEBUG - Attempting to serve image: PS0010E.jpg
+2025-10-09 07:00:40,097 - DEBUG - File exists: True
+2025-10-09 07:00:40,099 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00461.jpg
+2025-10-09 07:00:40,100 - DEBUG - File exists: True
+2025-10-09 07:00:40,100 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0010E.jpg
+2025-10-09 07:00:40,102 - DEBUG - File exists: True
+2025-10-09 07:00:40,103 - DEBUG - File exists: True
+2025-10-09 07:00:40,103 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ER0018.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,107 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/LR0005.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,107 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0005E.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,112 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0005P.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,121 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0010E.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,129 - DEBUG - Attempting to serve image: ASAC00361.jpg
+2025-10-09 07:00:40,133 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ASAC00461.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,136 - DEBUG - Attempting to serve image: MLR00007.jpeg
+2025-10-09 07:00:40,138 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00361.jpg
+2025-10-09 07:00:40,139 - DEBUG - Full path to image: /app/StyleImages/ASAC/MLR00007.jpeg
+2025-10-09 07:00:40,143 - DEBUG - File exists: True
+2025-10-09 07:00:40,145 - DEBUG - File exists: True
+2025-10-09 07:00:40,161 - DEBUG - Attempting to serve image: MLR00001.jpeg
+2025-10-09 07:00:40,162 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ASAC00361.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,167 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/MLR00007.jpeg HTTP/1.1" 200 -
+2025-10-09 07:00:40,168 - DEBUG - Attempting to serve image: MNK00007E.jpeg
+2025-10-09 07:00:40,169 - DEBUG - Full path to image: /app/StyleImages/ASAC/MLR00001.jpeg
+2025-10-09 07:00:40,172 - DEBUG - File exists: True
+2025-10-09 07:00:40,172 - DEBUG - Full path to image: /app/StyleImages/ASAC/MNK00007E.jpeg
+2025-10-09 07:00:40,174 - DEBUG - Attempting to serve image: PS0003E.jpg
+2025-10-09 07:00:40,178 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0003E.jpg
+2025-10-09 07:00:40,179 - DEBUG - File exists: True
+2025-10-09 07:00:40,184 - DEBUG - File exists: True
+2025-10-09 07:00:40,188 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/MLR00001.jpeg HTTP/1.1" 200 -
+2025-10-09 07:00:40,191 - DEBUG - Attempting to serve image: GR0002.jpg
+2025-10-09 07:00:40,197 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/MNK00007E.jpeg HTTP/1.1" 200 -
+2025-10-09 07:00:40,198 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0002.jpg
+2025-10-09 07:00:40,201 - DEBUG - Attempting to serve image: LR0030@C.jpg
+2025-10-09 07:00:40,207 - DEBUG - File exists: True
+2025-10-09 07:00:40,211 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0030@C.jpg
+2025-10-09 07:00:40,212 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0003E.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,218 - DEBUG - Attempting to serve image: MLR00008.jpeg
+2025-10-09 07:00:40,223 - DEBUG - File exists: True
+2025-10-09 07:00:40,223 - DEBUG - Full path to image: /app/StyleImages/ASAC/MLR00008.jpeg
+2025-10-09 07:00:40,226 - DEBUG - Attempting to serve image: ASAC00365.jpg
+2025-10-09 07:00:40,229 - DEBUG - File exists: True
+2025-10-09 07:00:40,231 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00365.jpg
+2025-10-09 07:00:40,233 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/GR0002.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,240 - DEBUG - File exists: True
+2025-10-09 07:00:40,248 - DEBUG - Attempting to serve image: LR0011.jpg
+2025-10-09 07:00:40,252 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0011.jpg
+2025-10-09 07:00:40,252 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/LR0030@C.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,253 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/MLR00008.jpeg HTTP/1.1" 200 -
+2025-10-09 07:00:40,259 - DEBUG - File exists: True
+2025-10-09 07:00:40,270 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/LR0011.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,277 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ASAC00365.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,321 - DEBUG - Attempting to serve image: PS0005P-1.jpg
+2025-10-09 07:00:40,330 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0005P-1.jpg
+2025-10-09 07:00:40,333 - DEBUG - Attempting to serve image: GP0007.jpg
+2025-10-09 07:00:40,334 - DEBUG - Attempting to serve image: ER0011.jpg
+2025-10-09 07:00:40,338 - DEBUG - Attempting to serve image: ASAC00409.jpg
+2025-10-09 07:00:40,346 - DEBUG - File exists: True
+2025-10-09 07:00:40,349 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00409.jpg
+2025-10-09 07:00:40,349 - DEBUG - Full path to image: /app/StyleImages/PENDENT/GP0007.jpg
+2025-10-09 07:00:40,350 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0011.jpg
+2025-10-09 07:00:40,356 - DEBUG - File exists: True
+2025-10-09 07:00:40,358 - DEBUG - File exists: True
+2025-10-09 07:00:40,359 - DEBUG - File exists: True
+2025-10-09 07:00:40,377 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0005P-1.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,378 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ASAC00409.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,399 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ER0011.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,412 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/GP0007.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,427 - DEBUG - Attempting to serve image: ER0008.jpg
+2025-10-09 07:00:40,433 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0008.jpg
+2025-10-09 07:00:40,437 - DEBUG - File exists: True
+2025-10-09 07:00:40,444 - DEBUG - Attempting to serve image: ER0022.jpg
+2025-10-09 07:00:40,452 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0022.jpg
+2025-10-09 07:00:40,453 - DEBUG - Attempting to serve image: GP0024.jpg
+2025-10-09 07:00:40,456 - DEBUG - Attempting to serve image: GR0017.jpg
+2025-10-09 07:00:40,457 - DEBUG - File exists: True
+2025-10-09 07:00:40,460 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ER0008.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,460 - DEBUG - Full path to image: /app/StyleImages/PENDENT/GP0024.jpg
+2025-10-09 07:00:40,461 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0017.jpg
+2025-10-09 07:00:40,467 - DEBUG - File exists: True
+2025-10-09 07:00:40,467 - DEBUG - File exists: True
+2025-10-09 07:00:40,481 - DEBUG - Attempting to serve image: PS0001P.jpg
+2025-10-09 07:00:40,482 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ER0022.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,485 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0001P.jpg
+2025-10-09 07:00:40,486 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/GP0024.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,493 - DEBUG - File exists: True
+2025-10-09 07:00:40,494 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/GR0017.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,514 - DEBUG - Attempting to serve image: GR0004.jpg
+2025-10-09 07:00:40,522 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0004.jpg
+2025-10-09 07:00:40,525 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0001P.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,527 - DEBUG - File exists: True
+2025-10-09 07:00:40,541 - DEBUG - Attempting to serve image: PS0009E.jpg
+2025-10-09 07:00:40,544 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0009E.jpg
+2025-10-09 07:00:40,550 - DEBUG - File exists: True
+2025-10-09 07:00:40,554 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/GR0004.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,556 - DEBUG - Attempting to serve image: LR0028.JPG
+2025-10-09 07:00:40,563 - DEBUG - Attempting to serve image: LR0027.jpg
+2025-10-09 07:00:40,565 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0028.JPG
+2025-10-09 07:00:40,568 - DEBUG - Attempting to serve image: PS0006P.jpg
+2025-10-09 07:00:40,570 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0027.jpg
+2025-10-09 07:00:40,572 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0009E.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,573 - DEBUG - File exists: True
+2025-10-09 07:00:40,578 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0006P.jpg
+2025-10-09 07:00:40,578 - DEBUG - File exists: True
+2025-10-09 07:00:40,592 - DEBUG - File exists: True
+2025-10-09 07:00:40,598 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/LR0028.JPG HTTP/1.1" 200 -
+2025-10-09 07:00:40,605 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/LR0027.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,610 - DEBUG - Attempting to serve image: GR0015.jpg
+2025-10-09 07:00:40,616 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0006P.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,618 - DEBUG - Attempting to serve image: LR0010.jpg
+2025-10-09 07:00:40,620 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0015.jpg
+2025-10-09 07:00:40,629 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0010.jpg
+2025-10-09 07:00:40,633 - DEBUG - File exists: True
+2025-10-09 07:00:40,633 - DEBUG - File exists: True
+2025-10-09 07:00:40,655 - DEBUG - Attempting to serve image: ASAC00348.jpg
+2025-10-09 07:00:40,656 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/LR0010.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,658 - DEBUG - Attempting to serve image: PE.jpg
+2025-10-09 07:00:40,664 - DEBUG - Attempting to serve image: pear.jpg
+2025-10-09 07:00:40,665 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00348.jpg
+2025-10-09 07:00:40,665 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/GR0015.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,669 - DEBUG - Full path to image: /app/StyleImages/Items/PE.jpg
+2025-10-09 07:00:40,670 - DEBUG - Attempting to serve image: ASAC00359.jpg
+2025-10-09 07:00:40,677 - DEBUG - Attempting to serve image: PS0008E.jpg
+2025-10-09 07:00:40,677 - DEBUG - Full path to image: /app/StyleImages/Dia Shapes/pear.jpg
+2025-10-09 07:00:40,679 - DEBUG - File exists: True
+2025-10-09 07:00:40,679 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00359.jpg
+2025-10-09 07:00:40,679 - DEBUG - File exists: True
+2025-10-09 07:00:40,682 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0008E.jpg
+2025-10-09 07:00:40,683 - DEBUG - File exists: True
+2025-10-09 07:00:40,683 - DEBUG - File exists: True
+2025-10-09 07:00:40,685 - DEBUG - File exists: True
+2025-10-09 07:00:40,702 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ASAC00359.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,702 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ASAC00348.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,707 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PE.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,707 - DEBUG - Attempting to serve image: ASAC00263.jpg
+2025-10-09 07:00:40,710 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/pear.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,725 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00263.jpg
+2025-10-09 07:00:40,711 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0008E.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,728 - DEBUG - File exists: True
+2025-10-09 07:00:40,780 - DEBUG - Attempting to serve image: ASAC00281LR.jpeg
+2025-10-09 07:00:40,784 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ASAC00263.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,789 - DEBUG - Attempting to serve image: ER0015.jpg
+2025-10-09 07:00:40,791 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00281LR.jpeg
+2025-10-09 07:00:40,794 - DEBUG - Attempting to serve image: PS0006E.jpg
+2025-10-09 07:00:40,803 - DEBUG - File exists: True
+2025-10-09 07:00:40,803 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0015.jpg
+2025-10-09 07:00:40,806 - DEBUG - Attempting to serve image: ER0016.jpg
+2025-10-09 07:00:40,806 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0006E.jpg
+2025-10-09 07:00:40,809 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0016.jpg
+2025-10-09 07:00:40,810 - DEBUG - File exists: True
+2025-10-09 07:00:40,811 - DEBUG - File exists: True
+2025-10-09 07:00:40,818 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ASAC00281LR.jpeg HTTP/1.1" 200 -
+2025-10-09 07:00:40,818 - DEBUG - File exists: True
+2025-10-09 07:00:40,841 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ER0016.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,841 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/ER0015.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,841 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/PS0006E.jpg HTTP/1.1" 200 -
+2025-10-09 07:00:40,867 - DEBUG - Attempting to serve image: GP0008.jpg
+2025-10-09 07:00:40,872 - DEBUG - Full path to image: /app/StyleImages/PENDENT/GP0008.jpg
+2025-10-09 07:00:40,876 - DEBUG - File exists: True
+2025-10-09 07:00:40,888 - INFO - 172.18.0.1 - - [09/Oct/2025 07:00:40] "GET /uploads/GP0008.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,632 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "POST /search HTTP/1.1" 200 -
+2025-10-09 07:01:00,661 - DEBUG - Attempting to serve image: GR0014.jpg
+2025-10-09 07:01:00,662 - DEBUG - Attempting to serve image: ASAC00339.jpg
+2025-10-09 07:01:00,663 - DEBUG - Attempting to serve image: PS0004P-1.jpg
+2025-10-09 07:01:00,665 - DEBUG - Attempting to serve image: ASAC00261.jpg
+2025-10-09 07:01:00,667 - DEBUG - Attempting to serve image: PS0001E.jpg
+2025-10-09 07:01:00,667 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0014.jpg
+2025-10-09 07:01:00,668 - DEBUG - Attempting to serve image: ASAC00413.jpg
+2025-10-09 07:01:00,669 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00339.jpg
+2025-10-09 07:01:00,670 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0004P-1.jpg
+2025-10-09 07:01:00,671 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00261.jpg
+2025-10-09 07:01:00,672 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0001E.jpg
+2025-10-09 07:01:00,672 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00413.jpg
+2025-10-09 07:01:00,672 - DEBUG - File exists: True
+2025-10-09 07:01:00,673 - DEBUG - File exists: True
+2025-10-09 07:01:00,673 - DEBUG - File exists: True
+2025-10-09 07:01:00,673 - DEBUG - File exists: True
+2025-10-09 07:01:00,675 - DEBUG - File exists: True
+2025-10-09 07:01:00,675 - DEBUG - File exists: True
+2025-10-09 07:01:00,683 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/PS0004P-1.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,684 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/ASAC00339.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,684 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/ASAC00261.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,686 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/GR0014.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,689 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/PS0001E.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,690 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/ASAC00413.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,736 - DEBUG - Attempting to serve image: ASAC00264.jpg
+2025-10-09 07:01:00,739 - DEBUG - Attempting to serve image: PS0008P.jpg
+2025-10-09 07:01:00,743 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00264.jpg
+2025-10-09 07:01:00,746 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0008P.jpg
+2025-10-09 07:01:00,748 - DEBUG - Attempting to serve image: GP0021.jpg
+2025-10-09 07:01:00,751 - DEBUG - Attempting to serve image: PS0006P-1.jpg
+2025-10-09 07:01:00,751 - DEBUG - File exists: True
+2025-10-09 07:01:00,751 - DEBUG - File exists: True
+2025-10-09 07:01:00,757 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0006P-1.jpg
+2025-10-09 07:01:00,757 - DEBUG - Full path to image: /app/StyleImages/PENDENT/GP0021.jpg
+2025-10-09 07:01:00,759 - DEBUG - Attempting to serve image: ASAC00288ER.jpeg
+2025-10-09 07:01:00,759 - DEBUG - File exists: True
+2025-10-09 07:01:00,760 - DEBUG - File exists: True
+2025-10-09 07:01:00,764 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00288ER.jpeg
+2025-10-09 07:01:00,766 - DEBUG - File exists: True
+2025-10-09 07:01:00,767 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/PS0008P.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,768 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/ASAC00264.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,774 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/PS0006P-1.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,780 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/GP0021.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,786 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/ASAC00288ER.jpeg HTTP/1.1" 200 -
+2025-10-09 07:01:00,809 - DEBUG - Attempting to serve image: GR0005.jpg
+2025-10-09 07:01:00,813 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0005.jpg
+2025-10-09 07:01:00,826 - DEBUG - File exists: True
+2025-10-09 07:01:00,829 - DEBUG - Attempting to serve image: ASAC00393.jpg
+2025-10-09 07:01:00,831 - DEBUG - Attempting to serve image: GR0021.jpg
+2025-10-09 07:01:00,835 - DEBUG - Attempting to serve image: BN0011.jpg
+2025-10-09 07:01:00,836 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00393.jpg
+2025-10-09 07:01:00,837 - DEBUG - Attempting to serve image: ASAC00358.jpg
+2025-10-09 07:01:00,837 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0021.jpg
+2025-10-09 07:01:00,839 - DEBUG - File exists: True
+2025-10-09 07:01:00,839 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0011.jpg
+2025-10-09 07:01:00,841 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00358.jpg
+2025-10-09 07:01:00,842 - DEBUG - File exists: True
+2025-10-09 07:01:00,844 - DEBUG - File exists: True
+2025-10-09 07:01:00,845 - DEBUG - File exists: True
+2025-10-09 07:01:00,847 - DEBUG - Attempting to serve image: ASAC00334.jpg
+2025-10-09 07:01:00,848 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/GR0005.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,850 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/ASAC00393.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,852 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00334.jpg
+2025-10-09 07:01:00,852 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/GR0021.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,858 - DEBUG - File exists: True
+2025-10-09 07:01:00,865 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/ASAC00358.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,871 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/BN0011.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,878 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/ASAC00334.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,890 - DEBUG - Attempting to serve image: MNK00010E.jpeg
+2025-10-09 07:01:00,899 - DEBUG - Full path to image: /app/StyleImages/ASAC/MNK00010E.jpeg
+2025-10-09 07:01:00,902 - DEBUG - Attempting to serve image: GR0003.jpg
+2025-10-09 07:01:00,903 - DEBUG - File exists: True
+2025-10-09 07:01:00,907 - DEBUG - Attempting to serve image: ER0010.jpg
+2025-10-09 07:01:00,908 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0003.jpg
+2025-10-09 07:01:00,915 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0010.jpg
+2025-10-09 07:01:00,917 - DEBUG - File exists: True
+2025-10-09 07:01:00,922 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/MNK00010E.jpeg HTTP/1.1" 200 -
+2025-10-09 07:01:00,922 - DEBUG - File exists: True
+2025-10-09 07:01:00,925 - DEBUG - Attempting to serve image: MLR00010.jpeg
+2025-10-09 07:01:00,938 - DEBUG - Attempting to serve image: PS0023.jpg
+2025-10-09 07:01:00,938 - DEBUG - Full path to image: /app/StyleImages/ASAC/MLR00010.jpeg
+2025-10-09 07:01:00,944 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/GR0003.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,945 - DEBUG - File exists: True
+2025-10-09 07:01:00,948 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0023.jpg
+2025-10-09 07:01:00,949 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/ER0010.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,954 - DEBUG - File exists: True
+2025-10-09 07:01:00,970 - DEBUG - Attempting to serve image: ASAC00372.jpg
+2025-10-09 07:01:00,970 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/MLR00010.jpeg HTTP/1.1" 200 -
+2025-10-09 07:01:00,973 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00372.jpg
+2025-10-09 07:01:00,981 - DEBUG - File exists: True
+2025-10-09 07:01:00,982 - DEBUG - Attempting to serve image: PS0021E.jpg
+2025-10-09 07:01:00,983 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:00] "GET /uploads/PS0023.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:00,985 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0021E.jpg
+2025-10-09 07:01:00,989 - DEBUG - File exists: True
+2025-10-09 07:01:00,992 - DEBUG - Attempting to serve image: ASAC00283.jpg
+2025-10-09 07:01:01,001 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ASAC00372.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,003 - DEBUG - Attempting to serve image: PS0008P-1.jpg
+2025-10-09 07:01:01,007 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00283.jpg
+2025-10-09 07:01:01,007 - DEBUG - Attempting to serve image: ASAC00429.jpg
+2025-10-09 07:01:01,011 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0008P-1.jpg
+2025-10-09 07:01:01,015 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00429.jpg
+2025-10-09 07:01:01,016 - DEBUG - File exists: True
+2025-10-09 07:01:01,016 - DEBUG - File exists: True
+2025-10-09 07:01:01,018 - DEBUG - File exists: True
+2025-10-09 07:01:01,022 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/PS0021E.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,031 - DEBUG - Attempting to serve image: GR0022.jpg
+2025-10-09 07:01:01,035 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0022.jpg
+2025-10-09 07:01:01,037 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ASAC00283.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,040 - DEBUG - File exists: True
+2025-10-09 07:01:01,042 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/PS0008P-1.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,044 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ASAC00429.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,059 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/GR0022.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,073 - DEBUG - Attempting to serve image: GR0012.jpg
+2025-10-09 07:01:01,080 - DEBUG - Attempting to serve image: PS0010P-1.jpg
+2025-10-09 07:01:01,081 - DEBUG - Attempting to serve image: ER0005.jpg
+2025-10-09 07:01:01,083 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0012.jpg
+2025-10-09 07:01:01,091 - DEBUG - File exists: True
+2025-10-09 07:01:01,092 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0010P-1.jpg
+2025-10-09 07:01:01,092 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0005.jpg
+2025-10-09 07:01:01,102 - DEBUG - File exists: True
+2025-10-09 07:01:01,102 - DEBUG - File exists: True
+2025-10-09 07:01:01,112 - DEBUG - Attempting to serve image: ER0020.jpg
+2025-10-09 07:01:01,114 - DEBUG - Attempting to serve image: PS0007P-1.jpg
+2025-10-09 07:01:01,115 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/GR0012.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,115 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0020.jpg
+2025-10-09 07:01:01,118 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0007P-1.jpg
+2025-10-09 07:01:01,121 - DEBUG - File exists: True
+2025-10-09 07:01:01,121 - DEBUG - File exists: True
+2025-10-09 07:01:01,123 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/PS0010P-1.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,125 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ER0005.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,140 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/PS0007P-1.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,141 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ER0020.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,144 - DEBUG - Attempting to serve image: ASAC00284LR.jpeg
+2025-10-09 07:01:01,146 - DEBUG - Attempting to serve image: ASAC00308A.jpg
+2025-10-09 07:01:01,152 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00284LR.jpeg
+2025-10-09 07:01:01,153 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00308A.jpg
+2025-10-09 07:01:01,159 - DEBUG - Attempting to serve image: LR0001----.jpg
+2025-10-09 07:01:01,160 - DEBUG - File exists: True
+2025-10-09 07:01:01,162 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0001----.jpg
+2025-10-09 07:01:01,162 - DEBUG - File exists: True
+2025-10-09 07:01:01,167 - DEBUG - Attempting to serve image: BN0010.jpg
+2025-10-09 07:01:01,169 - DEBUG - File exists: True
+2025-10-09 07:01:01,170 - DEBUG - Full path to image: /app/StyleImages/BANGLE/BN0010.jpg
+2025-10-09 07:01:01,174 - DEBUG - File exists: True
+2025-10-09 07:01:01,182 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ASAC00284LR.jpeg HTTP/1.1" 200 -
+2025-10-09 07:01:01,182 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ASAC00308A.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,191 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/LR0001----.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,196 - DEBUG - Attempting to serve image: GR0013.jpg
+2025-10-09 07:01:01,200 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/BN0010.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,202 - DEBUG - Full path to image: /app/StyleImages/MENS RING/GR0013.jpg
+2025-10-09 07:01:01,215 - DEBUG - Attempting to serve image: PS0007E.jpg
+2025-10-09 07:01:01,220 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0007E.jpg
+2025-10-09 07:01:01,223 - DEBUG - File exists: True
+2025-10-09 07:01:01,234 - DEBUG - File exists: True
+2025-10-09 07:01:01,238 - DEBUG - Attempting to serve image: ER0023.jpg
+2025-10-09 07:01:01,247 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0023.jpg
+2025-10-09 07:01:01,251 - DEBUG - File exists: True
+2025-10-09 07:01:01,261 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/GR0013.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,265 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/PS0007E.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,266 - DEBUG - Attempting to serve image: ASAC00405.jpg
+2025-10-09 07:01:01,266 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ER0023.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,273 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00405.jpg
+2025-10-09 07:01:01,278 - DEBUG - File exists: True
+2025-10-09 07:01:01,310 - DEBUG - Attempting to serve image: THAKA.jpeg
+2025-10-09 07:01:01,316 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ASAC00405.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,319 - DEBUG - Attempting to serve image: MNK00009E.jpeg
+2025-10-09 07:01:01,319 - DEBUG - Full path to image: /app/StyleImages/ASAC/THAKA.jpeg
+2025-10-09 07:01:01,326 - DEBUG - Full path to image: /app/StyleImages/ASAC/MNK00009E.jpeg
+2025-10-09 07:01:01,326 - DEBUG - File exists: True
+2025-10-09 07:01:01,337 - DEBUG - File exists: True
+2025-10-09 07:01:01,353 - DEBUG - Attempting to serve image: ER0017.jpg
+2025-10-09 07:01:01,357 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/THAKA.jpeg HTTP/1.1" 200 -
+2025-10-09 07:01:01,358 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/MNK00009E.jpeg HTTP/1.1" 200 -
+2025-10-09 07:01:01,358 - DEBUG - Full path to image: /app/StyleImages/EARRING/ER0017.jpg
+2025-10-09 07:01:01,371 - DEBUG - Attempting to serve image: OV.jpg
+2025-10-09 07:01:01,372 - DEBUG - File exists: True
+2025-10-09 07:01:01,384 - DEBUG - Full path to image: /app/StyleImages/Items/OV.jpg
+2025-10-09 07:01:01,388 - DEBUG - File exists: True
+2025-10-09 07:01:01,399 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ER0017.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,407 - DEBUG - Attempting to serve image: OD.jpg
+2025-10-09 07:01:01,410 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/OV.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,414 - DEBUG - Full path to image: /app/StyleImages/Dia Shapes/OD.jpg
+2025-10-09 07:01:01,424 - DEBUG - File exists: True
+2025-10-09 07:01:01,425 - DEBUG - Attempting to serve image: ASAC00417XL.jpg
+2025-10-09 07:01:01,433 - DEBUG - Attempting to serve image: PS0022.jpg
+2025-10-09 07:01:01,434 - DEBUG - Full path to image: /app/StyleImages/ASAC/ASAC00417XL.jpg
+2025-10-09 07:01:01,439 - DEBUG - Attempting to serve image: LR0024.jpg
+2025-10-09 07:01:01,440 - DEBUG - Full path to image: /app/StyleImages/PENDENT SET/PS0022.jpg
+2025-10-09 07:01:01,446 - DEBUG - File exists: True
+2025-10-09 07:01:01,447 - DEBUG - Full path to image: /app/StyleImages/WOMENS RING/LR0024.jpg
+2025-10-09 07:01:01,449 - DEBUG - File exists: True
+2025-10-09 07:01:01,450 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/OD.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,451 - DEBUG - File exists: True
+2025-10-09 07:01:01,460 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/ASAC00417XL.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,464 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/PS0022.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:01,473 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:01] "GET /uploads/LR0024.jpg HTTP/1.1" 200 -
+2025-10-09 07:01:40,843 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:40] "POST /search HTTP/1.1" 200 -
+2025-10-09 07:01:57,999 - INFO - 172.18.0.1 - - [09/Oct/2025 07:01:57] "POST /search HTTP/1.1" 200 -
+2025-10-09 07:02:04,833 - INFO - 172.18.0.1 - - [09/Oct/2025 07:02:04] "POST /search HTTP/1.1" 200 -
+2025-10-09 07:02:11,145 - INFO - 172.18.0.1 - - [09/Oct/2025 07:02:11] "POST /search HTTP/1.1" 200 -
+2025-10-09 07:02:31,768 - INFO - 172.18.0.1 - - [09/Oct/2025 07:02:31] "POST /search HTTP/1.1" 200 -
+2025-10-09 07:02:31,781 - DEBUG - Attempting to serve image: BR0001.jpg
+2025-10-09 07:02:31,782 - DEBUG - Attempting to serve image: BR0009.jpg
+2025-10-09 07:02:31,782 - DEBUG - Attempting to serve image: BR0006.jpg
+2025-10-09 07:02:31,786 - DEBUG - Attempting to serve image: BR0008.jpg
+2025-10-09 07:02:31,787 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0001.jpg
+2025-10-09 07:02:31,789 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0009.jpg
+2025-10-09 07:02:31,789 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0006.jpg
+2025-10-09 07:02:31,789 - DEBUG - Full path to image: /app/StyleImages/LADIES BRACELET/BR0008.jpg
+2025-10-09 07:02:31,790 - DEBUG - File exists: True
+2025-10-09 07:02:31,790 - DEBUG - File exists: True
+2025-10-09 07:02:31,791 - DEBUG - File exists: True
+2025-10-09 07:02:31,791 - DEBUG - File exists: True
+2025-10-09 07:02:31,797 - INFO - 172.18.0.1 - - [09/Oct/2025 07:02:31] "[36mGET /uploads/BR0009.jpg HTTP/1.1[0m" 304 -
+2025-10-09 07:02:31,797 - INFO - 172.18.0.1 - - [09/Oct/2025 07:02:31] "[36mGET /uploads/BR0006.jpg HTTP/1.1[0m" 304 -
+2025-10-09 07:02:31,798 - INFO - 172.18.0.1 - - [09/Oct/2025 07:02:31] "[36mGET /uploads/BR0008.jpg HTTP/1.1[0m" 304 -
+2025-10-09 07:02:31,798 - INFO - 172.18.0.1 - - [09/Oct/2025 07:02:31] "GET /uploads/BR0001.jpg HTTP/1.1" 200 -
+2025-10-09 07:31:49,377 - INFO - SSL context created successfully
+2025-10-09 07:31:50,828 - INFO - SSL connection to https://github.com/certifi/python-certifi verified successfully
+2025-10-09 07:31:50,829 - DEBUG - Certificate details: {'subject': ((('commonName', 'github.com'),),), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'Sectigo Limited'),), (('commonName', 'Sectigo ECC Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': 'AB6686B5627BE80596821330128649F5', 'notBefore': 'Feb  5 00:00:00 2025 GMT', 'notAfter': 'Feb  5 23:59:59 2026 GMT', 'subjectAltName': (('DNS', 'github.com'), ('DNS', 'www.github.com')), 'OCSP': ('http://ocsp.sectigo.com',), 'caIssuers': ('http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt',)}
+2025-10-09 07:31:50,830 - INFO - Initial SSL test connection successful
+2025-10-09 07:31:50,841 - INFO - SSL context created successfully
+2025-10-09 07:31:57,924 - INFO - MobileNetV3 weights loaded successfully.
+2025-10-09 07:31:58,022 - INFO - Starting server on port 5002
+2025-10-09 07:31:58,035 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.18.0.2:5002
+2025-10-09 07:31:58,035 - INFO - [33mPress CTRL+C to quit[0m
